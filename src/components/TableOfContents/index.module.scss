@@ -1,0 +1,29 @@
+.tableOfContents {
+  position: relative;
+
+  .content {
+    position: sticky;
+    top: 20px;
+    padding: 0 20px;
+    overflow: auto;
+
+    &::before {
+      position: absolute;
+      left: 16px;
+      top: 0;
+      bottom: 0;
+      content: "";
+      width: 2px;
+      background: #ddd;
+    }
+
+    ul {
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin-left: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.markdownPage {
+  display: flex;
+  min-height: 100vh;
+
+  .content {
+    flex: 1;
+    padding: 20px 40px
+  }
+}
