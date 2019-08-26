@@ -7,7 +7,7 @@ pipeline {
         }
         
         stage('prepare') {
-            sh 'npm insta''
+            sh 'npm install'
         }
         
         stage('Build') {
