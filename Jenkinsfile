@@ -1,9 +1,12 @@
 node {
-    withEnv(['NODE_HOME=/var/lib/jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS_12.9.1/bin']) {
-        stage('Checkout') {
+    env.NODEJS_HOME = "${tool 'Node 12.x'}"
+    // on linux / mac
+    env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
+    
+    stage('Checkout') {
        checkout scm
     }
-
+    
     stage('Prepare') {
       sh 'npm install'
       sh 'npm install -g gatsby-cli'
@@ -17,6 +20,4 @@ node {
     stage('Deploy') {
       sh 'npm run serve'
     }
-    }
-    
 }
