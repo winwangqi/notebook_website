@@ -1,5 +1,6 @@
 node {
-    stage('Checkout') {
+    withEnv(['NODE_HOME=/var/lib/jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS_12.9.1/bin']) {
+        stage('Checkout') {
        checkout scm
     }
 
@@ -16,4 +17,6 @@ node {
     stage('Deploy') {
       sh 'npm run serve'
     }
+    }
+    
 }
