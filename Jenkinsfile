@@ -1,29 +1,26 @@
-pipeline {
-    agent any
-
+node {
     stages {
-        stage('checkout') {
+        stage('Checkout') {
             checkout scm
         }
         
-        stage('prepare') {
+        stage('Prepare') {
+          steps {
             sh 'npm install'
+            sh 'npm install -g gatsby-cli'
+          }
         }
         
         stage('Build') {
             steps {
-                echo 'Building..'
+              sh 'npm run build'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
+
         stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
+          steps {
+          sh 'npm run serve'
+          }
         }
     }
 }
