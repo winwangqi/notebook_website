@@ -1,6 +1,5 @@
 node {
-    stages {
-        stage('Checkout') {
+    stage('Checkout') {
             checkout scm
         }
         
@@ -22,5 +21,4 @@ node {
           sh 'npm run serve'
           }
         }
-    }
 }
