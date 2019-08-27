@@ -5,11 +5,12 @@ node {
 
     stage('Prepare') {
       sh 'npm install'
-        sh 'npm install -g gatsby-cli'
+      sh 'npm install -g gatsby-cli'
+      sh 'gatsby telemetry --disable'
     }
 
     stage('Build') {
-       sh 'npm run build'
+      sh 'npm run build'
     }
 
     stage('Deploy') {
