@@ -1,23 +1,27 @@
 node {
-    withEnv(["PATH+NODE=${tool name: 'NodeJS 12.9.1', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'}/bin"]) {
-    stage('Checkout') {
-       checkout scm
-    }
     
-    stage('Prepare') {
-      sh 'npm install'
-      sh 'npm install -g gatsby-cli'
-      sh 'gatsby telemetry --disable'
-    }
+    withNPM(npmrcConfig: 'my-custom-nprc') {
+        stage('Checkout') {
+           checkout scm
+        }
 
-    stage('Build') {
-      sh 'npm run build'
-    }
+        stage('Prepare') {
+          sh 'npm install'
+          sh 'npm install -g gatsby-cli'
+          sh 'gatsby telemetry --disable'
+        }
 
-    stage('Deploy') {
-      sh 'npm run serve'
+        stage('Build') {
+          sh 'npm run build'
+        }
+
+        stage('Deploy') {
+          sh 'npm run serve'
+        }
     }
-  }
+    // withEnv(["PATH+NODE=${tool name: 'NodeJS 12.9.1', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'}/bin"]) {
+    
+    // }
     
     // env.NODEJS_HOME = "${tool 'NodeJS 12.9.1'}"
     // on linux / mac
