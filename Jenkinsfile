@@ -1,10 +1,11 @@
 node {
-    
-    withNPM() {
+    def root = tool name: 'NodeJS 12.9.1', type: 'nodejs'
+
+    withEnv(["PATH+NODEJS=${root}"]) {
         stage('Checkout') {
            checkout scm
         }
-
+        
         stage('Prepare') {
           sh 'npm install'
           sh 'npm install -g gatsby-cli'
