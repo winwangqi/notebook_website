@@ -1,5 +1,5 @@
 node {
-    env.NODEJS_HOME = "${tool 'Node 12.x'}"
+    env.NODEJS_HOME = "${tool 'NodeJS 12.9.1'}"
     // on linux / mac
     env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
     
