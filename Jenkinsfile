@@ -1,6 +1,6 @@
 node {
     
-    withNPM(npmrcConfig: 'my-custom-nprc') {
+    withNPM() {
         stage('Checkout') {
            checkout scm
         }
