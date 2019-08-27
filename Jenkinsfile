@@ -1,8 +1,5 @@
 node {
-    env.NODEJS_HOME = "${tool 'NodeJS 12.9.1'}"
-    // on linux / mac
-    env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
-    
+    withEnv(["PATH+NODE=${tool name: 'NodeJS 12.9.1', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'}/bin"]) {
     stage('Checkout') {
        checkout scm
     }
@@ -20,4 +17,9 @@ node {
     stage('Deploy') {
       sh 'npm run serve'
     }
+  }
+    
+    // env.NODEJS_HOME = "${tool 'NodeJS 12.9.1'}"
+    // on linux / mac
+    // env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
 }
