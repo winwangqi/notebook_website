@@ -1,5 +1,5 @@
 node {
-    def root = tool name: 'NodeJS 12.9.1', type: 'nodejs'
+    def root = tool name: 'NodeJS 10.15.1', type: 'nodejs'
 
     withEnv(["PATH+NODEJS=${root}"]) {
         stage('Checkout') {
