@@ -14,6 +14,10 @@ node {
           dir("${WORKSPACE}/public") {
             deleteDir()
           }
+            
+           dir("/var/www/darkred.vip/notebook/*") {
+            deleteDir()
+          }
           
             
           sh "npm install"
