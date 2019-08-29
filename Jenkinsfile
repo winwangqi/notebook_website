@@ -19,8 +19,8 @@ node {
         }
 
         stage("Archive") {
-          sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
-          sh "mv ./archive/release:${BUILD_ID}.tar ${CLIENT_ARCHIVE_DIR}"
+          // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
+          sh "mv ./public /var/www/darkred.vip/notebook"
         }
     }
     // withEnv(["PATH+NODE=${tool name: 'NodeJS 12.9.1', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'}/bin"]) {
