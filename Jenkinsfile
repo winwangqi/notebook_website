@@ -10,12 +10,13 @@ node {
           dir("${WORKSPACE}/public") {
             deleteDir()
           }
-          
-          sh "npm install"
+            
+          sh "npm install -g yarn"
+          sh "yarn install"
         }
 
         stage("Build") {
-          sh "npm run build"
+          sh "yarn run build"
         }
 
         stage("Archive") {
