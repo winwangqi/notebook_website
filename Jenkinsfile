@@ -7,7 +7,7 @@ node {
         }
         
         stage("Prepare") {
-          dir("${WORKSPACE}/notebook") {
+          dir("${WORKSPACE}/notebook/public") {
             deleteDir()
           }
           
