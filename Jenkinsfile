@@ -15,9 +15,7 @@ node {
             deleteDir()
           }
             
-           dir("/var/www/darkred.vip/notebook") {
-            deleteDir()
-          }
+          sh "rm -rf /var/www/darkred.vip/notebook/*"
           
             
           sh "npm install"
