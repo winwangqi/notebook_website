@@ -11,12 +11,11 @@ node {
             deleteDir()
           }
             
-          sh "npm install -g yarn"
-          sh "yarn install"
+          sh "npm install"
         }
 
         stage("Build") {
-          sh "yarn run build"
+          sh "npm run build"
         }
 
         stage("Archive") {
