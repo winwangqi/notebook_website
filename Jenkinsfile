@@ -8,8 +8,6 @@ node {
         
         stage('Prepare') {
           sh 'npm install'
-          sh 'npm install -g gatsby-cli'
-          sh 'gatsby telemetry --disable'
         }
 
         stage('Build') {
