@@ -1,21 +1,26 @@
 node {
-    def root = tool name: 'NodeJS 10.15.1', type: 'nodejs'
+    def root = tool name: "NodeJS 10.15.1", type: "nodejs"
 
     withEnv(["PATH+NODEJS=${root}"]) {
-        stage('Checkout') {
+        stage("Checkout") {
            checkout scm
         }
         
-        stage('Prepare') {
-          sh 'npm install'
+        stage("Prepare") {
+          dir("${WORKSPACE}/public") {
+            deleteDir()
+          }
+          
+          sh "npm install"
         }
 
-        stage('Build') {
-          sh 'npm run build'
+        stage("Build") {
+          sh "npm run build"
         }
 
-        stage('Deploy') {
-          sh 'npm run serve'
+        stage("Archive") {
+          sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./public"
+          sh "mv ./archive/release:${BUILD_ID}.tar ${CLIENT_ARCHIVE_DIR}"
         }
     }
     // withEnv(["PATH+NODE=${tool name: 'NodeJS 12.9.1', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'}/bin"]) {
