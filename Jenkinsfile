@@ -7,9 +7,14 @@ node {
         }
         
         stage("Prepare") {
+          dir("${WORKSPACE}/.cache") {
+            deleteDir()
+          }
+            
           dir("${WORKSPACE}/public") {
             deleteDir()
           }
+          
             
           sh "npm install"
         }
