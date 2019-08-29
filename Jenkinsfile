@@ -15,7 +15,7 @@ node {
             deleteDir()
           }
             
-           dir("/var/www/darkred.vip/notebook/*") {
+           dir("/var/www/darkred.vip/notebook") {
             deleteDir()
           }
           
