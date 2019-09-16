@@ -2,14 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import MarkdownPage from 'components/MarkdownPage'
-export default function Notebook({ data }) {
+export default function Notebook({ data, pageContext: { headingIDs, tableOfContentsAST } }) {
   const { markdownRemark } = data
-
-  console.log(markdownRemark)
 
   return (
     <MarkdownPage
       markdownRemark={markdownRemark}
+      headingIDs={headingIDs}
+      tableOfContentsAST={tableOfContentsAST}
     />
   )
 }

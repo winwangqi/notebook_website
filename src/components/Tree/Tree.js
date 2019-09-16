@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import cns from 'classnames'
+
 import styl from './Tree.module.scss'
 
 /*
@@ -19,23 +21,23 @@ import styl from './Tree.module.scss'
 ]
  */
 
-function createNode(node, createLeaf) {
+function createNode({ node, createBranchNode, createLeaf }) {
   if (Array.isArray(node)) {
-    return node.map(item => createNode(item, createLeaf))
+    return node.map(item => createNode({ node: item, createBranchNode, createLeaf }))
   }
 
   if (node instanceof Object) {
     if (node.type === 'branchNode') {
       return (
-        <div key={node.label} className={styl.branch}>
-          <div className={styl.label}>{node.label}</div>
-          {node.isOpen && <div className={styl.branch}>{createNode(node.items, createLeaf)}</div>}
-        </div>
+        <ul key={node.label} className={styl.branch}>
+          <div className={styl.label}>{createBranchNode ? createBranchNode(node) : node.label}</div>
+          {node.isOpen && <ul className={styl.branch}>{createNode({ node: node.items, createBranchNode, createLeaf })}</ul>}
+        </ul>
       )
     }
 
     if (node.type === 'leaf') {
-      return <div key={node.label} className={styl.leaf}>{createLeaf ? createLeaf(node) : node.label}</div>
+      return <li key={node.label} className={styl.leaf}>{createLeaf ? createLeaf(node) : node.label}</li>
     }
   }
 
@@ -48,8 +50,12 @@ Tree.propTypes = {
 
 function Tree(props) {
   return (
-    <div className={styl.rootNode}>
-      {createNode(props.data, props.createLeaf)}
+    <div className={cns(styl.rootNode, props.className)}>
+      {createNode({
+        node: props.data,
+        createBranchNode: props.createBranchNode,
+        createLeaf: props.createLeaf
+      })}
     </div>
   )
 }

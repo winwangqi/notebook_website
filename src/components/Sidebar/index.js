@@ -33,7 +33,7 @@ const treeData = (function createTreeData(list, relativePath = '/') {
   })
 })(list)
 
-export default function Sidebar(props) {
+export default function Sidebar() {
   return (
     <div className={styl.sidebar}>
       <div className={styl.content}>
