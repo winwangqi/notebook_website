@@ -1,0 +1,14 @@
+@import "boot";
+
+.main-width {
+  margin: 0 auto;
+  width: 90%;
+
+  @include respond-to(lg) {
+    max-width: map-get($breakpoints, lg);
+  }
+
+  @include respond-to(xl) {
+    max-width: 1300px;
+  }
+}
