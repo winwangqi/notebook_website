@@ -16,7 +16,7 @@ function IndexPage() {
       <div className={cns('main-width theme-color', styl.slogan)}>For Learning! For Everyone!</div>
       <div className={styl.content}>
         <video className={styl.banner} src={require('../assets/videos/beach.mp4')} autoPlay loop />
-        <Link className={cns('theme-primary-button', styl.button)} to="/Notebook/功能需求">Let's Go!</Link>
+        <Link className={cns('theme-primary-button', styl.button)} to="/Notebook/功能需求">Get Started!</Link>
       </div>
     </Layout>
   )

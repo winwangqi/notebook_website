@@ -1,0 +1,38 @@
+.markdown {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 2em 0 0;
+    text-rendering: optimizelegibility;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 56px;
+
+    &:first-child {
+      margin-top: 1em;
+    }
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  p + ul, p + ol {
+    margin-top: 1em;
+  }
+
+  ul {
+    margin: 1em 0 1em 2em;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+}
