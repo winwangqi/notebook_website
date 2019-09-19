@@ -13,8 +13,6 @@ import Theme from '../theme'
 import Header from "./partials/header"
 import Footer from './partials/footer'
 
-import "./layout.scss"
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
