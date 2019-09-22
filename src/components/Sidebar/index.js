@@ -36,11 +36,11 @@ const treeData = (function createTreeData(list, relativePath = '/') {
 
 export default function Sidebar() {
   return (
-    <div className={cns('theme-background', styl.sidebar)}>
+    <div className={cns('theme-background', 'hidden-xs hidden-sm', styl.sidebar)}>
       <div className={styl.content}>
         <Tree
           data={treeData}
-          createLeaf={node => <Link to={node.context.path}>{node.label}</Link>}
+          createLeaf={node => <Link className="theme-color" to={node.context.path}>{node.label}</Link>}
         />
       </div>
     </div>

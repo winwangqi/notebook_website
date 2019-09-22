@@ -1,0 +1,18 @@
+@each $breakpoint, $value in $breakpoints {
+  $next: breakpoint-next($breakpoint);
+
+  @if ($next) {
+    @include media-breakpoint-between($breakpoint, $next) {
+      .hidden-#{$breakpoint} {
+        display: none;
+      }
+    }
+  } @else {
+    @include respond-to($breakpoint) {
+      .hidden-#{$breakpoint} {
+        display: none;
+      }
+
+    }
+  }
+}

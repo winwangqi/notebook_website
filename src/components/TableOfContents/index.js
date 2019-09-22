@@ -8,14 +8,16 @@ import { Link } from 'gatsby'
 export default function(props) {
   const { tableOfContents, tocAST } = props
 
+  if (tocAST.length === 0) return null
+
   return (
     <div className={styl.tableOfContents}>
       {/*<div className={styl.content} dangerouslySetInnerHTML={{ __html: tableOfContents }} />*/}
       <Tree
         className={styl.content}
         data={createTreeData(tocAST)}
-        createBranchNode={node => <Link to={node.context.path}>{node.context.path + '||' + node.label}</Link>}
-        createLeaf={node => <Link to={node.context.path}>{node.context.path + '||' + node.label}</Link>}
+        createBranchNode={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
+        createLeaf={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
       />
     </div>
   )
