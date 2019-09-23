@@ -11,12 +11,14 @@ import styl from './index.module.scss'
 export default function(props) {
   const { markdownRemark, tableOfContentsAST, headingIDs } = props
 
+  console.log(tableOfContentsAST)
+
   return (
     <Theme>
       <div className={styl.markdownPage}>
         <Sidebar />
         <div className={cns('markdown', styl.content)} dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-        <TableOfContents tableOfContents={markdownRemark.tableOfContents} tocAST={tableOfContentsAST} />
+        <TableOfContents tableOfContentsAST={tableOfContentsAST} />
       </div>
     </Theme>
   )

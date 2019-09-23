@@ -1,3 +1,5 @@
+@import "../../styles/boot";
+
 .markdownPage {
   display: flex;
   min-height: 100vh;
@@ -5,6 +7,10 @@
   .content {
     box-sizing: border-box;
     flex: 1;
-    padding: 0 40px
+    padding: 0 1.4em;
+
+    @include respond-to(md) {
+      padding: 0 40px;
+    }
   }
 }

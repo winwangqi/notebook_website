@@ -2,20 +2,20 @@ import React from 'react'
 
 import Tree from '../Tree'
 
+import cns from 'classnames'
 import styl from './index.module.scss'
-import { Link } from 'gatsby'
 
 export default function(props) {
-  const { tableOfContents, tocAST } = props
+  const { tableOfContentsAST } = props
 
-  if (tocAST.length === 0) return null
+  if (tableOfContentsAST.length === 0) return null
 
   return (
-    <div className={styl.tableOfContents}>
+    <div className={cns('hidden-xs', 'hidden-sm', styl.tableOfContents)}>
       {/*<div className={styl.content} dangerouslySetInnerHTML={{ __html: tableOfContents }} />*/}
       <Tree
         className={styl.content}
-        data={createTreeData(tocAST)}
+        data={createTreeData(tableOfContentsAST)}
         createBranchNode={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
         createLeaf={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
       />
@@ -23,12 +23,12 @@ export default function(props) {
   )
 }
 
-function createTreeData(tocAST) {
-  return tocAST.map(item => {
-    if (!item.children) {
+function createTreeData(tableOfContentsAST) {
+  return tableOfContentsAST.map((item, index) => {
+    if (!item.children && index !== 0) {
       return {
         type: 'leaf',
-        label: item.id,
+        label: item.value,
         context: {
           path: `#${item.id}`,
         },
@@ -36,9 +36,9 @@ function createTreeData(tocAST) {
     } else {
       return {
         type: 'branchNode',
-        label: item.id ? item.id : '',
+        label: item.value ? item.value : '',
         isOpen: true,
-        items: createTreeData(item.children),
+        items: createTreeData(item.children || []),
         context: {
           path: `#${item.id}`,
         },

@@ -18,3 +18,11 @@
     background: $theme-background;
   }
 }
+
+a {
+  color: $theme-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,11 +1,18 @@
+@import "../../styles/boot";
+
 .tableOfContents {
   position: relative;
 
   .content {
     position: sticky;
-    top: 20px;
-    padding: 0 20px;
+    top: 1.2em;
+    max-width: 8em;
+    padding: 0 1.2em;
     overflow: auto;
+
+    @include respond-to(xl) {
+      max-width: 14em;
+    }
 
     &::before {
       position: absolute;

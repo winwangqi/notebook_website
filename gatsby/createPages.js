@@ -46,19 +46,19 @@ module.exports = async ({ actions, graphql, reporter }) => {
 }
 
 function getTableOfContentsAstFromHTMLAST(htmlAst) {
-  function getNewNode(depth, id) {
-    const root = {
-      depth: 1,
-    }
+  function getNode(id, value, depth) {
+    return { id, value, depth }
+  }
+
+  function getNewNodeWrapper(id, value, depth) {
+    const root = getNode(undefined, value, 1)
 
     let parent = root
     let last = root
 
     if (depth > 1) {
       for (let i = 2; i <= depth; i++) {
-        let node = {
-          depth: i
-        }
+        let node = getNode(undefined, value, i)
 
         if (i === depth) {
           node.id = id
@@ -76,13 +76,11 @@ function getTableOfContentsAstFromHTMLAST(htmlAst) {
     return { root, last, parent }
   }
 
-  function getAfterNode(start, end, id, lastNodeObj) {
+  function getAfterNodeWrapper(start, end, id, value, lastNodeObj) {
     let last = lastNodeObj.last
     let parent = lastNodeObj.parent
     for (let i = start + 1; i <= end; i++) {
-      const node = {
-        depth: i,
-      }
+      const node = getNode(undefined, value, i)
 
       if (i === end) {
         node.id = id
@@ -96,44 +94,73 @@ function getTableOfContentsAstFromHTMLAST(htmlAst) {
     return { root: lastNodeObj.root, last, parent }
   }
 
+  function getHeadingValue(children = []) {
+    return children
+      .map(node => {
+        if (node.tagName === 'svg') {
+          return false
+        }
+
+        if (node.type === 'element') {
+          const value = getHeadingValue(node.children)
+          return value && ` ${value} `
+        }
+
+        if (node.type === 'text') {
+          return node.value.trim()
+        }
+      })
+      .filter(Boolean)
+      .reduce((acc, cur) => acc + cur, '')
+      .trim()
+  }
+
   const headingTagNames = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 
   const list = []
-  let rootNode = null
+  let rootNodeWrapper = null
+  let lastNodeWrapper = null
 
   const headings = htmlAst.children.filter(node => headingTagNames.includes(node.tagName))
 
   headings.forEach((item, index) => {
-      const depth = headingTagNames.indexOf(item.tagName) + 1
+    console.log(JSON.stringify(item, null, 2))
+    console.log('--------------------------------')
+    const depth = headingTagNames.indexOf(item.tagName) + 1
 
-      if (index === 0) {
-        rootNode = getNewNode(depth, item.properties.id)
-      } else {
-        const lastItem = headings[index - 1]
-        const lastDepth = headingTagNames.indexOf(lastItem.tagName) + 1
+    if (index === 0) {
+      rootNodeWrapper = getNewNodeWrapper(item.properties.id, getHeadingValue(item.children), depth)
+      lastNodeWrapper = rootNodeWrapper
+    } else {
+      const lastItem = headings[index - 1]
+      const lastDepth = headingTagNames.indexOf(lastItem.tagName) + 1
 
-        if (depth < lastDepth) {
-          list.push(rootNode.root)
-          rootNode = getNewNode(depth, item.properties.id)
-        }
+      if (depth < lastDepth) {
+        list.push(rootNodeWrapper.root)
+        rootNodeWrapper = getNewNodeWrapper(item.properties.id, getHeadingValue(item.children), depth)
+        lastNodeWrapper = rootNodeWrapper
+      }
 
-        if (depth === lastDepth) {
-          if (!rootNode.parent.children) rootNode.parent.children = []
-          rootNode.parent.children.push({
-            id: item.properties.id,
-            depth,
-          })
-        }
-
-        if (depth > lastDepth) {
-          rootNode = getAfterNode(lastDepth, depth, item.properties.id, rootNode)
+      if (depth === lastDepth) {
+        if (!rootNodeWrapper.parent.children) rootNodeWrapper.parent.children = []
+        const node = getNode(item.properties.id, getHeadingValue(item.children), depth)
+        rootNodeWrapper.parent.children.push(node)
+        lastNodeWrapper = {
+          root: rootNodeWrapper.root,
+          parent: rootNodeWrapper.parent.children,
+          last: node
         }
       }
 
-      if (headings.length - 1 === index) {
-        list.push(rootNode.root)
+      if (depth > lastDepth) {
+        rootNodeWrapper = getAfterNodeWrapper(lastDepth, depth, item.properties.id, getHeadingValue(item.children), lastNodeWrapper)
       }
-    })
+    }
+
+    if (headings.length - 1 === index) {
+      list.push(rootNodeWrapper.root)
+    }
+  })
 
   return list
 }
