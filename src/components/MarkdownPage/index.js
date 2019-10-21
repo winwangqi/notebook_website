@@ -9,9 +9,7 @@ import './index.scss'
 import styl from './index.module.scss'
 
 export default function(props) {
-  const { markdownRemark, tableOfContentsAST, headingIDs } = props
-
-  console.log(tableOfContentsAST)
+  const { markdownRemark, tableOfContentsAST, /* headingIDs */ } = props
 
   return (
     <Theme>
