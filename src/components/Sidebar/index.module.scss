@@ -1,7 +1,34 @@
 @import "../../styles/boot";
 
 .sidebar {
-  position: relative;
+  display: block !important;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(3em);
+  opacity: 0;
+  transition: transform $transition-duration ease, opacity $transition-duration ease;
+  // todo: manage z-index
+  z-index: 98;
+
+  &.open {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @include respond-to(lg) {
+    pointer-events: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+    transform: translateY(0);
+    opacity: 1;
+    transition: none;
+  }
 
   .content {
     position: sticky;
@@ -26,4 +53,22 @@
       list-style: none;
     }
   }
+}
+
+.toggleButton {
+  position: fixed;
+  right: 3em;
+  bottom: 3em;
+  width: 2.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  box-shadow: rgba(0, 0, 0, .3) 0 0 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color $transition-duration;
+  // todo: manage z-index
+  z-index: 99;
 }

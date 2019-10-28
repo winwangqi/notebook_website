@@ -49,4 +49,9 @@
       border: 1px solid #000;
     }
   }
+
+  :not(pre) > code[class*="language-text"] {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 }

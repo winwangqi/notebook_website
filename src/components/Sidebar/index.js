@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
 import Tree from '../Tree'
@@ -35,14 +35,41 @@ const treeData = (function createTreeData(list, relativePath = '/') {
 })(list)
 
 export default function Sidebar() {
+  const [sideBarIsOpen, setSideBarIsOpen] = useState(false)
+
+  function handleToggleSideBar() {
+    setSideBarIsOpen(!sideBarIsOpen)
+  }
+
   return (
-    <div className={cns('theme-background', 'hidden-xs', 'hidden-sm', styl.sidebar)}>
-      <div className={styl.content}>
-        <Tree
-          data={treeData}
-          createLeaf={node => <Link className="theme-color" to={node.context.path}>{node.label}</Link>}
-        />
+    <>
+      <div
+        className={cns(
+          'theme-background',
+          'hidden-xs',
+          'hidden-sm',
+          styl.sidebar,
+          { [styl.open]: sideBarIsOpen }
+        )}
+      >
+        <div className={styl.content}>
+          <Tree
+            data={treeData}
+            createLeaf={node => <Link className="theme-color" to={node.context.path}>{node.label}</Link>}
+          />
+        </div>
       </div>
-    </div>
+
+      <div
+        className={cns(
+          'hidden-lg',
+          { 'theme-color': sideBarIsOpen },
+          styl.toggleButton
+        )}
+        onClick={handleToggleSideBar}
+      >
+        <i className="fa fa-align-right" />
+      </div>
+    </>
   )
 }
