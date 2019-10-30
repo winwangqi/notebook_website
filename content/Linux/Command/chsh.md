@@ -1,10 +1,10 @@
-## 语法
-
-**chsh** [**-s** / **-l** / **-u** / **-v**] [username]
-
 ## 描述
 
 **chsh** 用来更改登录的 shell。如果在命令行中没有给出 shell，**chsh** 将给出一个提示。
+
+## 用法
+
+**chsh** [options] [username]
 
 ## 选项
 
