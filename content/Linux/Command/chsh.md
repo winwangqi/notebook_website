@@ -1,7 +1,3 @@
-## Name
-
-chsh - 更改 shell
-
 ## 语法
 
 **chsh** [(**-s** *shell*) / (**-l**) / (**-u**)] [username]
