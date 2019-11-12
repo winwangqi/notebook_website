@@ -1,17 +1,27 @@
 @import "../../styles/boot";
+@import "../Sidebar/variables";
+@import "../TableOfContents/variables";
 
 .markdownPage {
-  display: flex;
   min-height: 100vh;
 
   .content {
     min-width: 0;
     box-sizing: border-box;
-    flex: 1;
     padding: 0 1.4em;
 
     @include respond-to(md) {
       padding: 0 40px;
+    }
+
+    @include respond-to(lg) {
+      margin-left: $sidebar-width-lg;
+      margin-right: calc(#{$toc-right-lg} + #{$toc-width-lg});
+    }
+
+    @include respond-to(xl) {
+      margin-left: $sidebar-width-xl;
+      margin-right: calc(#{$toc-right-xl} + #{$toc-width-xl});
     }
   }
 }

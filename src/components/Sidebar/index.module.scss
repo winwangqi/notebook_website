@@ -1,4 +1,5 @@
 @import "../../styles/boot";
+@import "variables";
 
 .sidebar {
   display: block !important;
@@ -13,6 +14,7 @@
   transition: transform $transition-duration ease, opacity $transition-duration ease;
   // todo: manage z-index
   z-index: 98;
+  overflow: auto;
 
   &.open {
     pointer-events: auto;
@@ -22,20 +24,20 @@
 
   @include respond-to(lg) {
     pointer-events: auto;
-    position: relative;
-    width: auto;
-    height: auto;
+    width: $sidebar-width-lg;
     transform: translateY(0);
     opacity: 1;
     transition: none;
+  }
+
+  @include respond-to(xl) {
+    width: $sidebar-width-xl;
   }
 
   .content {
     position: sticky;
     top: 0;
     padding: 14px 20px;
-    min-width: 160px;
-    max-width: 200px;
     overflow: auto;
 
     @include respond-to(xl) {

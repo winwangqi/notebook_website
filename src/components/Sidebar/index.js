@@ -55,7 +55,7 @@ export default function Sidebar() {
         <div className={styl.content}>
           <Tree
             data={treeData}
-            createLeaf={node => <Link className="theme-color" to={node.context.path}>{node.label}</Link>}
+            createLeaf={node => <Link className="theme-color" to={node.context.path} title={node.label}>{node.label}</Link>}
           />
         </div>
       </div>

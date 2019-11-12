@@ -1,3 +1,5 @@
+@import "../../styles/mixin";
+
 .rootNode {
   margin-left: -10px;
 }
@@ -9,5 +11,6 @@
   margin-left: 10px;
   .leaf {
     margin-left: 10px;
+    @include text-ellipsis;
   }
 }
