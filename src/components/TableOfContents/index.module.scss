@@ -1,28 +1,34 @@
 @import "../../styles/boot";
-@import "variables";
+
+$toc-width-lg: 12em;
+$toc-width-xl: 14em;
+
+$toc-right-lg: 1em;
+$toc-right-xl: 1.2em;
 
 .tableOfContents {
-  position: fixed;
-  top: 1.2em;
-  right: $toc-right-lg;
-  box-sizing: border-box;
-  padding-left: 1em;
-  width: $toc-width-lg;
-  overflow: auto;
+  position: relative;
+  width: $toc-width-lg + $toc-right-lg;
 
   @include respond-to(xl) {
-    width: $toc-width-xl;
-    right: $toc-right-xl;
+    width: $toc-width-xl + $toc-right-xl;
   }
 
-  &::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    content: "";
-    width: 2px;
-    background: #ddd;
+  .wrapper {
+    position: fixed;
+    top: 1.2em;
+    right: $toc-right-lg;
+    width: $toc-width-lg;
+    box-sizing: border-box;
+    padding-left: 1.2em;
+    max-height: 20em;
+    border-left: 2px solid #ddd;
+    overflow: auto;
+
+    @include respond-to(xl) {
+      right: $toc-right-xl;
+      width: $toc-width-xl;
+    }
   }
 
   .content {

@@ -1,11 +1,11 @@
 @import "../../styles/boot";
-@import "../Sidebar/variables";
-@import "../TableOfContents/variables";
 
 .markdownPage {
+  display: flex;
   min-height: 100vh;
 
   .content {
+    flex: 1;
     min-width: 0;
     box-sizing: border-box;
     padding: 0 1.4em;
@@ -14,14 +14,10 @@
       padding: 0 40px;
     }
 
-    @include respond-to(lg) {
-      margin-left: $sidebar-width-lg;
-      margin-right: calc(#{$toc-right-lg} + #{$toc-width-lg});
-    }
-
-    @include respond-to(xl) {
-      margin-left: $sidebar-width-xl;
-      margin-right: calc(#{$toc-right-xl} + #{$toc-width-xl});
+    .title {
+      padding: 20px 0;
+      font-size: 2em;
+      border-bottom: 1px solid #999;
     }
   }
 }

@@ -12,13 +12,15 @@ export default function(props) {
 
   return (
     <div className={cns('hidden-xs', 'hidden-sm', styl.tableOfContents)}>
-      {/*<div className={styl.content} dangerouslySetInnerHTML={{ __html: tableOfContents }} />*/}
-      <Tree
-        className={styl.content}
-        data={createTreeData(tableOfContentsAST)}
-        createBranchNode={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
-        createLeaf={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
-      />
+      <div className={styl.wrapper}>
+        {/*<div className={styl.content} dangerouslySetInnerHTML={{ __html: tableOfContents }} />*/}
+        <Tree
+          className={styl.content}
+          data={createTreeData(tableOfContentsAST)}
+          createBranchNode={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
+          createLeaf={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
+        />
+      </div>
     </div>
   )
 }

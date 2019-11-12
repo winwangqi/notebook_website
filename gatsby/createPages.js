@@ -33,11 +33,14 @@ module.exports = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const pathSegments = node.fields.slug.split('/')
+
     createPage({
       path: node.fields.slug,
       component: path.resolve(`src/templates/notebook.js`),
       // additional data can be passed via context
       context: {
+        title: pathSegments[pathSegments.length - 2],
         tableOfContentsAST: getTableOfContentsAstFromHTMLAST(node.htmlAst),
         headingIDs: getHeadingIDs(node.htmlAst),
       },
@@ -124,8 +127,6 @@ function getTableOfContentsAstFromHTMLAST(htmlAst) {
   const headings = htmlAst.children.filter(node => headingTagNames.includes(node.tagName))
 
   headings.forEach((item, index) => {
-    console.log(JSON.stringify(item, null, 2))
-    console.log('--------------------------------')
     const depth = headingTagNames.indexOf(item.tagName) + 1
 
     if (index === 0) {

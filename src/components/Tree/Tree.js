@@ -49,7 +49,6 @@ Tree.propTypes = {
 }
 
 function Tree(props) {
-  console.log(props.data, 'sssss')
   return (
     <div className={cns(styl.rootNode, props.className)}>
       {createNode({
