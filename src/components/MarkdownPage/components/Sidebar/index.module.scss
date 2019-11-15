@@ -1,13 +1,12 @@
-@import "../../styles/boot";
-
-$sidebar-width-lg: 240px;
-$sidebar-width-xl: 300px;
+@import "../../variables";
+@import "../../../../styles/boot";
 
 .sidebar {
   position: fixed;
   left: 0;
   top: 3em;
   bottom: 0;
+  width: 100%;
   display: block !important;
   opacity: 0;
   pointer-events: none;
@@ -22,7 +21,6 @@ $sidebar-width-xl: 300px;
   }
 
   @include respond-to(lg) {
-    position: relative;
     top: 0;
     width: $sidebar-width-lg;
     pointer-events: auto;
@@ -34,15 +32,14 @@ $sidebar-width-xl: 300px;
   }
 
   .content {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: $sidebar-width-lg;
     height: 100%;
     overflow: auto;
     box-sizing: border-box;
     padding: 14px 20px;
+
+    @include respond-to(lg) {
+      width: $sidebar-width-lg;
+    }
 
     @include respond-to(xl) {
       width: $sidebar-width-xl;

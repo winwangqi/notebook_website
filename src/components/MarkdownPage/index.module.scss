@@ -1,17 +1,22 @@
+@import "variables";
 @import "../../styles/boot";
 
 .markdownPage {
-  display: flex;
-  min-height: 100vh;
+  .main {
+    @include respond-to(lg) {
+      margin: 0 $toc-width-lg 0 $sidebar-width-lg;
+    }
 
-  .content {
-    flex: 1;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 0 1.4em;
+    @include respond-to(xl) {
+      margin: 0 $toc-width-xl 0 $sidebar-width-xl;
+    }
 
-    @include respond-to(md) {
-      padding: 0 40px;
+    .wrapper {
+      padding: 0 1.6em;
+
+      @include respond-to(lg) {
+        padding: 0 2em;
+      }
     }
 
     .title {

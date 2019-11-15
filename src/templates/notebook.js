@@ -5,8 +5,6 @@ import MarkdownPage from 'components/MarkdownPage'
 export default function Notebook({ data, pageContext: { title, headingIDs, tableOfContentsAST } }) {
   const { markdownRemark } = data
 
-  console.log(title)
-
   return (
     <MarkdownPage
       title={title}

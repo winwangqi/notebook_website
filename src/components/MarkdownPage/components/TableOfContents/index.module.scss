@@ -1,0 +1,36 @@
+@import "../../variables";
+@import "../../../../styles/boot";
+
+
+.tableOfContents {
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  @include respond-to(lg) {
+    width: $toc-width-lg;
+  }
+
+  @include respond-to(xl) {
+    width: $toc-width-xl;
+  }
+
+  .wrapper {
+    box-sizing: border-box;
+    padding-left: 1.2em;
+    max-height: 20em;
+    border-left: 2px solid #ddd;
+    overflow: auto;
+  }
+
+  .content {
+    ul {
+      margin: 10px 0 10px 10px;
+      list-style: none;
+
+      li {
+        margin: 10px 0 10px 10px;
+      }
+    }
+  }
+}

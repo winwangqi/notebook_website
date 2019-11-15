@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-import Tree from '../Tree'
+import Tree from '../../../Tree'
 
-import list from '../../../content/sidebar.yml'
+import list from '../../../../../content/sidebar.yml'
 
 import cns from 'classnames'
 import styl from './index.module.scss'
@@ -43,7 +43,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <div
+      <nav
         className={cns(
           'theme-background',
           'hidden-xs',
@@ -55,10 +55,10 @@ export default function Sidebar() {
         <div className={styl.content}>
           <Tree
             data={treeData}
-            createLeaf={node => <Link className="theme-color" to={node.context.path} title={node.label}>{node.label}</Link>}
+            createLeaf={node => <Link to={node.context.path} title={node.label}>{node.label}</Link>}
           />
         </div>
-      </div>
+      </nav>
 
       <div
         className={cns(

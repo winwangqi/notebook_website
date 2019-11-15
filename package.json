@@ -35,6 +35,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "js-yaml": "^3.13.1",
     "prettier": "^1.18.2",
     "source-map-loader": "^0.2.4"
   },
@@ -44,7 +45,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop --no-cache",
+    "develop": "gatsby develop -p 6699 -o --no-cache",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

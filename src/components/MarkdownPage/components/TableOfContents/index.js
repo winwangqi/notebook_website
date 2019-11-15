@@ -1,14 +1,12 @@
 import React from 'react'
 
-import Tree from '../Tree'
+import Tree from '../../../Tree'
 
 import cns from 'classnames'
 import styl from './index.module.scss'
 
 export default function(props) {
   const { tableOfContentsAST } = props
-
-  if (tableOfContentsAST.length === 0) return null
 
   return (
     <div className={cns('hidden-xs', 'hidden-sm', styl.tableOfContents)}>
@@ -17,8 +15,8 @@ export default function(props) {
         <Tree
           className={styl.content}
           data={createTreeData(tableOfContentsAST)}
-          createBranchNode={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
-          createLeaf={node => <a className="theme-color" href={node.context.path}>{node.label}</a>}
+          createBranchNode={node => <a href={node.context.path}>{node.label}</a>}
+          createLeaf={node => <a href={node.context.path}>{node.label}</a>}
         />
       </div>
     </div>
