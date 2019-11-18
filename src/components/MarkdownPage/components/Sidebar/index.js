@@ -36,8 +36,8 @@ export default function Sidebar() {
           node={treeData}
           nodeCreator={
             node => node.context
-              ? <Link to={node.context.path} title={node.label}>{node.label}</Link>
-              : <span title={node.label}>{node.label}</span>
+              ? <Link to={node.context.path} title={node.label} className={styl.label}>{node.label}</Link>
+              : <span title={node.label} className={styl.label}>{node.label}</span>
           }
         />
       </nav>

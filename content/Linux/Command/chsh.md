@@ -17,7 +17,7 @@
 
 ## 示例
 
-使用 *bash* sheel
+使用 *bash* shell
 
 ```bash
 chsh -s /bin/bash

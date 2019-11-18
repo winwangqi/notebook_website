@@ -20,7 +20,7 @@ export default function(props) {
         <Tree
           className={styl.content}
           node={treeDate}
-          nodeCreator={node => <a href={node.context.path}>{node.label}</a>}
+          nodeCreator={node => <a href={node.context.path} title={node.label} className={styl.label}>{node.label}</a>}
         />
       </div>
     </div>
