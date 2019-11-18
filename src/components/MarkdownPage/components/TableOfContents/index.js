@@ -8,41 +8,42 @@ import styl from './index.module.scss'
 export default function(props) {
   const { tableOfContentsAST } = props
 
+  const treeDate = {
+    id: -1,
+    children: createTreeData(tableOfContentsAST)
+  }
+
   return (
     <div className={cns('hidden-xs', 'hidden-sm', styl.tableOfContents)}>
       <div className={styl.wrapper}>
         {/*<div className={styl.content} dangerouslySetInnerHTML={{ __html: tableOfContents }} />*/}
         <Tree
           className={styl.content}
-          data={createTreeData(tableOfContentsAST)}
-          createBranchNode={node => <a href={node.context.path}>{node.label}</a>}
-          createLeaf={node => <a href={node.context.path}>{node.label}</a>}
+          node={treeDate}
+          nodeCreator={node => <a href={node.context.path}>{node.label}</a>}
         />
       </div>
     </div>
   )
 }
 
-function createTreeData(tableOfContentsAST) {
-  return tableOfContentsAST.map((item, index) => {
+function createTreeData(list = []) {
+  return list.map((item, index) => {
+    const node = {
+      id: item.id,
+      label: item.value,
+      context: {
+        path: `#${item.id}`,
+      }
+    }
+
     if (!item.children && index !== 0) {
-      return {
-        type: 'leaf',
-        label: item.value,
-        context: {
-          path: `#${item.id}`,
-        },
-      }
-    } else {
-      return {
-        type: 'branchNode',
-        label: item.value ? item.value : '',
-        isOpen: true,
-        items: createTreeData(item.children || []),
-        context: {
-          path: `#${item.id}`,
-        },
-      }
+      return node
+    }
+
+    return {
+      ...node,
+      children: createTreeData(item.children)
     }
   })
 }

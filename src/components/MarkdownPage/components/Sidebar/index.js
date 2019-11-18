@@ -8,34 +8,13 @@ import list from '../../../../../content/sidebar.yml'
 import cns from 'classnames'
 import styl from './index.module.scss'
 
-const treeData = (function createTreeData(list, relativePath = '/') {
-  return list.map(item => {
-    if (typeof item === 'string') {
-      return {
-        type: 'leaf',
-        label: item,
-        context: {
-          path: relativePath + item,
-        },
-      }
-    } else if (item instanceof Object) {
-      const keys = Object.keys(item)
-      return keys.map(key => {
-        const value = item[key]
-        return {
-          type: 'branchNode',
-          label: key,
-          isOpen: true,
-          items: createTreeData(value, `${relativePath + key}/`)
-        }
-      })
-    }
-    return null
-  })
-})(list)
-
 export default function Sidebar() {
   const [sideBarIsOpen, setSideBarIsOpen] = useState(false)
+
+  const treeData = {
+    id: -1,
+    children: createTree(list),
+  }
 
   function handleToggleSideBar() {
     setSideBarIsOpen(!sideBarIsOpen)
@@ -49,27 +28,55 @@ export default function Sidebar() {
           'hidden-xs',
           'hidden-sm',
           styl.sidebar,
-          { [styl.open]: sideBarIsOpen }
+          { [styl.open]: sideBarIsOpen },
         )}
       >
-        <div className={styl.content}>
-          <Tree
-            data={treeData}
-            createLeaf={node => <Link to={node.context.path} title={node.label}>{node.label}</Link>}
-          />
-        </div>
+        <Tree
+          className={styl.content}
+          node={treeData}
+          nodeCreator={
+            node => node.context
+              ? <Link to={node.context.path} title={node.label}>{node.label}</Link>
+              : <span title={node.label}>{node.label}</span>
+          }
+        />
       </nav>
 
       <div
         className={cns(
           'hidden-lg',
           { 'theme-color': sideBarIsOpen },
-          styl.toggleButton
+          styl.toggleButton,
         )}
         onClick={handleToggleSideBar}
       >
-        <i className="fa fa-align-right" />
+        <i className="fa fa-align-right"/>
       </div>
     </>
   )
+}
+
+function createTree(list, idPrefix = '', relativePath = '/') {
+  const buildPath = label => relativePath + label + '/'
+
+  return list.map((item, index) => {
+    const id = [idPrefix, String(index)].filter(Boolean).join('-')
+
+    if (typeof item === 'string') {
+      return {
+        id,
+        label: item,
+        context: {
+          path: buildPath(item),
+        },
+      }
+    }
+
+    const [label, value] = Object.entries(item)[0]
+    return {
+      id,
+      label,
+      children: createTree(value, id, buildPath(label)),
+    }
+  })
 }

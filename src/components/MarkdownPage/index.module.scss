@@ -11,6 +11,10 @@
       margin: 0 $toc-width-xl 0 $sidebar-width-xl;
     }
 
+    &.noTOC {
+      margin-right: 0;
+    }
+
     .wrapper {
       padding: 0 1.6em;
 

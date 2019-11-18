@@ -11,20 +11,21 @@ import styl from './index.module.scss'
 export default function(props) {
   const { title, markdownRemark, tableOfContentsAST, /* headingIDs */ } = props
 
+  const noTOC = tableOfContentsAST.length === 0
+
   return (
     <Theme>
       <div className={styl.markdownPage}>
         <Sidebar />
 
-        <div className={cns('markdown', styl.main)}>
+        <div className={cns('markdown', styl.main, { [styl.noTOC]: noTOC })}>
           <div className={styl.wrapper}>
             <div className={styl.title}>{title}</div>
             <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
           </div>
         </div>
 
-        {tableOfContentsAST.length > 0 &&
-        <TableOfContents tableOfContentsAST={tableOfContentsAST} />}
+        {!noTOC && <TableOfContents tableOfContentsAST={tableOfContentsAST} />}
       </div>
     </Theme>
   )

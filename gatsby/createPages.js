@@ -1,5 +1,7 @@
 const path = require(`path`)
 
+const headingTagNames = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+
 module.exports = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
@@ -54,14 +56,14 @@ function getTableOfContentsAstFromHTMLAST(htmlAst) {
   }
 
   function getNewNodeWrapper(id, value, depth) {
-    const root = getNode(undefined, value, 1)
+    const root = getNode(`root-${id}`, depth === 1 ? value : '', 1)
 
     let parent = root
     let last = root
 
     if (depth > 1) {
       for (let i = 2; i <= depth; i++) {
-        let node = getNode(undefined, value, i)
+        const node = getNode(i, value, i)
 
         if (i === depth) {
           node.id = id
@@ -118,8 +120,6 @@ function getTableOfContentsAstFromHTMLAST(htmlAst) {
       .trim()
   }
 
-  const headingTagNames = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-
   const list = []
   let rootNodeWrapper = null
   let lastNodeWrapper = null
@@ -167,6 +167,5 @@ function getTableOfContentsAstFromHTMLAST(htmlAst) {
 }
 
 function getHeadingIDs(htmlAst) {
-  const headingTagNames = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
   return htmlAst.children.filter(node => headingTagNames.includes(node.tagName)).map(node => node.properties.id)
 }
