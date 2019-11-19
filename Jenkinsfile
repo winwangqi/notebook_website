@@ -1,7 +1,7 @@
 node {
     def root = tool name: "NodeJS 13.1.0", type: "nodejs"
   
-    sh export PATH="/usr/local/bin"
+    def PATH="/usr/local/bin"
 
     withEnv(["PATH+NODEJS=${root}", "PATH+NPM=${npm}"]) {
         stage("Checkout") {
