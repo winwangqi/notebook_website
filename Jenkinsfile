@@ -1,6 +1,7 @@
 node {
     def root = tool name: "NodeJS 13.1.0", type: "nodejs"
-    def npm = "/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS_13.1.0/bin/npm"
+  
+    export PATH=/usr/local/bin
 
     withEnv(["PATH+NODEJS=${root}", "PATH+NPM=${npm}"]) {
         stage("Checkout") {
