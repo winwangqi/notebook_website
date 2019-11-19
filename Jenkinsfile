@@ -8,11 +8,14 @@ pipeline {
 
   stages {
     stage("Checkout") {
-         checkout scm
+      steps {
+        checkout scm
+      }
       }
 
-      stage("Prepare") {
-      dir("${WORKSPACE}/.cache") {
+    stage("Prepare") {
+      steps {
+        dir("${WORKSPACE}/.cache") {
           deleteDir()
         }
 
@@ -25,14 +28,19 @@ pipeline {
 
         sh "npm install"
       }
+      }
 
       stage("Build") {
-        sh "npm run build"
+        steps {
+          sh "npm run build"
+        }
       }
 
       stage("Archive") {
         // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
-        sh "mv  *  /home/wwwroot/notebook"
+        steps {
+          sh "mv  *  /home/wwwroot/notebook"
+        }
       }
   }
 }
