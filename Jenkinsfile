@@ -1,37 +1,38 @@
 node {
-    def root = tool name: "NodeJS 13.1.0", type: "nodejs"
-  
-    def PATH="/usr/local/bin"
-
-    withEnv(["PATH+NODEJS=${root}", "PATH+NPM=${npm}"]) {
-        stage("Checkout") {
-           checkout scm
-        }
-        
-        stage("Prepare") {
-          dir("${WORKSPACE}/.cache") {
-            deleteDir()
+    agent {
+          docker {
+              image 'node:6-alpine'
+              args '-p 3000:3000'
           }
-            
-          dir("${WORKSPACE}/public") {
-            deleteDir()
-          }
-            
-          sh "rm -rf /home/wwwroot/notebook/*"
-          
-            
-          sh "npm install"
+      }
+
+      stage("Checkout") {
+         checkout scm
+      }
+
+      stage("Prepare") {
+      dir("${WORKSPACE}/.cache") {
+          deleteDir()
         }
 
-        stage("Build") {
-          sh "npm run build"
+        dir("${WORKSPACE}/public") {
+          deleteDir()
         }
 
-        stage("Archive") {
-          // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
-          sh "mv  *  /home/wwwroot/notebook"
-        }
-    }
+        sh "rm -rf /home/wwwroot/notebook/*"
+
+
+        sh "npm install"
+      }
+
+      stage("Build") {
+        sh "npm run build"
+      }
+
+      stage("Archive") {
+        // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
+        sh "mv  *  /home/wwwroot/notebook"
+      }
     // withEnv(["PATH+NODE=${tool name: 'NodeJS 12.9.1', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'}/bin"]) {
     
     // }
