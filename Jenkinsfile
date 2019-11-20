@@ -25,7 +25,7 @@ pipeline {
 
                 sh "rm -rf /home/wwwroot/notebook/*"
 
-                sh "npm install"
+                sh "npm install --registry https://registry.npm.taobao.org"
               
                 sh "npm rebuild node-sass"
             }
