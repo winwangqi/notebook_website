@@ -26,6 +26,8 @@ pipeline {
                 sh "rm -rf /home/wwwroot/notebook/*"
 
                 sh "npm install"
+              
+                sh "npm rebuild node-sass"
             }
         }
 
