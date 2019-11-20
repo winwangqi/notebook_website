@@ -40,7 +40,7 @@ pipeline {
         stage("Archive") {
             // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
             steps {
-                sh "mv  *  /home/wwwroot/notebook"
+                sh "mv ./public/*  /home/wwwroot/notebook"
             }
         }
     }
