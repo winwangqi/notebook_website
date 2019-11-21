@@ -9,3 +9,9 @@
 exports.onCreateWebpackConfig = require('./gatsby/onCreateWebpackConfig')
 exports.onCreateNode = require('./gatsby/onCreateNode')
 exports.createPages = require('./gatsby/createPages')
+
+const express = require('express')
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use(express.static('public'))
+}

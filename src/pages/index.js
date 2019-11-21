@@ -1,25 +1,20 @@
-import React  from "react"
-import { Link } from "gatsby"
+import React, { useEffect }  from "react"
+import { Link, navigate } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
 // import themePink from '../themes/pink/index'
 
-import cns from 'classnames'
-import styl from './index.module.scss'
+// import cns from 'classnames'
+// import styl from './index.module.scss'
 
 function IndexPage() {
-  return (
-    <Layout>
-      <SEO title="笔记本" />
-      <div className={cns('main-width theme-color', styl.slogan)}>For Learning! For Everyone!</div>
-      <div className={styl.content}>
-        <video className={styl.banner} src={require('../assets/videos/beach.mp4')} autoPlay loop />
-        <Link className={cns('theme-primary-button', styl.button)} to="/Notebook/功能需求">Get Started!</Link>
-      </div>
-    </Layout>
-  )
+  useEffect(() => {
+    if (window) {
+      window.location.replace('/track/index.html')
+    }
+  }, [])
+  return null
 }
 
 export default IndexPage

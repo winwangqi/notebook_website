@@ -1,0 +1,1833 @@
+{
+  "metadata": {
+    "type": "Object"
+  },
+  "geometries": [
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          0,
+          287
+        ],
+        "position": [
+          288,
+          863
+        ],
+        "normal": [
+          864,
+          1439
+        ],
+        "tangent": [
+          1440,
+          2207
+        ],
+        "uv": [
+          2208,
+          2591
+        ],
+        "uv2": [
+          2592,
+          2975
+        ],
+        "color": [
+          2976,
+          3551
+        ]
+      },
+      "uuid": "FE9388DA-D25D-47FD-8234-D3A95E39C71C",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          3552,
+          3935
+        ],
+        "position": [
+          3936,
+          4727
+        ],
+        "normal": [
+          4728,
+          5519
+        ],
+        "tangent": [
+          5520,
+          6575
+        ],
+        "uv": [
+          6576,
+          7103
+        ],
+        "uv2": [
+          7104,
+          7631
+        ],
+        "color": [
+          7632,
+          8423
+        ]
+      },
+      "uuid": "1CC44DB3-61ED-4BAB-AF0F-F1FB67E28420",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          8424,
+          8855
+        ],
+        "position": [
+          8856,
+          9719
+        ],
+        "normal": [
+          9720,
+          10583
+        ],
+        "tangent": [
+          10584,
+          11735
+        ],
+        "uv": [
+          11736,
+          12311
+        ],
+        "uv2": [
+          12312,
+          12887
+        ],
+        "color": [
+          12888,
+          13751
+        ]
+      },
+      "uuid": "865F8ECA-DFCC-4BF7-88C7-F4209856741E",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          13752,
+          14135
+        ],
+        "position": [
+          14136,
+          14927
+        ],
+        "normal": [
+          14928,
+          15719
+        ],
+        "tangent": [
+          15720,
+          16775
+        ],
+        "uv": [
+          16776,
+          17303
+        ],
+        "uv2": [
+          17304,
+          17831
+        ],
+        "color": [
+          17832,
+          18623
+        ]
+      },
+      "uuid": "3C3A7351-70B4-4012-8AB6-2F444434CD5A",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          18624,
+          19439
+        ],
+        "position": [
+          19440,
+          20351
+        ],
+        "normal": [
+          20352,
+          21263
+        ],
+        "tangent": [
+          21264,
+          22479
+        ],
+        "uv": [
+          22480,
+          23087
+        ],
+        "uv2": [
+          23088,
+          23695
+        ],
+        "color": [
+          23696,
+          24607
+        ]
+      },
+      "uuid": "38C2DF29-82F2-4DFB-B353-7C2631B8DD6C",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          24608,
+          30175
+        ],
+        "position": [
+          30176,
+          35863
+        ],
+        "normal": [
+          35864,
+          41551
+        ],
+        "tangent": [
+          41552,
+          49135
+        ],
+        "uv": [
+          49136,
+          52927
+        ],
+        "uv2": [
+          52928,
+          56719
+        ],
+        "color": [
+          56720,
+          62407
+        ]
+      },
+      "uuid": "B97B677C-261D-487A-B21C-60ABA6274F8D",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          62408,
+          63007
+        ],
+        "position": [
+          63008,
+          63727
+        ],
+        "normal": [
+          63728,
+          64447
+        ],
+        "tangent": [
+          64448,
+          65407
+        ],
+        "uv": [
+          65408,
+          65887
+        ],
+        "uv2": [
+          65888,
+          66367
+        ],
+        "color": [
+          66368,
+          67087
+        ]
+      },
+      "uuid": "7772D218-BBB2-4042-918C-F34CAC6CD54E",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          67088,
+          67687
+        ],
+        "position": [
+          67688,
+          68407
+        ],
+        "normal": [
+          68408,
+          69127
+        ],
+        "tangent": [
+          69128,
+          70087
+        ],
+        "uv": [
+          70088,
+          70567
+        ],
+        "uv2": [
+          70568,
+          71047
+        ],
+        "color": [
+          71048,
+          71767
+        ]
+      },
+      "uuid": "B0FC38BA-674C-454D-B4D0-1DF0FC8735D3",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          71768,
+          72259
+        ],
+        "position": [
+          72260,
+          73159
+        ],
+        "normal": [
+          73160,
+          74059
+        ],
+        "tangent": [
+          74060,
+          75259
+        ],
+        "uv": [
+          75260,
+          75859
+        ],
+        "uv2": [
+          75860,
+          76459
+        ],
+        "color": [
+          76460,
+          77359
+        ]
+      },
+      "uuid": "77DB2A59-728A-4787-878F-BAB7A9513EA2",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          77360,
+          78175
+        ],
+        "position": [
+          78176,
+          79111
+        ],
+        "normal": [
+          79112,
+          80047
+        ],
+        "tangent": [
+          80048,
+          81295
+        ],
+        "uv": [
+          81296,
+          81919
+        ],
+        "uv2": [
+          81920,
+          82543
+        ],
+        "color": [
+          82544,
+          83479
+        ]
+      },
+      "uuid": "68D71322-FD63-4718-BCB0-E99FC06FB82D",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          83480,
+          83971
+        ],
+        "position": [
+          83972,
+          84871
+        ],
+        "normal": [
+          84872,
+          85771
+        ],
+        "tangent": [
+          85772,
+          86971
+        ],
+        "uv": [
+          86972,
+          87571
+        ],
+        "uv2": [
+          87572,
+          88171
+        ],
+        "color": [
+          88172,
+          89071
+        ]
+      },
+      "uuid": "19C43CC9-8100-409E-AF27-233638963C6D",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          89072,
+          89671
+        ],
+        "position": [
+          89672,
+          90391
+        ],
+        "normal": [
+          90392,
+          91111
+        ],
+        "tangent": [
+          91112,
+          92071
+        ],
+        "uv": [
+          92072,
+          92551
+        ],
+        "uv2": [
+          92552,
+          93031
+        ],
+        "color": [
+          93032,
+          93751
+        ]
+      },
+      "uuid": "FD4C0D69-7B23-4759-BD13-C5BB61F0064A",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          93752,
+          114019
+        ],
+        "position": [
+          114020,
+          135415
+        ],
+        "normal": [
+          135416,
+          156811
+        ],
+        "tangent": [
+          156812,
+          185339
+        ],
+        "uv": [
+          185340,
+          199603
+        ],
+        "uv2": [
+          199604,
+          213867
+        ],
+        "color": [
+          213868,
+          235263
+        ]
+      },
+      "uuid": "718788C3-BEB4-4C39-83D4-92ED3417D559",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          235264,
+          237807
+        ],
+        "position": [
+          237808,
+          240495
+        ],
+        "normal": [
+          240496,
+          243183
+        ],
+        "tangent": [
+          243184,
+          246767
+        ],
+        "uv": [
+          246768,
+          248559
+        ],
+        "uv2": [
+          248560,
+          250351
+        ],
+        "color": [
+          250352,
+          253039
+        ]
+      },
+      "uuid": "7BF238B8-8295-4440-87F2-98AEBFDFB50F",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          253040,
+          259183
+        ],
+        "position": [
+          259184,
+          264943
+        ],
+        "normal": [
+          264944,
+          270703
+        ],
+        "tangent": [
+          270704,
+          278383
+        ],
+        "uv": [
+          278384,
+          282223
+        ],
+        "uv2": [
+          282224,
+          286063
+        ],
+        "color": [
+          286064,
+          291823
+        ]
+      },
+      "uuid": "A274F731-9EE7-4A50-93C0-234F641BF88D",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          291824,
+          293695
+        ],
+        "position": [
+          293696,
+          295807
+        ],
+        "normal": [
+          295808,
+          297919
+        ],
+        "tangent": [
+          297920,
+          300735
+        ],
+        "uv": [
+          300736,
+          302143
+        ],
+        "uv2": [
+          302144,
+          303551
+        ],
+        "color": [
+          303552,
+          305663
+        ]
+      },
+      "uuid": "EA31526A-8CFD-41C3-AF36-E58D41A76F1A",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          305664,
+          307535
+        ],
+        "position": [
+          307536,
+          309647
+        ],
+        "normal": [
+          309648,
+          311759
+        ],
+        "tangent": [
+          311760,
+          314575
+        ],
+        "uv": [
+          314576,
+          315983
+        ],
+        "uv2": [
+          315984,
+          317391
+        ],
+        "color": [
+          317392,
+          319503
+        ]
+      },
+      "uuid": "DAA18990-22B8-4FDD-8CBE-094B1C426286",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          319504,
+          319911
+        ],
+        "position": [
+          319912,
+          320343
+        ],
+        "normal": [
+          320344,
+          320775
+        ],
+        "tangent": [
+          320776,
+          321351
+        ],
+        "uv": [
+          321352,
+          321639
+        ],
+        "uv2": [
+          321640,
+          321927
+        ],
+        "color": [
+          321928,
+          322359
+        ]
+      },
+      "uuid": "F67294F5-E26A-4482-A2C9-49BDD37D8984",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          322360,
+          322743
+        ],
+        "position": [
+          322744,
+          323127
+        ],
+        "normal": [
+          323128,
+          323511
+        ],
+        "tangent": [
+          323512,
+          324023
+        ],
+        "uv": [
+          324024,
+          324279
+        ],
+        "uv2": [
+          324280,
+          324535
+        ],
+        "color": [
+          324536,
+          324919
+        ]
+      },
+      "uuid": "AB628852-EC2D-4C25-B6F0-C6EA38AB4708",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          324920,
+          329215
+        ],
+        "position": [
+          329216,
+          333535
+        ],
+        "normal": [
+          333536,
+          337855
+        ],
+        "tangent": [
+          337856,
+          343615
+        ],
+        "uv": [
+          343616,
+          346495
+        ],
+        "uv2": [
+          346496,
+          349375
+        ],
+        "color": [
+          349376,
+          353695
+        ]
+      },
+      "uuid": "34065A84-30D9-44DF-B2E5-8C0A77B5B72F",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          353696,
+          354319
+        ],
+        "position": [
+          354320,
+          355063
+        ],
+        "normal": [
+          355064,
+          355807
+        ],
+        "tangent": [
+          355808,
+          356799
+        ],
+        "uv": [
+          356800,
+          357295
+        ],
+        "uv2": [
+          357296,
+          357791
+        ],
+        "color": [
+          357792,
+          358535
+        ]
+      },
+      "uuid": "AF169BCB-D70D-4462-A638-02D92C6B9072",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          358536,
+          358943
+        ],
+        "position": [
+          358944,
+          359375
+        ],
+        "normal": [
+          359376,
+          359807
+        ],
+        "tangent": [
+          359808,
+          360383
+        ],
+        "uv": [
+          360384,
+          360671
+        ],
+        "uv2": [
+          360672,
+          360959
+        ],
+        "color": [
+          360960,
+          361391
+        ]
+      },
+      "uuid": "E8C60282-9079-48E7-A3C9-FFDCCA4275C5",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          361392,
+          361967
+        ],
+        "position": [
+          361968,
+          362543
+        ],
+        "normal": [
+          362544,
+          363119
+        ],
+        "tangent": [
+          363120,
+          363887
+        ],
+        "uv": [
+          363888,
+          364271
+        ],
+        "uv2": [
+          364272,
+          364655
+        ],
+        "color": [
+          364656,
+          365231
+        ]
+      },
+      "uuid": "C2019F7E-21D5-4D3A-AFCB-4ACFF2FE9A07",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          365232,
+          365375
+        ],
+        "position": [
+          365376,
+          365663
+        ],
+        "normal": [
+          365664,
+          365951
+        ],
+        "tangent": [
+          365952,
+          366335
+        ],
+        "uv": [
+          366336,
+          366527
+        ],
+        "uv2": [
+          366528,
+          366719
+        ],
+        "color": [
+          366720,
+          367007
+        ]
+      },
+      "uuid": "E3503300-C1AD-4197-94EB-9A9B38EA81B2",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          367008,
+          372959
+        ],
+        "position": [
+          372960,
+          376343
+        ],
+        "normal": [
+          376344,
+          379727
+        ],
+        "tangent": [
+          379728,
+          384239
+        ],
+        "uv": [
+          384240,
+          386495
+        ],
+        "uv2": [
+          386496,
+          388751
+        ],
+        "color": [
+          388752,
+          392135
+        ]
+      },
+      "uuid": "E4B592A7-36A7-4532-9211-25784749FD78",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          392136,
+          392543
+        ],
+        "position": [
+          392544,
+          392783
+        ],
+        "normal": [
+          392784,
+          393023
+        ],
+        "tangent": [
+          393024,
+          393343
+        ],
+        "uv": [
+          393344,
+          393503
+        ],
+        "uv2": [
+          393504,
+          393663
+        ],
+        "color": [
+          393664,
+          393903
+        ]
+      },
+      "uuid": "7589D0FD-2E93-436F-84BD-36F0782F5BCE",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          393904,
+          394311
+        ],
+        "position": [
+          394312,
+          394551
+        ],
+        "normal": [
+          394552,
+          394791
+        ],
+        "tangent": [
+          394792,
+          395111
+        ],
+        "uv": [
+          395112,
+          395271
+        ],
+        "uv2": [
+          395272,
+          395431
+        ],
+        "color": [
+          395432,
+          395671
+        ]
+      },
+      "uuid": "474FC558-136C-46B9-992B-65902F7FC49E",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          395672,
+          396583
+        ],
+        "position": [
+          396584,
+          397639
+        ],
+        "normal": [
+          397640,
+          398695
+        ],
+        "tangent": [
+          398696,
+          400103
+        ],
+        "uv": [
+          400104,
+          400807
+        ],
+        "uv2": [
+          400808,
+          401511
+        ],
+        "color": [
+          401512,
+          402567
+        ]
+      },
+      "uuid": "CA07F335-EA68-46ED-AA34-6E0F9284490C",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          402568,
+          402951
+        ],
+        "position": [
+          402952,
+          403479
+        ],
+        "normal": [
+          403480,
+          404007
+        ],
+        "tangent": [
+          404008,
+          404711
+        ],
+        "uv": [
+          404712,
+          405063
+        ],
+        "uv2": [
+          405064,
+          405415
+        ],
+        "color": [
+          405416,
+          405943
+        ]
+      },
+      "uuid": "46141851-1A47-4366-AE0C-E4995A370C92",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          405944,
+          407815
+        ],
+        "position": [
+          407816,
+          409927
+        ],
+        "normal": [
+          409928,
+          412039
+        ],
+        "tangent": [
+          412040,
+          414855
+        ],
+        "uv": [
+          414856,
+          416263
+        ],
+        "uv2": [
+          416264,
+          417671
+        ],
+        "color": [
+          417672,
+          419783
+        ]
+      },
+      "uuid": "F1E3C3C8-A4A0-4E39-93EF-0C0C27E28305",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          419784,
+          421655
+        ],
+        "position": [
+          421656,
+          423767
+        ],
+        "normal": [
+          423768,
+          425879
+        ],
+        "tangent": [
+          425880,
+          428695
+        ],
+        "uv": [
+          428696,
+          430103
+        ],
+        "uv2": [
+          430104,
+          431511
+        ],
+        "color": [
+          431512,
+          433623
+        ]
+      },
+      "uuid": "BEDA87D5-6861-4433-82A4-C802D60C538F",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          433624,
+          434031
+        ],
+        "position": [
+          434032,
+          434463
+        ],
+        "normal": [
+          434464,
+          434895
+        ],
+        "tangent": [
+          434896,
+          435471
+        ],
+        "uv": [
+          435472,
+          435759
+        ],
+        "uv2": [
+          435760,
+          436047
+        ],
+        "color": [
+          436048,
+          436479
+        ]
+      },
+      "uuid": "940BB593-7FB6-4CCF-A133-F48DD7254C17",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          436480,
+          437007
+        ],
+        "position": [
+          437008,
+          437679
+        ],
+        "normal": [
+          437680,
+          438351
+        ],
+        "tangent": [
+          438352,
+          439247
+        ],
+        "uv": [
+          439248,
+          439695
+        ],
+        "uv2": [
+          439696,
+          440143
+        ],
+        "color": [
+          440144,
+          440815
+        ]
+      },
+      "uuid": "9D2C5D11-F4DE-4608-A713-05730AAFB86F",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          440816,
+          441343
+        ],
+        "position": [
+          441344,
+          442015
+        ],
+        "normal": [
+          442016,
+          442687
+        ],
+        "tangent": [
+          442688,
+          443583
+        ],
+        "uv": [
+          443584,
+          444031
+        ],
+        "uv2": [
+          444032,
+          444479
+        ],
+        "color": [
+          444480,
+          445151
+        ]
+      },
+      "uuid": "CCF8CAE3-0AA6-447F-B7FD-DE3750CD2ED9",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          445152,
+          445679
+        ],
+        "position": [
+          445680,
+          446351
+        ],
+        "normal": [
+          446352,
+          447023
+        ],
+        "tangent": [
+          447024,
+          447919
+        ],
+        "uv": [
+          447920,
+          448367
+        ],
+        "uv2": [
+          448368,
+          448815
+        ],
+        "color": [
+          448816,
+          449487
+        ]
+      },
+      "uuid": "09FE7F4A-1786-4B4D-BE49-E986507BC439",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          449488,
+          449775
+        ],
+        "position": [
+          449776,
+          450351
+        ],
+        "normal": [
+          450352,
+          450927
+        ],
+        "tangent": [
+          450928,
+          451695
+        ],
+        "uv": [
+          451696,
+          452079
+        ],
+        "uv2": [
+          452080,
+          452463
+        ],
+        "color": [
+          452464,
+          453039
+        ]
+      },
+      "uuid": "974BB509-7C86-446E-8E49-A82A6EC9C27B",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          453040,
+          453447
+        ],
+        "position": [
+          453448,
+          453879
+        ],
+        "normal": [
+          453880,
+          454311
+        ],
+        "tangent": [
+          454312,
+          454887
+        ],
+        "uv": [
+          454888,
+          455175
+        ],
+        "uv2": [
+          455176,
+          455463
+        ],
+        "color": [
+          455464,
+          455895
+        ]
+      },
+      "uuid": "A6B08D03-1BFF-4F21-9504-C7BAFA06C26B",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          455896,
+          456303
+        ],
+        "position": [
+          456304,
+          456735
+        ],
+        "normal": [
+          456736,
+          457167
+        ],
+        "tangent": [
+          457168,
+          457743
+        ],
+        "uv": [
+          457744,
+          458031
+        ],
+        "uv2": [
+          458032,
+          458319
+        ],
+        "color": [
+          458320,
+          458751
+        ]
+      },
+      "uuid": "C089A216-F195-4225-83E5-C14F4F73CF9D",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          458752,
+          460623
+        ],
+        "position": [
+          460624,
+          462735
+        ],
+        "normal": [
+          462736,
+          464847
+        ],
+        "tangent": [
+          464848,
+          467663
+        ],
+        "uv": [
+          467664,
+          469071
+        ],
+        "uv2": [
+          469072,
+          470479
+        ],
+        "color": [
+          470480,
+          472591
+        ]
+      },
+      "uuid": "9A616CE9-AADA-471F-A20E-6CC1D2358734",
+      "name": "geo1"
+    },
+    {
+      "groups": [],
+      "offsets": {
+        "index": [
+          472592,
+          474463
+        ],
+        "position": [
+          474464,
+          476575
+        ],
+        "normal": [
+          476576,
+          478687
+        ],
+        "tangent": [
+          478688,
+          481503
+        ],
+        "uv": [
+          481504,
+          482911
+        ],
+        "uv2": [
+          482912,
+          484319
+        ],
+        "color": [
+          484320,
+          486431
+        ]
+      },
+      "uuid": "83D583B4-2378-4C23-9D86-33575D45F8FF",
+      "name": "geo1"
+    }
+  ],
+  "materials": [
+    {
+      "color": 16777215,
+      "metalFactor": 0.0,
+      "glossFactor": 0.0,
+      "aoFactor": 1.0,
+      "environment": "default",
+      "exposure": 1.0,
+      "occludeSpecular": true,
+      "customType": "PBRMaterial",
+      "uuid": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+      "type": "ShaderMaterial",
+      "name": "No Name"
+    }
+  ],
+  "cameras": [
+    "A6EACAEA-EAC0-45DF-904B-0D2960E31174"
+  ],
+  "images": [],
+  "textures": [],
+  "animations": [],
+  "object": {
+    "uuid": "F4A7A754-F7E9-4203-8B55-5DE8F91CB1B9",
+    "name": "Test1",
+    "type": "Scene",
+    "children": [
+      {
+        "fov": 60,
+        "aspect": 2.42940044,
+        "near": 0.3,
+        "far": 1000.0,
+        "uuid": "A6EACAEA-EAC0-45DF-904B-0D2960E31174",
+        "name": "Main Camera",
+        "type": "PerspectiveCamera",
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          10.0,
+          1.0
+        ],
+        "layers": -1
+      },
+      {
+        "uuid": "E17ACA38-88F6-4125-B99D-BB9300C28E71",
+        "name": "meshes",
+        "children": [
+          {
+            "geometry": "FE9388DA-D25D-47FD-8234-D3A95E39C71C",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "30D0D8BE-72E4-44AF-A291-AA22BFF5E0BE",
+            "name": "door_aperture",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "1CC44DB3-61ED-4BAB-AF0F-F1FB67E28420",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "1FE8150E-E33D-4C4E-BF1F-111092D75E2E",
+            "name": "door_diamond",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "865F8ECA-DFCC-4BF7-88C7-F4209856741E",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "69DD145F-5CE5-459D-9117-1062A9FA0E06",
+            "name": "door_horizontal",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "3C3A7351-70B4-4012-8AB6-2F444434CD5A",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "BDD15A99-A7B5-4F7A-A2C0-202DA84C68CE",
+            "name": "door_vertical",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "38C2DF29-82F2-4DFB-B353-7C2631B8DD6C",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "B7ED9D45-712C-41C6-A4D4-8A984E554FC1",
+            "name": "door_cross",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "B97B677C-261D-487A-B21C-60ABA6274F8D",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "70AA8447-5A0B-4D88-9792-BB7A435C014A",
+            "name": "room_circ",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "7772D218-BBB2-4042-918C-F34CAC6CD54E",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "16EAE0C1-238C-47F3-8C56-E5D5702B9323",
+            "name": "room_diam",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "B0FC38BA-674C-454D-B4D0-1DF0FC8735D3",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "90CF436E-A373-4A01-A2E1-C76C1BB68CE9",
+            "name": "room_sq",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "77DB2A59-728A-4787-878F-BAB7A9513EA2",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "9A03D5C2-2921-457B-B1D9-6123E08E6202",
+            "name": "room_tri",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "68D71322-FD63-4718-BCB0-E99FC06FB82D",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "9D59FAE4-BD82-49A7-9EEE-880B6D1C6691",
+            "name": "room_hexa",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "19C43CC9-8100-409E-AF27-233638963C6D",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "22943F11-8FCF-4875-986B-3F5121A768EC",
+            "name": "room_intro",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "FD4C0D69-7B23-4759-BD13-C5BB61F0064A",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "86D3115E-94AD-4017-91CE-75637473EE32",
+            "name": "room_spiral",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "718788C3-BEB4-4C39-83D4-92ED3417D559",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "7ECAAF4D-0246-452D-9C3C-5C4A8FAFD92D",
+            "name": "inner_intro",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "7BF238B8-8295-4440-87F2-98AEBFDFB50F",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "85AA7FFA-134C-474E-88D2-EF0AB6B7BAD2",
+            "name": "inner_arcs",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "A274F731-9EE7-4A50-93C0-234F641BF88D",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "1BD53063-B71B-417D-804F-E5E6D65C96A5",
+            "name": "inner_circlines",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "EA31526A-8CFD-41C3-AF36-E58D41A76F1A",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "0ECB504C-A474-4698-B2BB-C1AD9211C820",
+            "name": "inner_columns",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "DAA18990-22B8-4FDD-8CBE-094B1C426286",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "A3E80779-284E-4198-8963-BECB022F3C79",
+            "name": "inner_cubegrid",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "F67294F5-E26A-4482-A2C9-49BDD37D8984",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "E33E9E21-393C-4023-99BB-927A0F12AD4A",
+            "name": "inner_diamondlines",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "AB628852-EC2D-4C25-B6F0-C6EA38AB4708",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "B157F901-EE23-4F71-8114-08F4891912DB",
+            "name": "inner_diamonds",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "34065A84-30D9-44DF-B2E5-8C0A77B5B72F",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "AE6F4CF9-5E2F-42CC-831A-D5CE764B17E7",
+            "name": "inner_discs",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "AF169BCB-D70D-4462-A638-02D92C6B9072",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "AE8CA070-B160-4E07-8826-91C01453457F",
+            "name": "inner_hexagrid",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "E8C60282-9079-48E7-A3C9-FFDCCA4275C5",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "DBA2EBD4-577E-4273-8062-A29A550A8BA3",
+            "name": "inner_hexalines",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "C2019F7E-21D5-4D3A-AFCB-4ACFF2FE9A07",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "DB1114D7-E5AC-4137-BC85-B711580EF5CA",
+            "name": "inner_hexagons",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "E3503300-C1AD-4197-94EB-9A9B38EA81B2",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "02A08AA9-7146-466A-9784-06EB6034E14F",
+            "name": "inner_mikado",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "E4B592A7-36A7-4532-9211-25784749FD78",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "E5782542-2418-4776-8520-6D540138EBF5",
+            "name": "inner_shells",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "7589D0FD-2E93-436F-84BD-36F0782F5BCE",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "18CD1082-F32D-4120-A8FE-152366D47AAE",
+            "name": "inner_lasers",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "474FC558-136C-46B9-992B-65902F7FC49E",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "6E417514-E538-4CEF-960C-41320EF2A8C5",
+            "name": "inner_lasers2",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "CA07F335-EA68-46ED-AA34-6E0F9284490C",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "FE048CBD-1FDD-4DC5-BF4B-6D55C1F52146",
+            "name": "inner_pyramids",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "46141851-1A47-4366-AE0C-E4995A370C92",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "B71DD5A6-7290-4AB2-9255-1DE5A6B03AD4",
+            "name": "inner_spiral",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "F1E3C3C8-A4A0-4E39-93EF-0C0C27E28305",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "3815189A-A7F5-4FDD-B269-A7E78B71062D",
+            "name": "inner_squareboxes",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "BEDA87D5-6861-4433-82A4-C802D60C538F",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "6ED02E6B-A851-43EE-806D-B4233CBED0FE",
+            "name": "inner_squarebridge",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "940BB593-7FB6-4CCF-A133-F48DD7254C17",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "119A10AA-6F83-4FAA-AE2F-C96C672A6030",
+            "name": "inner_squarelines",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "9D2C5D11-F4DE-4608-A713-05730AAFB86F",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "9AB53BF8-7703-45CD-B362-4F89570D8439",
+            "name": "inner_tiles",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "CCF8CAE3-0AA6-447F-B7FD-DE3750CD2ED9",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "9EBF1E4C-5B76-4FCC-B6CA-BEF5C4D44C37",
+            "name": "inner_tiles2",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "09FE7F4A-1786-4B4D-BE49-E986507BC439",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "ED99B54B-C752-481A-847C-35304F95B56F",
+            "name": "inner_tiles3",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "974BB509-7C86-446E-8E49-A82A6EC9C27B",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "C9E83EA0-9A08-4706-9DA0-B5D3EFB3A571",
+            "name": "inner_triangles",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "A6B08D03-1BFF-4F21-9504-C7BAFA06C26B",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "90E0162C-9DDE-47C4-BD3A-D10D62F991A0",
+            "name": "inner_trilines",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "C089A216-F195-4225-83E5-C14F4F73CF9D",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "33972C36-8DEC-47B7-ABDA-0B74283A500B",
+            "name": "inner_trilines2",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "9A616CE9-AADA-471F-A20E-6CC1D2358734",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "5AE3709C-5C78-496D-AF5F-71630580A6D6",
+            "name": "inner_tubeboxes",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          {
+            "geometry": "83D583B4-2378-4C23-9D86-33575D45F8FF",
+            "material": "54A40D72-0DBC-4952-AD6D-B39B12A3A86D",
+            "uuid": "A6C99E11-DEEB-43D3-9F4D-E9E67786EE0A",
+            "name": "inner_tubeboxes2",
+            "type": "Mesh",
+            "castShadow": true,
+            "receiveShadow": true
+          }
+        ]
+      }
+    ]
+  },
+  "renderer": {
+    "shadowMapEnabled": false
+  },
+  "binary": true
+}
