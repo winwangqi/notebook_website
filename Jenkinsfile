@@ -15,9 +15,9 @@ pipeline {
 
       stage("Clean") {
         steps {
-          sh "rm -rf ${WORKSPACK}/public"
+          sh "rm -rf ${WORKSPACE}/public"
               
-          sh "rm -rf ${WORKSPACK}/.cache"
+          sh "rm -rf ${WORKSPACE}/.cache"
 
         }
       }
