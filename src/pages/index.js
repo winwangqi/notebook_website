@@ -1,5 +1,5 @@
-import React, { useEffect }  from "react"
-import { Link, navigate } from "gatsby"
+import React from "react"
+// import { Link, navigate } from "gatsby"
 
 // import SEO from "../components/seo"
 
@@ -8,13 +8,16 @@ import { Link, navigate } from "gatsby"
 // import cns from 'classnames'
 // import styl from './index.module.scss'
 
-function IndexPage() {
-  useEffect(() => {
+class IndexPage extends React.PureComponent {
+  componentDidMount() {
     if (window) {
       window.location.replace('/track/index.html')
     }
-  }, [])
-  return null
+  }
+
+  render() {
+    return null
+  }
 }
 
 export default IndexPage
