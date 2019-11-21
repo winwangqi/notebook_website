@@ -20,14 +20,13 @@ pipeline {
           sh "rm -rf ${WORKSPACE}/public"
               
           sh "rm -rf ${WORKSPACE}/.cache"
-
+          
+          sh "rm -rf /home/wwwroot/notebook/*"
         }
       }
       
-        stage("Prepare") {
+        stage("Install Dependencies") {
             steps {
-                sh "rm -rf /home/wwwroot/notebook/*"
-
                 sh "npm install --registry https://registry.npm.taobao.org"
               
                 sh "npm rebuild node-sass"
@@ -40,7 +39,7 @@ pipeline {
             }
         }
 
-        stage("Archive") {
+        stage("Deliver") {
             // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
             steps {
                 sh "mv ./public/*  /home/wwwroot/notebook"
