@@ -13,16 +13,17 @@ pipeline {
             }
         }
 
+      stage("Clean") {
+        steps {
+          sh "rm -rf ${WORKSPACK}/public"
+              
+          sh "rm -rf ${WORKSPACK}/.cache"
+
+        }
+      }
+      
         stage("Prepare") {
             steps {
-                dir("${WORKSPACE}/.cache") {
-                    deleteDir()
-                }
-
-                dir("${WORKSPACE}/public") {
-                    deleteDir()
-                }
-
                 sh "rm -rf /home/wwwroot/notebook/*"
 
                 sh "npm install --registry https://registry.npm.taobao.org"
