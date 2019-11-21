@@ -1,49 +1,49 @@
 pipeline {
-    agent {
-        docker {
-            image 'node'
-            args '-p 3000:3000'
-        }
+  agent {
+    docker {
+      image 'node'
+      args '-p 3000:3000'
+    }
+  }
+
+  stages {
+    stage("Checkout") {
+      steps {
+          checkout scm
+      }
     }
 
-    stages {
-        stage("Checkout") {
-            steps {
-                checkout scm
-            }
-        }
+    stage("Clean") {
+      steps {
+        sh "rm -rf ${WORKSPACE}/node_modules"
 
-      stage("Clean") {
+        sh "rm -rf ${WORKSPACE}/public"
+
+        sh "rm -rf ${WORKSPACE}/.cache"
+      }
+    }
+
+      stage("Install Dependencies") {
         steps {
-          sh "rm -rf ${WORKSPACE}/node_modules"
-          
-          sh "rm -rf ${WORKSPACE}/public"
-              
-          sh "rm -rf ${WORKSPACE}/.cache"
-          
-          sh "rm -rf /home/wwwroot/notebook/*"
+          sh "npm install --registry https://registry.npm.taobao.org"
+
+          sh "npm rebuild node-sass"
         }
       }
-      
-        stage("Install Dependencies") {
-            steps {
-                sh "npm install --registry https://registry.npm.taobao.org"
-              
-                sh "npm rebuild node-sass"
-            }
-        }
 
-        stage("Build") {
-            steps {
-                sh "npm run build"
-            }
+      stage("Build") {
+        steps {
+          sh "npm run build"
         }
+      }
 
-        stage("Deliver") {
-            // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
-            steps {
-                sh "mv ./public/*  /home/wwwroot/notebook"
-            }
+      stage("Deliver") {
+        // sh "tar -cvf ./archive/release:${BUILD_ID}.tar ./notebook/public"
+        steps {
+          sh "rm -rf /home/wwwroot/notebook/*"
+
+          sh "mv ./public/*  /home/wwwroot/notebook"
         }
-    }
+      }
+  }
 }
