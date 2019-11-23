@@ -24,7 +24,7 @@ pipeline {
         steps {
           sh "npm install --registry https://registry.npm.taobao.org"
 
-          sh "npm rebuild node-sass"
+          // sh "npm rebuild node-sass"
         }
       }
 
