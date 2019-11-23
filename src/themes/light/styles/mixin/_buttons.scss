@@ -1,0 +1,21 @@
+@import "../variables";
+
+%button {
+  transition: background $transition-duration;
+}
+
+@mixin button-primary {
+  @extend %button;
+  color: #fff;
+  background: $theme-color;
+}
+
+@mixin button-secondary {
+  @extend %button;
+  color: #74818D;
+  background: $background-lv2;
+  
+  &:hover {
+    background: $background-lv4;
+  }
+}

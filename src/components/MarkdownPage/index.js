@@ -20,7 +20,7 @@ export default function(props) {
 
         <div className={cns('markdown', styl.main, { [styl.noTOC]: noTOC })}>
           <div className={styl.wrapper}>
-            <div className={styl.title}>{title}</div>
+            <div className={cns('title', styl.title)}>{title}</div>
             <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
           </div>
         </div>

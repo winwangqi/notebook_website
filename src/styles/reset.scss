@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-ul, li {
+ul, ol, li {
   margin: 0;
   padding: 0;
 }
@@ -23,4 +23,12 @@ progress,
 video {
   display: inline-block;
   line-height: 0;
+}
+
+p {
+  margin: 0;
+}
+
+pre {
+  margin: 0;
 }

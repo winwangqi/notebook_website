@@ -9,7 +9,9 @@
 1. 如果账号密码有变动 用这个命令 `git config –system –unset credential.helper` 重新输入账号密码 应该就能解决了 
 2. 如果用了第一个命令 还不能解决问题那么 用这个命令 `git config –global http.emptyAuth true`
 
-## When `git push` or `git pull` always requires username and password
+---
+
+## When git push or git pull always requires username and password
 
 **Description**
 

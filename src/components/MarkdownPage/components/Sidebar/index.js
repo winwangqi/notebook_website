@@ -24,7 +24,7 @@ export default function Sidebar() {
     <>
       <nav
         className={cns(
-          'theme-background',
+          'sidebar',
           'hidden-xs',
           'hidden-sm',
           styl.sidebar,

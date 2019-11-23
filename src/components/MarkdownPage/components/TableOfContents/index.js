@@ -8,6 +8,8 @@ import styl from './index.module.scss'
 export default function(props) {
   const { tableOfContentsAST } = props
 
+  console.log(tableOfContentsAST)
+
   const treeDate = {
     id: -1,
     children: createTreeData(tableOfContentsAST)

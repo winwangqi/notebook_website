@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import PropTypes from 'prop-types'
 
-import themePink from '../../themes/pink'
+import themeLight from '../../themes/light'
 
 Theme.propTypes = {
 
@@ -9,7 +9,7 @@ Theme.propTypes = {
 
 function Theme(props) {
   const { children } = props
-  const [theme] = useState(themePink)
+  const [theme] = useState(themeLight)
 
   return (
     <div className={theme}>

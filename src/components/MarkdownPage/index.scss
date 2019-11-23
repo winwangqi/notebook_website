@@ -1,61 +1,31 @@
 @import "../../styles/boot";
 
 .markdown {
+  // ===== header =====
   h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0 0;
-    text-rendering: optimizelegibility;
-  }
-
-  h1 {
-    font-size: 2em;
-    line-height: 56px;
-
-    &:first-child {
-      margin-top: .8em;
-    }
-  }
-
-  h2 {
-    font-size: 1.6em;
-    line-height: 1.8em;
-  }
-
-  p {
     margin: 1em 0;
   }
+  // ===== /header =====
 
-  p + ul, p + ol {
-    margin-top: 1em;
-  }
-
-  ul {
-    margin: 1em 0 1em 2em;
+  // ===== list =====
+  ul, ol {
+    margin-left: 1.6em;
   }
 
   li {
-    margin-bottom: .6em;
     line-height: 1.6em;
   }
+  // ===== /list =====
 
+  // ===== table =====
   table {
     margin: 1.2em 0;
     border-collapse: collapse;
-    border: 2px solid #000;
-
-    th, td {
-      padding: .6em 1.2em;
-      border: 1px solid #000;
-    }
-
-    tbody {
-      tr:nth-child(2n) {
-        background: #f1f1f1;
-      }
-    }
   }
+  // ===== table =====
 
   hr {
-    margin: 2.4em 0;
+    margin: 2em 0;
   }
 
   :not(pre) > code[class*="language-text"] {

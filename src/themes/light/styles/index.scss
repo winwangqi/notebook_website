@@ -1,0 +1,163 @@
+@import "variables";
+
+.theme-light {
+  font-size: 18px;
+  color: $text-color-primary;
+
+  a {
+    color: $text-color-primary;
+  }
+
+  // ================== sidebar ==================
+  .sidebar {
+    background: $background-lv1;
+
+    a:hover {
+      color: $theme-color;
+    }
+  }
+  // ================== /sidebar ==================
+
+  .markdown {
+    // ================== header ==================
+    h1, h2, h3, h4, h5, h6 {
+      margin: $gap 0;
+    }
+
+    h1 {
+      font-size: 1.7em;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 1.4em;
+    }
+
+    h5 {
+      font-size: 1.3em;
+    }
+
+    h6 {
+      font-size: 1.2em;
+    }
+    // ================== /header ==================
+
+    // ================== paragraph ==================
+    p {
+      line-height: $line-height;
+    }
+
+    p + p {
+      margin-top: .6 * $gap;
+    }
+    // ================== /paragraph ==================
+
+    // ================== list ==================
+    ul, ol {
+      margin-top: $gap;
+      margin-bottom: $gap;
+
+      li {
+        line-height: $line-height;
+      }
+    }
+    // ================== /list ==================
+
+    // ================== blockquote ==================
+    blockquote {
+      margin: 1.4 * $gap 0;
+      padding: 1em;
+      background-color: $background-lv1;
+      border-left: 5px solid $theme-color;
+      border-radius: $border-radius;
+    }
+    // ================== /blockquote ==================
+
+    // ================== code ==================
+    div[data-language] {
+      margin: $gap 0;
+
+      pre {
+        $line-height: 1.8em;
+
+        padding: 1.2em;
+        line-height: $line-height;
+        border-radius: $border-radius;
+        background: $background-lv6;
+
+        code {
+          line-height: $line-height;
+        }
+      }
+
+      .line-numbers-rows {
+        font-size: .9em;
+      }
+    }
+
+    h1 > code, h2 > code, h3 > code, h4 > code, h5 > code, h6 > code,
+    p > code,
+    li > code {
+      padding: 0 8px;
+      color: $text-color-primary;
+      background: $background-lv2;
+      border-radius: $border-radius;
+    }
+    // ================== /code ==================
+
+    // ================== table ==================
+    table {
+      width: 100%;
+      margin: $gap 0;
+      background: $background-lv1;
+      border: none;
+      border-radius: $border-radius;
+      overflow: hidden;
+      table-layout: fixed;
+      word-wrap:break-word;
+      line-height: 1.6em;
+
+      tr {
+        border-bottom: 1px solid #fff;
+      }
+
+      th, td {
+        margin: 2em;
+        padding: 1em 1.8em;
+        border-right: 1px solid #fff;
+      }
+
+      thead {
+        tr {
+          background: $background-lv2;
+        }
+      }
+    }
+    // ================== /table ==================
+
+    // ================== link ==================
+    a:not([aria-label]) {
+      target-name:new;
+      target-new:tab;
+      padding: .1em .2em;
+      color: $text-color-primary;
+      background: $background-lv1;
+      border-bottom: 1px solid $theme-color;
+
+      &:hover {
+        background: $background-lv3;
+      }
+    }
+    // ================== /link ==================
+    .title {
+      margin: 1.4em 0;
+    }
+  }
+}
