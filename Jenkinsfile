@@ -16,7 +16,7 @@ pipeline {
     stage("Clean") {
       steps {
         sh "npm run clean"
-        sh "rm -rf ${WORKSPACE}/node_modules"
+        // sh "rm -rf ${WORKSPACE}/node_modules"
       }
     }
 
