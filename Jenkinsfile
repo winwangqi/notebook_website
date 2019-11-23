@@ -16,7 +16,7 @@ pipeline {
     stage("Clean") {
       steps {
         sh "npm run clean"
-        // sh "rm -rf ${WORKSPACE}/node_modules"
+        sh "rm -rf ${WORKSPACE}/node_modules"
       }
     }
 
@@ -24,7 +24,7 @@ pipeline {
         steps {
           sh "npm install --registry https://registry.npm.taobao.org"
 
-          // sh "npm rebuild node-sass"
+          sh "npm rebuild node-sass"
         }
       }
 
