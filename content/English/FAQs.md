@@ -1,0 +1,1 @@
+## [Why do they say “may not” for things which people shouldn't do](https://english.stackexchange.com/questions/189974/why-do-they-say-may-not-for-things-which-people-shouldnt-do)

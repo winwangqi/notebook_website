@@ -15,6 +15,7 @@
 
 - Redis:
     - 基本类型
+    - 命令
 
 - DynamoDB:
     - FAQs
@@ -23,9 +24,12 @@
     - Music:
         - Lession1 Talking about music you like
         - Lession2 Finding ways to listen to music
-
+    - FAQs
 - CSS:
     - 如何使用 CSS 自动切换明暗模式
+
+- JavaScript:
+    - 注意项
 
 - Golang:
     - 介绍
