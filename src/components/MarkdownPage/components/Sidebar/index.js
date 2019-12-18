@@ -3,12 +3,13 @@ import { Link } from 'gatsby'
 
 import Tree from '../../../Tree'
 
+import { TemplateContext } from '../../../../templates/notebook'
 import list from '../../../../../content/sidebar.yml'
 
 import cns from 'classnames'
 import styl from './index.module.scss'
 
-export default function Sidebar() {
+function Sidebar({ location }) {
   const [sideBarIsOpen, setSideBarIsOpen] = useState(false)
 
   const treeData = {
@@ -19,6 +20,10 @@ export default function Sidebar() {
   function handleToggleSideBar() {
     setSideBarIsOpen(!sideBarIsOpen)
   }
+
+  const paths = location.pathname.split('/')
+    .filter(Boolean)
+    .map((item) => window.decodeURIComponent(item))
 
   return (
     <>
@@ -33,6 +38,9 @@ export default function Sidebar() {
       >
         <Tree
           className={styl.content}
+          treeClassName="theme-tree"
+          nodeClassName="theme-tree-node"
+          activeID={findActiveID(treeData, paths)}
           node={treeData}
           nodeCreator={
             node => node.context
@@ -55,6 +63,12 @@ export default function Sidebar() {
     </>
   )
 }
+
+export default () => (
+  <TemplateContext.Consumer>
+    {context => <Sidebar location={context.location} />}
+  </TemplateContext.Consumer>
+)
 
 function createTree(list, idPrefix = '', relativePath = '/') {
   const buildPath = label => relativePath + label + '/'
@@ -79,4 +93,21 @@ function createTree(list, idPrefix = '', relativePath = '/') {
       children: createTree(value, id, buildPath(label)),
     }
   })
+}
+
+function findActiveID(tree, paths, pathIndex = 0) {
+  const path = paths[pathIndex]
+
+  for (let i = 0; i < tree.children.length; i++) {
+    const child = tree.children[i]
+    if (child.label === path) {
+      if (child.children) {
+        return findActiveID(child, paths, pathIndex + 1)
+      }
+
+      return child.id
+    }
+  }
+
+  return -1
 }

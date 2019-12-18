@@ -4,11 +4,15 @@ import { graphql } from "gatsby"
 import SEO from '../components/seo'
 import MarkdownPage from 'components/MarkdownPage'
 
-export default function Notebook({ data, pageContext: { title, headingIDs, tableOfContentsAST } }) {
+export const TemplateContext = React.createContext({
+  location: {}
+})
+
+export default function Notebook({ data, location, pageContext: { title, headingIDs, tableOfContentsAST } }) {
   const { markdownRemark } = data
 
   return (
-    <>
+    <TemplateContext.Provider value={{ location }}>
       <SEO title={title}></SEO>
       <MarkdownPage
         title={title}
@@ -16,7 +20,7 @@ export default function Notebook({ data, pageContext: { title, headingIDs, table
         headingIDs={headingIDs}
         tableOfContentsAST={tableOfContentsAST}
       />
-    </>
+    </TemplateContext.Provider>
   )
 }
 
