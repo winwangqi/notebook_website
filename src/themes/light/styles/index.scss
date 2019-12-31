@@ -121,7 +121,8 @@
     h1 > code, h2 > code, h3 > code, h4 > code, h5 > code, h6 > code,
     p > code,
     li > code {
-      padding: 0 8px;
+      display: inline-block;
+      padding: .2em .4em;
       color: $text-color-primary;
       background: $background-lv2;
       border-radius: $border-radius;
