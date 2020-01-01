@@ -9,7 +9,11 @@ interface Node {
 
 export interface Props {
   node: Node
-  nodeCreator?: (node: Node) => React.ReactNode
+  context: object
+  activeID: string | number
+  nodeCreator?: (node: Node) => React.ReactNode,
+  treeClassName: string
+  nodeClassName: string
 }
 
 declare class Tree extends React.Component<Props> {

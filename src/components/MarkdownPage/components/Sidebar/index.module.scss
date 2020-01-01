@@ -56,14 +56,11 @@
     }
 
     .label {
-      display: inline-block;
+      box-sizing: border-box;
+      display: block;
       width: 100%;
       padding: 8px;
       @include text-ellipsis;
-    }
-
-    a.label:hover {
-      background: #E6ECF1;
     }
   }
 }
