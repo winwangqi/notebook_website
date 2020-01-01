@@ -19,19 +19,18 @@ Tree.defaultProps = {
 
 function Tree(props) {
   const { className, treeClassName, nodeClassName, node, nodeCreator, activeID } = props
-  //
-  // const treeNodeElement = useRef(null)
-  // const activeNodeElement = useRef(null)
-  //
-  // useEffect(() => {
-  //   if (treeNodeElement.current && activeNodeElement.current) {
-  //     treeNodeElement.current.scrollTo(
-  //       0,
-  //       activeNodeElement.current.getBoundingClientRect().top -
-  //       (window.screen.availHeight - treeNodeElement.current.getBoundingClientRect().top) / 2
-  //     )
-  //   }
-  // }, [])
+
+  const treeNodeElement = useRef(null)
+  const activeNodeElement = useRef(null)
+
+  useEffect(() => {
+    if (treeNodeElement.current && activeNodeElement.current) {
+      treeNodeElement.current.scrollTop = (
+        activeNodeElement.current.getBoundingClientRect().top -
+        (window.screen.availHeight - treeNodeElement.current.getBoundingClientRect().top) / 2
+      )
+    }
+  }, [])
 
   return (
     <div
