@@ -23,7 +23,7 @@ function Sidebar({ location }) {
 
   const paths = location.pathname.split('/')
     .filter(Boolean)
-    .map((item) => window.decodeURIComponent(item))
+    .map((item) => decodeURIComponent(item))
 
   return (
     <>
