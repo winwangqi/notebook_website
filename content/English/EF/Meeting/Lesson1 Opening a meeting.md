@@ -120,13 +120,13 @@
 - For instance...
 - A huge challenge for me is ...
 
-> 就是不起作用\
+> 就是不起作用。\
 > 该改变的时候了。\
 > 听一些人抱怨\
 > 我需要更多详细的信息。\
 > 首要问题是沟通。\
 > 你能更具体一些吗？\
-> 比如……
+> 比如……\
 > 对我而言，一个艰巨的任务是…… 
 
 ## Expression: Discussing company problems
