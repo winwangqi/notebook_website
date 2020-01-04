@@ -19,7 +19,7 @@
 - The **merger** of our two companies are still going ahead.
 - The final decision will be made by the CEO.
 - The CFO **is responsible for** reporting all company income.
-- John is out new marketing **executive**.
+- John is our new marketing **executive**.
 - Our biggest **challenge** is to increase market share.
 
 
