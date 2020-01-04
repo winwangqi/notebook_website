@@ -120,7 +120,7 @@
 - For instance...
 - A huge challenge for me is ...
 
-> 就是不起作用。\
+> 就是不起作用\
 > 该改变的时候了。\
 > 听一些人抱怨\
 > 我需要更多详细的信息。\
@@ -149,7 +149,7 @@
 - The biggest problem is their CFO.
 - **Could you be more specific?**
 
-> 最大的问题是他们的 CFO。
+> 最大的问题是他们的 CFO。\
 > 可以说得具体一点吗？
 
 用细节和例子增强针对性。
@@ -157,5 +157,5 @@
 - **For instance**, they don't return out phone call.
 - **The best example, I can give is** our decreasing market share.
 
-> 比如，他们不回我们的电话。
+> 比如，他们不回我们的电话。\
 > 我能想到的最好的例子就是我们的市场份额正在下降。
