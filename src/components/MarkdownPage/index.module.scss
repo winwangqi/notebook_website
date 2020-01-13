@@ -16,17 +16,17 @@
     }
 
     .wrapper {
-      padding: 0 1.6em;
+      padding: 0 1.6em 1.6em;
 
       @include respond-to(lg) {
-        padding: 0 2em;
+        padding: 0 2em 2em;
       }
     }
 
-    .title {
-      margin: 1.2em 0;
-      font-size: 2em;
-      font-weight: bold;
-    }
+    //.title {
+    //  margin: 1.2em 0;
+    //  font-size: 2em;
+    //  font-weight: bold;
+    //}
   }
 }

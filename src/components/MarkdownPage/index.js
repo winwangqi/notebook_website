@@ -9,7 +9,7 @@ import './index.scss'
 import styl from './index.module.scss'
 
 export default function(props) {
-  const { title, markdownRemark, tableOfContentsAST, /* headingIDs */ } = props
+  const { /* title, */markdownRemark, tableOfContentsAST, /* headingIDs */ } = props
 
   const noTOC = tableOfContentsAST.length === 0
 
@@ -20,7 +20,7 @@ export default function(props) {
 
         <div className={cns('markdown', styl.main, { [styl.noTOC]: noTOC })}>
           <div className={styl.wrapper}>
-            <div className={cns('title', styl.title)}>{title}</div>
+            {/*<div className={cns('title', styl.title)}>{title}</div>*/}
             <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
           </div>
         </div>

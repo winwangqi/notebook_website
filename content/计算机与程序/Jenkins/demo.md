@@ -4,9 +4,9 @@ node {
     def fail_file=[]
     def file_list
     def JKROOT="${WORKSPACE}/${target_project}"
-    def HJROOT="/home/wwwroot/huajuan/app/${target_project}"
+    def HJROOT="/home/wwwroot/xxxx/app/${target_project}"
     def BAKPATH="${WORKSPACE}/rollback/${target_project}_${BUILD_NUMBER}"
-    def ori_version='2015041703'
+    def ori_version='xxxxx'
 
     echo "目标项目: ${target_project}"
     echo "目标版本: ${target_version}"
@@ -37,7 +37,7 @@ node {
                             depthOption: 'infinity', 
                             ignoreExternalsOption: true, 
                             local: "${target_project}", 
-                            remote: 'svn://svn.huajuanmall.com/huajuan/trunk/app/${target_project}'
+                            remote: 'svn://svn.xxxxmall.com/xxxx/trunk/app/${target_project}'
                         ]], 
                 quietOperation: true, 
                 workspaceUpdater: [$class: 'UpdateUpdater']
@@ -131,7 +131,7 @@ node {
     def fail_file=[]
     def file_list
     def JKROOT="${WORKSPACE}/${target_project}"
-    def HJROOT="/home/wwwroot/huajuan/app/${target_project}"
+    def HJROOT="/home/wwwroot/xxxx/app/${target_project}"
     def BAKPATH="${WORKSPACE}/rollback/${target_project}_${BUILD_NUMBER}"
     def ori_version='2015041703'
 
@@ -164,7 +164,7 @@ node {
                             depthOption: 'infinity', 
                             ignoreExternalsOption: true, 
                             local: "${target_project}", 
-                            remote: 'svn://svn.huajuanmall.com/huajuan/trunk/app/${target_project}'
+                            remote: 'svn://svn.xxxxmall.com/xxxx/trunk/app/${target_project}'
                         ]], 
                 quietOperation: true, 
                 workspaceUpdater: [$class: 'UpdateUpdater']

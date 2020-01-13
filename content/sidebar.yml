@@ -1,8 +1,14 @@
-- StudyPlanning
-
-- test
-
 - 生活感悟与人生格言
+
+- 杂记
+
+- 爱情的味道
+
+- 说话的艺术
+
+- 诗歌
+
+- 学习规划
 
 - 读书笔记:
     - 少年维特的烦恼
@@ -13,19 +19,61 @@
     - 功能需求
     - 技术选型
 
-- 设计思想:
-    - 接口设计
+- 计算机与程序:
+    - 程序设计思想:
+        - 接口设计
 
-- Git:
-    - Branch
-    - FAQs
+    - 工具:
+        - Git:
+            - Branch
+            - FAQs
 
-- Redis:
-    - 基本类型
-    - 命令
+    - Redis:
+        - 基本类型
+        - 命令
 
-- DynamoDB:
-    - FAQs
+    - DynamoDB:
+        - FAQs
+
+    - CSS:
+        - 如何使用 CSS 自动切换明暗模式
+
+    - JavaScript:
+        - 学习资料
+        - 注意项
+
+    - Golang:
+        - 介绍
+        - 快速上手
+        - 核心概念:
+            - 接口
+        - Package:
+            - Time:
+                - Format
+        - 类型转换
+        - 正则表达式
+        - 学习资源
+        - 生态系统
+        - 常见错误
+        - FAQs
+
+    - 微信开发:
+        - 获取用户头像模糊不清晰
+
+    - Linux:
+        - Command:
+            - chsh
+        - 用户管理
+
+    - 计算机科普
+
+    - 计算机操作:
+        - Mac:
+            - shortcut
+        # - Windows
+
+    - 服务器:
+        - 通过公网服务器访问内网服务器
 
 - English:
     - EF:
@@ -33,36 +81,9 @@
             - Lesson1 Opening a meeting
         - Music:
             - Lession1 Talking about music you like
+    - 航空业:
+        - 缩写
     - FAQs
-- CSS:
-    - 如何使用 CSS 自动切换明暗模式
-
-- JavaScript:
-    - 学习资料
-    - 注意项
-
-- Golang:
-    - 介绍
-    - 快速上手
-    - 核心概念:
-        - 接口
-    - Package:
-        - Time:
-          - Format
-    - 类型转换
-    - 正则表达式
-    - 学习资源
-    - 生态系统
-    - 常见错误
-    - FAQs
-
-- 微信开发:
-    - 获取用户头像模糊不清晰
-
-- Linux:
-    - Command:
-        - chsh
-    - 用户管理
 
 - Writing:
     - 如何书写技术文档:
@@ -70,11 +91,4 @@
         - 文档体系
         - 参考资料
 
-- 计算机科普
-
-- 服务器:
-    - 通过公网服务器访问内网服务器
-
 - YouTube
-
-- For test 404

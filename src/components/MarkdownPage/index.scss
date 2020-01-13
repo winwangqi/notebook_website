@@ -1,6 +1,8 @@
 @import "../../styles/boot";
 
 .markdown {
+  font-size: 1.1em;
+
   // ===== header =====
   h1, h2, h3, h4, h5, h6 {
     margin: 1em 0;
@@ -42,5 +44,9 @@
 
   code[class*="language-"], pre[class*="language-"] {
     text-shadow: none;
+  }
+
+  img {
+    width: 100%;
   }
 }

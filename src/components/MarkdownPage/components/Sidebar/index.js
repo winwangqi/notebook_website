@@ -13,7 +13,7 @@ function Sidebar({ location }) {
   const [sideBarIsOpen, setSideBarIsOpen] = useState(false)
 
   const treeData = {
-    id: -1,
+    id: NaN,
     children: createTree(list),
   }
 
@@ -45,7 +45,7 @@ function Sidebar({ location }) {
           nodeCreator={
             node => node.context
               ? <Link to={node.context.path} title={node.label} className={styl.label}>{node.label}</Link>
-              : <span title={node.label} className={styl.label}>{node.label}</span>
+              : <span title={node.label} className={cns(styl.label, styl.plainText)}>{node.label}</span>
           }
         />
       </nav>
@@ -109,5 +109,5 @@ function findActiveID(tree, paths, pathIndex = 0) {
     }
   }
 
-  return -1
+  return NaN
 }
