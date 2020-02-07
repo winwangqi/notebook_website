@@ -2,6 +2,10 @@
   display:none !important;
 }
 
+video::-webkit-media-controls-enclosure {
+  display:none !important;
+}
+
 body {
   min-height: 100vh;
 	/*background-color: #FFDAB9;	*/
