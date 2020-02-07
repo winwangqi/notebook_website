@@ -1,3 +1,7 @@
+::-webkit-media-controls {
+  display:none !important;
+}
+
 body {
   min-height: 100vh;
 	/*background-color: #FFDAB9;	*/
