@@ -1,2 +1,2 @@
-- screenshot: `Shift + Command + 5`
+- screenshot: `Shift + Command + 4`
 
