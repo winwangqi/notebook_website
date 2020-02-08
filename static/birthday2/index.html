@@ -5,7 +5,7 @@
 <!--[if gt IE 8]> <html> <![endif]-->
 <!--[if !IE]><!--><html lang="zh-CN"><!-- <![endif]-->
 <head>
-	<title>222xxx - Happy Birthday</title>
+	<title>Name Happy Birthday</title>
 	<meta charset="UTF-8" />
 	<meta name="description" content="Happy Birthday">
 	<meta name="robots" content="index, follow" />
@@ -26,7 +26,7 @@
 	<link href='static/Signika.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" href="cake.less">
 	<link rel="stylesheet" type="text/css" href="loading.css">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css?ver=202002091243">
 	<script src="static/less.min.2.1.0.js"></script>
 </head>
 
@@ -37,11 +37,7 @@
 
   <video id="open-light-video" src="static/videos/open-light.mp4" preload="auto" playsinline webkit-playsinline></video>
 
-	<audio class="song" controls loop preload="auto">
-<!--        <source src="hbd.mp3"></source>-->
-        <source src="music/happy-birthday-korean.mp3"></source>
-	   Your browser isn't invited for super fun audio time.
-    </audio>
+	<audio id="song" class="song" loop preload="auto" src="music/happy-birthday-korean.mp3"></audio>
 
 	<div class="container">
 
@@ -67,34 +63,50 @@
 
     <div id="visible-balloons" class="visible-balloons">
       <div id="visible-balloon1">
-        <img src="static/imgs/balloons/balloon1.png" alt="">
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon1.png" alt="">
+        </div>
       </div>
       <div id="visible-balloon4">
-        <img src="static/imgs/balloons/balloon4.png" alt="">
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon4.png" alt="">
+        </div>
       </div>
       <div id="visible-balloon2">
-        <img src="static/imgs/balloons/balloon2.png" alt="">
-        <div class="animated fadeIn">姓</div>
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon2.png" alt="">
+          <div class="animated fadeIn text">姓</div>
+        </div>
       </div>
       <div id="visible-balloon3">
-        <img src="static/imgs/balloons/balloon3.png" alt="">
-        <div class="animated fadeIn">名</div>
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon3.png" alt="">
+          <div class="animated fadeIn text">名</div>
+        </div>
       </div>
       <div id="visible-balloon6">
-        <img src="static/imgs/balloons/balloon6.png" alt="">
-        <div class="animated fadeIn">生</div>
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon6.png" alt="">
+          <div class="animated fadeIn text">生</div>
+        </div>
       </div>
       <div id="visible-balloon7">
-        <img src="static/imgs/balloons/balloon7.png" alt="">
-        <div class="animated fadeIn">日</div>
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon7.png" alt="">
+          <div class="animated fadeIn text">日</div>
+        </div>
       </div>
       <div id="visible-balloon8">
-        <img src="static/imgs/balloons/balloon8.png" alt="">
-        <div class="animated fadeIn">快</div>
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon8.png" alt="">
+          <div class="animated fadeIn text">快</div>
+        </div>
       </div>
       <div id="visible-balloon5">
-        <img src="static/imgs/balloons/balloon5.png" alt="">
-        <div class="animated fadeIn">乐</div>
+        <div class="wrapper">
+          <img src="static/imgs/balloons/balloon5.png" alt="">
+          <div class="animated fadeIn text">乐</div>
+        </div>
       </div>
     </div>
 		<!-- <div class="row message">
@@ -142,24 +154,10 @@
         <p>今天又是美好的一天</p>
         <p>你意识到</p>
         <p>转眼间又一年过去了</p>
-        <p><strong>不过</strong></p>
-        <p>你知道吗？</p>
-        <p>今天很特别</p>
+        <p>不过，你知道吗？</p>
+        <p>今天是个重要的日子</p>
         <p>尤其对你来说很特别</p>
-        <p>所以</p>
-        <p>我用特别的庆祝方式</p>
-        <p>作为生日礼物送给你</p>
-        <p>与你一起分享快乐</p>
-        <p>感谢有你</p>
-        <p>感谢我们的友谊</p>
-        <p>祝你往后一切顺利</p>
-        <p>愿你的生活轻松自在</p>
-        <p>祝愿你梦想都能成真</p>
-        <p>愿你像自由的鸟儿一样生活</p>
-        <p>在蓝色的天空中飞翔...</p>
-        <p>现在情况有所不同...</p>
         <p>你即将开始新的人生故事</p>
-        <p>是的..</p>
         <p>在新的故事中</p>
         <p>有美好的时刻</p>
         <p>也会有艰难的时光</p>
@@ -167,17 +165,21 @@
         <p>请不要担心</p>
         <p>因为...</p>
         <p>大家都会支持你</p>
-        <p>而且</p>
-        <p>今年会更好</p>
+        <p>祝可爱的你每天都充满微笑</p>
+        <p>愿温柔你的生活轻松自在</p>
+        <p>祝爱吃甜食的你永远吃不胖</p>
+        <p>愿精致的你对生活永远充满热爱</p>
+        <p>请享受生活中的每一刻</p>
+        <p>用你最美丽的笑容充满每一天</p>
+        <p>留下最美好的记忆</p>
         <p>我也希望</p>
         <p>你能找到...</p>
         <p>属于你自己的快乐</p>
-        <p>打起精神来</p>
-        <p>享受生活中的每一刻...</p>
-        <p>用你最美丽的笑容充满每一天</p>
-        <p>并使其成为最佳记忆</p>
-        <p>到最后...</p>
-        <p>再次祝福</p>
+        <p>感谢有你</p>
+        <p>感谢遇见你</p>
+        <p>我用特别的庆祝方式</p>
+        <p>作为生日礼物送给你</p>
+        <p>与你一起分享快乐</p>
         <p>姓名，生日快乐！</p>
 			</div>
 		</div>
@@ -199,5 +201,5 @@
 		</div>
 	</div>
 </body>
-<script src="effect.js"></script>
+<script src="effect.js?ver=202002091243"></script>
 </html>
