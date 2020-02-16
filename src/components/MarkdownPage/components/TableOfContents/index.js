@@ -30,10 +30,10 @@ export default function(props) {
 function createTreeData(list = []) {
   return list.map((item, index) => {
     const node = {
-      id: item.id,
+      id: item.value,
       label: item.value,
       context: {
-        path: `#${item.id}`,
+        path: `#${item.value}`,
       }
     }
 

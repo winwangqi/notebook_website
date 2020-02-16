@@ -161,9 +161,8 @@
 
     // ================== link ==================
     a:not([aria-label]) {
-      target-name:new;
-      target-new:tab;
-      padding: .1em .2em;
+      target-name: new;
+      target-new: tab;
       color: $text-color-primary;
       background: $background-lv1;
       border-bottom: 1px solid $theme-color;
