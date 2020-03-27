@@ -1,7 +1,8 @@
 @import "variables";
 
 .theme-light {
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 1.7;
   color: $text-color-primary;
 
   a {
@@ -102,8 +103,9 @@
 
       pre {
         $line-height: 1.8em;
+        font-size: .86em;
 
-        padding: 1.2em;
+        padding: 1em;
         line-height: $line-height;
         border-radius: $border-radius;
         background: $background-lv6;
@@ -122,10 +124,12 @@
     p > code,
     li > code {
       display: inline-block;
-      padding: .2em .4em;
+      padding: 0 .24em;
+      font-size: 1em;
+      line-height: inherit;
       color: $text-color-primary;
       background: $background-lv2;
-      border-radius: $border-radius;
+      border-radius: 2px;
     }
     // ================== /code ==================
 
