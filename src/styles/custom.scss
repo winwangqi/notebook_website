@@ -19,3 +19,11 @@
 body {
   text-rendering: optimizelegibility;
 }
+
+/**
+ * gatsby-config / gatsby-remark-autolink-headers
+ */
+.custom-class {
+  padding-right: 0;
+  margin-left: -24px;
+}
