@@ -1,6 +1,8 @@
+import src from './ef-meeting-vocabulary-proposals.mp4'
+
 # Discussing proposals in a meeting
 
-<video width="100%" src="/videos/ef-meeting-vocabulary-proposals.mp4" controls></video>
+<Video src={src} />
 
 ## Vocabulary: Proposals
 

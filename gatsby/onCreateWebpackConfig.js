@@ -17,6 +17,9 @@ module.exports = ({ getConfig, stage, actions}) => {
         resolve(__dirname, '../src'),
         resolve(__dirname, '../node_modules'),
       ],
+      alias: {
+        '@': resolve(__dirname, '../src'),
+      },
     },
     // See https://github.com/FormidableLabs/react-live/issues/5
     plugins: [new webpack.IgnorePlugin(/^(xor|props)$/)],

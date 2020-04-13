@@ -13,9 +13,11 @@ import './src/styles/index.scss'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import './src/plugins/prismjs/line-numbers/index.scss'
 
+import 'lazysizes'
+
 // Auto switch color model by prefers-color-scheme
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  import('prismjs/themes/prism-tomorrow.css')
+  require('prismjs/themes/prism-tomorrow.css')
 } else {
-  import('./src/plugins/prismjs/themes/prism-dracula.css')
+  require('./src/plugins/prismjs/themes/prism-dracula.css')
 }

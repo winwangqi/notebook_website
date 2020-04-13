@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-import Tree from '../../../Tree'
+import Tree from 'components/Tree'
 
-import { TemplateContext } from '../../../../templates/notebook'
 import list from '../../../../../content/sidebar.yml'
 
 import cns from 'classnames'
 import styl from './index.module.scss'
 
-function Sidebar({ location }) {
+export default function Sidebar({ location }) {
   const [sideBarIsOpen, setSideBarIsOpen] = useState(false)
 
   const treeData = {
@@ -27,7 +26,7 @@ function Sidebar({ location }) {
 
   return (
     <>
-      <nav
+      <aside
         className={cns(
           'sidebar',
           'hidden-xs',
@@ -48,7 +47,7 @@ function Sidebar({ location }) {
               : <span title={node.label} className={cns(styl.label, styl.plainText)}>{node.label}</span>
           }
         />
-      </nav>
+      </aside>
 
       <div
         className={cns(
@@ -63,12 +62,6 @@ function Sidebar({ location }) {
     </>
   )
 }
-
-export default () => (
-  <TemplateContext.Consumer>
-    {context => <Sidebar location={context.location} />}
-  </TemplateContext.Consumer>
-)
 
 function createTree(list, idPrefix = '', relativePath = '/') {
   const buildPath = label => relativePath + label + '/'

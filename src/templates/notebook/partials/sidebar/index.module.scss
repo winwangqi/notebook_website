@@ -1,5 +1,5 @@
-@import "../../variables";
-@import "../../../../styles/boot";
+@import "../MarkdownPage/variables";
+@import "~@/styles/boot";
 
 .sidebar {
   position: fixed;
@@ -21,6 +21,7 @@
   }
 
   @include respond-to(lg) {
+    position: relative;
     top: 0;
     width: $sidebar-width-lg;
     pointer-events: auto;
@@ -32,8 +33,10 @@
   }
 
   .content {
-    height: 100%;
-    overflow: auto;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
     box-sizing: border-box;
     padding: 14px 20px;
 
@@ -61,6 +64,7 @@
       width: 100%;
       padding: 8px;
       @include text-ellipsis;
+      transition: background-color 0.08s linear 0s, color 0.08s linear 0s;
 
       &.plainText {
         color: #999;

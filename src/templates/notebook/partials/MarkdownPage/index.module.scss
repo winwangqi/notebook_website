@@ -1,0 +1,27 @@
+@import "~@/styles/boot";
+@import "variables";
+
+.markdownPage {
+  flex: 1;
+  min-width: 0;
+
+  .wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 0 $page-side-gap $page-side-gap;
+
+    .markdownWrapper {
+      flex: 1;
+      min-width: 0;
+      box-sizing: border-box;
+    }
+
+    .toc {
+      margin-left: $page-side-gap;
+    }
+  }
+}

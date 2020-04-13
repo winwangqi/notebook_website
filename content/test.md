@@ -60,7 +60,9 @@ var b = 20
 // In your gatsby-config.js
 plugins: [
   {
+    //highlight-start
     resolve: `gatsby-transformer-remark`,
+    //highlight-end
     options: {
       plugins: [
         `gatsby-remark-prismjs`,
@@ -74,8 +76,8 @@ plugins: [
 sh echo "hello"
 ```
 
-```jsx
-class Component extends React.Component {
+```jsx:title=abc
+class ComponentComponentComponentComponent extends React.Component {
     return (
         <div>text</div>
     )

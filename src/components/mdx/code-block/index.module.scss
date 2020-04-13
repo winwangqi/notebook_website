@@ -1,0 +1,83 @@
+@import "~@/styles/boot.scss";
+@import "~@/templates/notebook/partials/MarkdownPage/variables";
+@import "variables";
+@import "mixins";
+
+@mixin line-height {
+  line-height: 1.4em;
+}
+
+.title {
+  padding-left: $gap;
+  margin-bottom: -.5em;
+  line-height: 2.2em;
+  font-size: 1em;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  background: #2D2D2D;
+}
+
+.codeBlock {
+  .pre {
+    display: flex;
+    font-size: .9em;
+    box-sizing: border-box;
+    margin-left: -$page-side-gap;
+    margin-right: -$page-side-gap;
+
+    @include respond-to(lg) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .lineNumber {
+      @include line-height;
+      margin-right: $gap;
+      letter-spacing: -1px;
+      border-right: 1px solid #999;
+      user-select: none;
+      pointer-events: none;
+
+      & > span {
+        display: block;
+        pointer-events: none;
+        counter-increment: linenumber;
+
+        &::before {
+          content: counter(linenumber);
+          display: block;
+          color: #999;
+          padding-right: .8em;
+          text-align: right;
+        }
+      }
+    }
+
+    .code {
+      @include line-height;
+      flex: 1;
+      overflow-x: auto;
+    }
+
+    .copyButton {
+      @include button;
+      position: absolute;
+      top: 0;
+      right: $gap;
+      color: #ccc;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      //background: #34496A;
+      background: transparent;
+      transition: color .3s, background-color .3s;
+
+      &:hover {
+        color: #fff;
+        background: #005A9C;
+      }
+    }
+  }
+}
+
+

@@ -13,12 +13,12 @@
 > 张开耳朵，如果你听到自己的心跳，你爱的人便也在爱着你\
 > 闭上眼睛，如果你唇边有一丝微笑，你爱的人便也在爱着你
 
-![当阳光照在海面上，我思念你](/images/爱情的味道/当阳光照在海面上，我思念你.JPG)
-![当朦胧月色洒在泉水上，我思念你](/images/爱情的味道/当朦胧月色洒在泉水上，我思念你.JPG)
-![IMG_3642](/images/爱情的味道/IMG_3642.JPG)
-![IMG_3643](/images/爱情的味道/IMG_3643.JPG)
-![IMG_3644](/images/爱情的味道/IMG_3644.JPG)
-![IMG_3645](/images/爱情的味道/IMG_3645.JPG)
-![IMG_3647](/images/爱情的味道/IMG_3647.JPG)
-![IMG_3650](/images/爱情的味道/IMG_3650.JPG)
-![IMG_3655](/images/爱情的味道/IMG_3655.JPG)
+![当阳光照在海面上，我思念你](./images/当阳光照在海面上，我思念你.JPG)
+![当朦胧月色洒在泉水上，我思念你](./images/当朦胧月色洒在泉水上，我思念你.JPG)
+![IMG_3642](./images/IMG_3642.JPG)
+![IMG_3643](./images/IMG_3643.JPG)
+![IMG_3644](./images/IMG_3644.JPG)
+![IMG_3645](./images/IMG_3645.JPG)
+![IMG_3647](./images/IMG_3647.JPG)
+![IMG_3650](./images/IMG_3650.JPG)
+![IMG_3655](./images/IMG_3655.JPG)

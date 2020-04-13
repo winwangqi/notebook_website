@@ -1,0 +1,114 @@
+@import "variables";
+@import "mixins";
+
+.gatsby-highlight pre {
+  position: relative;
+  padding-top: 2.4em;
+
+  &[class*=language-]::before {
+    @include button;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: $gap;
+    color: #232129;
+    background: #D9D7E0;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-transform: uppercase;
+  }
+
+  &[class*=language-javascript]::before,
+  &[class*=language-js]::before {
+    content: "js";
+    background: #f7df1e;
+  }
+
+  &[class*=jsx]::before {
+    content: "jsx";
+    background: #61dafb;
+  }
+
+  &[class*=typescript]::before,
+  &[class*=ts]::before {
+    content: "ts";
+    color: #fff;
+    background: #294e80;
+  }
+
+  &[class*=graphql]::before {
+    content: "GraphQL";
+    color: #fff;
+    background: #E10098;
+  }
+
+  &[class*=html]::before {
+    content: "html";
+    color: #fff;
+    background: #005A9C;
+  }
+
+  &[class*=css]::before {
+    content: "css";
+    color: #fff;
+    background: #ff9800;
+  }
+
+  &[class*=mdx]::before {
+    content: "mdx";
+    color: #fff;
+    background: #f9ac00;
+  }
+
+  &[class*=shell]::before {
+    content: "shell";
+  }
+
+  &[class*=sh]::before {
+    content: "sh";
+  }
+
+  &[class*=bash]::before {
+    content: "bash";
+  }
+
+  &[class*=yaml]::before {
+    content: "yaml";
+    background: #ffa8df;
+  }
+
+  &[class*=md]::before,
+  &[class*=markdown]::before {
+    content: "md";
+  }
+
+  &[class*=json]::before {
+    content: "json";
+    background: linen;
+  }
+
+  &[class*=diff]::before {
+    content: "diff";
+    background: #e6ffed;
+  }
+
+  &[class*=text]::before {
+    content: "text";
+    background: #fff;
+  }
+
+  &[class*=flow]::before {
+    content: "flow";
+    background: #E8BD36;
+  }
+
+  &[class*=go]::before,
+  &[class*=golang]::before {
+    content: "go";
+    color: #fff;
+    background: #00ACD7;
+  }
+}
+
+.gatsby-highlight-code-line {
+  background: #0e0e0e;
+}

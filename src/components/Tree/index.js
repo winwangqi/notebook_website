@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 
 import cns from 'classnames'
@@ -14,45 +14,59 @@ Tree.propTypes = {
 }
 
 Tree.defaultProps = {
-  nodeCreator: (node) => <span>{node.label}</span>
+  nodeCreator: (node) => <span>{node.label}</span>,
 }
 
 function Tree(props) {
   const { className, treeClassName, nodeClassName, node, nodeCreator, activeID } = props
 
-  const treeNodeElement = useRef(null)
-  const activeNodeElement = useRef(null)
-
-  useEffect(() => {
-    if (treeNodeElement.current && activeNodeElement.current) {
-      treeNodeElement.current.scrollTop = (
-        activeNodeElement.current.getBoundingClientRect().top -
-        (window.screen.availHeight - treeNodeElement.current.getBoundingClientRect().top) / 2
-      )
-    }
-  }, [])
-
   return (
-    <div
-      ref={treeNodeElement}
-      className={cns(treeClassName, className)}
-    >
-      {createNode({ node, nodeCreator, activeID, nodeClassName, activeNodeElement })}
+    <div className={cns(treeClassName, className)}>
+      <Node
+        node={node}
+        nodeCreator={nodeCreator}
+        activeID={activeID}
+        nodeClassName={nodeClassName}
+      />
     </div>
   )
 }
 
-function createNode({ node, nodeCreator, activeID, nodeClassName, activeNodeElement }) {
+function Node({ node, nodeCreator, activeID, nodeClassName }) {
   const active = node.id === activeID
 
+  const itemRef = useCallback(
+    (node) => {
+      if (node && active) {
+        // this noop for whatever reason gives time for React to know what
+        // ref is attached to the node to scroll to it, removing this line
+        // will only scroll to the correct location on a full page refresh,
+        // instead of navigating between pages with the prev/next buttons
+        // or clicking on linking guides or urls
+        // line: 34 https://github.com/gatsbyjs/gatsby/blob/master/www/src/components/sidebar/item.js
+        // await function () {}
+        node.scrollIntoView({ block: 'center' })
+      }
+    },
+    [active],
+  )
+
   return (
-    <div className={cns(nodeClassName, { active })} ref={active ? activeNodeElement : null}>
+    <div
+      className={cns(nodeClassName, { active })}
+      ref={itemRef}
+    >
       {node.label && <div className={styl.label}>{nodeCreator(node)}</div>}
       {node.children && (
         <ul>
           {node.children.map((subNode) => (
             <li key={subNode.id}>
-              {createNode({ node: subNode, nodeCreator, activeID, nodeClassName, activeNodeElement })}
+              <Node
+                node={subNode}
+                nodeCreator={nodeCreator}
+                activeID={activeID}
+                nodeClassName={nodeClassName}
+              />
             </li>
           ))}
         </ul>

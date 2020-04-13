@@ -1,0 +1,12 @@
+.outer {
+  position: relative;
+  padding: 28% 50%;
+
+  .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}

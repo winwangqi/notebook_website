@@ -1,12 +1,9 @@
 @import "../../variables";
-@import "../../../../styles/boot";
+@import "../../../../../../styles/boot";
 
 
 .tableOfContents {
-  position: fixed;
-  right: 0;
-  top: 0;
-
+  position: relative;
   @include respond-to(lg) {
     width: $toc-width-lg;
   }
@@ -16,20 +13,28 @@
   }
 
   .wrapper {
+    position: sticky;
+    top: 2em;
+    display: inherit;
     box-sizing: border-box;
-    padding: 0 1.2em;
+    padding: 0 .8em;
     max-height: 30em;
     border-left: 2px solid #ddd;
-    overflow: auto;
+    overflow-y: auto;
+
+    .tree {
+      background: red;
+    }
   }
 
   .content {
+
     ul {
-      margin: 10px 0 10px 10px;
+      padding-left: .4em;
       list-style: none;
 
       li {
-        margin: 10px 0 10px 10px;
+        margin: .3em .6em;
       }
     }
 
