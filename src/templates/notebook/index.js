@@ -7,7 +7,7 @@ import Video from '@/components/mdx/video'
 import CodeBlock from '@/components/mdx/code-block'
 import Theme from '@/components/theme'
 import Sidebar from './partials/sidebar'
-import MarkdownPage from './partials/MarkdownPage'
+import MarkdownPage from './partials/markdown-page'
 
 import styl from './index.module.scss'
 

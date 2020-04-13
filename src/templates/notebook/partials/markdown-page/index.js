@@ -1,7 +1,7 @@
 import React from 'react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import TableOfContents from './components/TableOfContents'
+import TableOfContents from './components/table-of-contents'
 
 import cns from 'classnames'
 import './index.scss'

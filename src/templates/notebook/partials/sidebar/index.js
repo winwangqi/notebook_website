@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-import Tree from 'components/Tree'
+import Tree from '@/components/Tree'
 
 import list from '../../../../../content/sidebar.yml'
 

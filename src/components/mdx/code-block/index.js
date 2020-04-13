@@ -42,7 +42,7 @@ const CodeBlock = (props) => {
   const [content, highlights] = normalize(
     children.props && children.props.children
       ? children.props.children
-      : children,
+      : "",
     className,
   )
 
