@@ -2,7 +2,7 @@
 
 .theme-light {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
   color: $text-color-primary;
 
   a {
@@ -37,51 +37,49 @@
 
   .markdown {
     // ================== header ==================
-    h1, h2, h3, h4, h5, h6 {
-      margin: $gap 0;
+    @for $i from 1 through 6 {
+      h#{$i} {
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+        font-size: #{1.5 - $i * 0.08}em;
+
+        &::before {
+          content: " ";
+          display: block;
+          padding-top: $gap;
+        }
+      }
     }
 
     h1 {
-      font-size: 1.7em;
+
     }
 
-    h2 {
-      font-size: 1.6em;
+    h2::before {
+      border-bottom: 1px solid #ececec;
+      margin-bottom: $gap;
     }
 
-    h3 {
-      font-size: 1.5em;
-    }
-
-    h4 {
-      font-size: 1.4em;
-    }
-
-    h5 {
-      font-size: 1.3em;
-    }
-
-    h6 {
-      font-size: 1.2em;
-    }
     // ================== /header ==================
 
     // ================== paragraph ==================
     p {
-      line-height: $line-height;
+      line-height: 1.7;
+      margin-top: $gap;
     }
 
     p + p {
-      margin-top: .6 * $gap;
+      margin-top: .4 * $gap;
     }
     // ================== /paragraph ==================
 
     // ================== list ==================
     ul, ol {
       margin-top: $gap;
-      margin-bottom: $gap;
 
       li {
+        margin-top: .3em;
         line-height: $line-height;
       }
     }
@@ -89,11 +87,14 @@
 
     // ================== blockquote ==================
     blockquote {
-      margin: 1.4 * $gap 0;
+      margin: $gap 0 0;
       padding: 1em;
       background-color: $background-lv1;
-      border-left: 5px solid $theme-color;
-      border-radius: $border-radius;
+      border-left: 4px solid $theme-color;
+
+      p {
+        margin-top: 0;
+      }
     }
     // ================== /blockquote ==================
 
@@ -123,13 +124,14 @@
     h1 > code, h2 > code, h3 > code, h4 > code, h5 > code, h6 > code,
     p > code,
     li > code {
-      display: inline-block;
-      padding: 0 .24em;
+      display: inline;
+      padding: 0 3px;
       font-size: 1em;
-      line-height: inherit;
+      line-height: 1.2;
       color: $text-color-primary;
       background: $background-lv2;
-      border-radius: 2px;
+      word-break: break-word;
+      font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
     }
     // ================== /code ==================
 
@@ -176,8 +178,14 @@
       }
     }
     // ================== /link ==================
-    .title {
-      margin: 1.4em 0;
+
+
+    // ================== video ==================
+    .mdx-video {
+      margin-top: $gap;
     }
+    // ================== /video ==================
+
+
   }
 }

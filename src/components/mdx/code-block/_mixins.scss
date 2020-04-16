@@ -1,7 +1,12 @@
+@import "variables";
+
+@mixin code-line_line-height {
+  line-height: $code-line-height;
+}
+
 @mixin button {
   display: block;
-  padding: 0 .7rem;
-  line-height: 1.8em !important;
+  padding: 0 .5rem;
+  line-height: $code-block-language-height !important;
   font-size: .8em;
-  border-radius: 0 0 4px 4px;
 }

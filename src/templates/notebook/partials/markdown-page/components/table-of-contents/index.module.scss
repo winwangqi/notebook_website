@@ -5,11 +5,11 @@
 .tableOfContents {
   position: relative;
   @include respond-to(lg) {
-    width: $toc-width-lg;
+    max-width: $toc-width-lg;
   }
 
   @include respond-to(xl) {
-    width: $toc-width-xl;
+    max-width: $toc-width-xl;
   }
 
   .wrapper {
@@ -17,24 +17,22 @@
     top: 2em;
     display: inherit;
     box-sizing: border-box;
-    padding: 0 .8em;
+    padding: 0 1.2em;
     max-height: 30em;
     border-left: 2px solid #ddd;
     overflow-y: auto;
-
-    .tree {
-      background: red;
-    }
   }
 
   .content {
 
     ul {
-      padding-left: .4em;
       list-style: none;
 
-      li {
-        margin: .3em .6em;
+      ul {
+
+        li {
+          margin-left: 1em;
+        }
       }
     }
 

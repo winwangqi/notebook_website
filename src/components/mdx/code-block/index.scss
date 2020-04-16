@@ -2,15 +2,24 @@
 @import "mixins";
 
 .gatsby-highlight pre {
-  position: relative;
-  padding-top: 2.4em;
+  .token-line {
+    height: $code-line-height;
+  }
+
+  .gatsby-highlight-code-line {
+    margin-left: -$code-block-gap;
+    padding-left: $code-block-gap;
+    margin-right: -$code-block-gap;
+    padding-right: $code-block-gap;
+    background: #0e0e0e;
+  }
 
   &[class*=language-]::before {
     @include button;
     content: "";
     position: absolute;
     top: 0;
-    left: $gap;
+    left: $code-block-gap;
     color: #232129;
     background: #D9D7E0;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -107,8 +116,4 @@
     color: #fff;
     background: #00ACD7;
   }
-}
-
-.gatsby-highlight-code-line {
-  background: #0e0e0e;
 }

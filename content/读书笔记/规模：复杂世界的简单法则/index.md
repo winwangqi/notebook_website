@@ -1,6 +1,6 @@
 # 规模：复杂世界的简单法则
 
-<img style="width: 200px;" src="https://img9.doubanio.com/view/subject/s/public/s29809453.jpg" alt="规模" />
+<img style="width: 200px;" src="./images/cover.jpg" alt="规模" />
 
 ## 摘录
 

@@ -1,8 +1,8 @@
 # 爱的艺术
 
-*[在线阅读](https://m.99csw.com/book/1145/index.html)*
+<img style="width: 200px;" src="./images/cover.jpg" alt="爱的艺术" />
 
-<img style="width: 200px;" src="https://img9.doubanio.com/view/subject/l/public/s2990934.jpg" alt="爱的艺术" />
+*[在线阅读](https://m.99csw.com/book/1145/index.html)*
 
 ## 摘录
 

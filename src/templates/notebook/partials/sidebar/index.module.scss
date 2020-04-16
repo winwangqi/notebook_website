@@ -38,7 +38,7 @@
     overflow-y: auto;
     height: 100vh;
     box-sizing: border-box;
-    padding: 14px 20px;
+    padding: 10px 14px;
 
     @include respond-to(lg) {
       width: $sidebar-width-lg;
@@ -49,12 +49,14 @@
     }
 
     ul {
-      margin: 4px 0 4px 10px;
+      ul {
+        margin-left: 1em;
+      }
     }
 
     li {
-      margin: 2px 0 2px 1px;
-      line-height: 1.3;
+      margin: 2px 0;
+      line-height: .9;
       list-style: none;
     }
 

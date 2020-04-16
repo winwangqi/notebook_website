@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import cns from 'classnames'
 import styl from './index.module.scss'
 
 Index.propTypes = {
@@ -14,7 +15,7 @@ Index.defaultProps = {
 
 function Index(props) {
   return (
-    <div className={styl.outer}>
+    <div className={cns('mdx-video', styl.outer)}>
       <div className={styl.inner}>
         {props.iframe
           ? (

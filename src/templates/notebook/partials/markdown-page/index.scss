@@ -1,13 +1,14 @@
-@import "../../../../styles/boot";
+@import "~@/styles/boot";
+@import "variables";
 
 .markdown {
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.4;
 
   // ===== header =====
   h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0;
-    line-height: 1.2;
+    margin: .6em 0;
+    line-height: 1;
   }
   // ===== /header =====
 
@@ -29,7 +30,11 @@
   // ===== table =====
 
   hr {
-    margin: 2em 0;
+    margin-top: $section-gap;
+    height: 1px;
+    margin-bottom: -1px;
+    border: none;
+    border-bottom: 1px solid #ececec;
   }
 
   :not(pre) > code[class*="language-text"] {
@@ -39,13 +44,22 @@
 
   blockquote {
     padding: 0.4em 1em 0.5em 0.8em;
-    margin: 1em 0;
+    margin-top: $section-gap;
     background-color: rgba(204, 122, 111, 0.05);
     border-left: 5px solid rgba(191, 87, 73, 0.1);
   }
 
+  .gatsby-highlight {
+    margin-top: $section-gap;
+    margin-bottom: $section-gap;
+  }
+
   code[class*="language-"], pre[class*="language-"] {
     text-shadow: none;
+  }
+
+  .gatsby-resp-image-wrapper {
+    margin-top: $section-gap;
   }
 
   img {

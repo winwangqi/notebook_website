@@ -42,7 +42,7 @@ const CodeBlock = (props) => {
   const [content, highlights] = normalize(
     children.props && children.props.children
       ? children.props.children
-      : "",
+      : '',
     className,
   )
 
@@ -55,13 +55,14 @@ const CodeBlock = (props) => {
               <div>{title}</div>
             </div>
           )}
-          <div className={cns('gatsby-highlight', styl.codeBlock)}>
-            <pre className={cns(`language-${language}`, styl.pre)}>
-              <span className={styl.lineNumber}>
-                {[...Array(tokens.length)].map((v, i) => <span key={i} />)}
-              </span>
+          <div className={cns('gatsby-highlight', 'gatsby-code-block', styl.codeBlock)}>
+            <span className={styl.lineNumber}>
+              {[...Array(tokens.length)].map((v, i) => <span key={i}/>)}
+            </span>
 
-              <code className={cns(`language-${language}`, styl.code)}>
+            <div className={styl.preWrapper}>
+              <pre className={cns(`language-${language}`, styl.pre)}>
+                <code className={cns(`language-${language}`, styl.code)}>
                   {tokens.map((line, i) => {
                     const lineProps = getLineProps({ line, key: i })
                     const className = [lineProps.className]
@@ -84,14 +85,15 @@ const CodeBlock = (props) => {
                   })}
                 </code>
 
-              {copy && (
-                <Copy
-                  fileName={title}
-                  content={content}
-                  className={styl.copyButton}
-                />
-              )}
-            </pre>
+                {copy && (
+                  <Copy
+                    fileName={title}
+                    content={content}
+                    className={styl.copyButton}
+                  />
+                )}
+              </pre>
+            </div>
           </div>
         </React.Fragment>
       )}

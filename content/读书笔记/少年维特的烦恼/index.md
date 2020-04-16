@@ -1,6 +1,6 @@
 # 少年维特的烦恼
 
-<img style="width: 200px;" src="https://img9.doubanio.com/view/subject/s/public/s4569878.jpg" alt="少年维特的烦恼" />
+<img style="width: 200px;" src="./images/cover.jpg" alt="少年维特的烦恼" />
 
 ## 摘录
 

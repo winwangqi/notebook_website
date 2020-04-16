@@ -1,6 +1,6 @@
 # 自卑与超越
 
-<img style="width: 200px;" src="https://img9.doubanio.com/view/subject/s/public/s1780980.jpg" alt="自卑与超越" />
+<img style="width: 200px;" src="./images/cover.jpg" alt="自卑与超越" />
 
 ## 摘录
 
