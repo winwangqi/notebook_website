@@ -153,7 +153,7 @@ function createTree(list) {
 }
 
 function updateTreeDataCollapse(options) {
-  const { treeData, id, collapse = true, toggle = false, chain = false } = options
+  const { treeData, id = '', collapse = true, toggle = false, chain = false } = options
 
   const tree = cloneDeep(treeData)
 
@@ -194,7 +194,7 @@ function findActiveID(tree, location) {
       }
     }
 
-    return NaN
+    return ''
   }
 
   return find(tree, paths)
