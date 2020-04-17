@@ -62,6 +62,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-remark-images-medium-zoom`,
+      options: {
+        background: `rgba(255, 255, 255, .96)`,
+        scrollOffset: 20,
+      }
+    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -73,15 +82,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-remark-images-medium-zoom`,
-      options: {
-        background: `rgba(255, 255, 255, .96)`,
-        scrollOffset: 20,
-      }
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
