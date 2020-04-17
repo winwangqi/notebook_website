@@ -11,33 +11,31 @@ Tree.propTypes = {
   nodeCreator: PropTypes.func,
   treeClassName: PropTypes.string,
   nodeClassName: PropTypes.string,
+  activeClassName: PropTypes.string,
 }
 
 Tree.defaultProps = {
   nodeCreator: (node) => <span>{node.label}</span>,
+  enableScrollIntoView: false
 }
 
 function Tree(props) {
-  const { className, treeClassName, nodeClassName, node, nodeCreator, activeID } = props
+  const { className, treeClassName } = props
 
   return (
     <div className={cns(treeClassName, className)}>
-      <Node
-        node={node}
-        nodeCreator={nodeCreator}
-        activeID={activeID}
-        nodeClassName={nodeClassName}
-      />
+      <Node{...props} />
     </div>
   )
 }
 
-function Node({ node, nodeCreator, activeID, nodeClassName }) {
+function Node(props) {
+  const { node, nodeCreator, activeID, nodeClassName, activeClassName, enableScrollIntoView } = props
   const active = node.id === activeID
 
   const itemRef = useCallback(
     (node) => {
-      if (node && active) {
+      if (node && active && enableScrollIntoView) {
         // this noop for whatever reason gives time for React to know what
         // ref is attached to the node to scroll to it, removing this line
         // will only scroll to the correct location on a full page refresh,
@@ -53,7 +51,7 @@ function Node({ node, nodeCreator, activeID, nodeClassName }) {
 
   return (
     <div
-      className={cns(nodeClassName, { active })}
+      className={cns(nodeClassName, { active, [activeClassName]: active })}
       ref={itemRef}
     >
       {node.label && <div className={styl.label}>{nodeCreator(node)}</div>}
@@ -62,10 +60,12 @@ function Node({ node, nodeCreator, activeID, nodeClassName }) {
           {node.children.map((subNode) => (
             <li key={subNode.id}>
               <Node
-                node={subNode}
-                nodeCreator={nodeCreator}
-                activeID={activeID}
-                nodeClassName={nodeClassName}
+                {
+                  ...{
+                    ...props,
+                    node: subNode
+                  }
+                }
               />
             </li>
           ))}

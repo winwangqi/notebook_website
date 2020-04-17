@@ -1,6 +1,5 @@
+@import "~@/styles/boot";
 @import "../../variables";
-@import "../../../../../../styles/boot";
-
 
 .tableOfContents {
   position: relative;
@@ -24,7 +23,6 @@
   }
 
   .content {
-
     ul {
       list-style: none;
 
@@ -40,6 +38,10 @@
       display: inline-block;
       width: 100%;
       @include text-ellipsis;
+    }
+
+    .active > div .label {
+      font-weight: bold;
     }
   }
 }

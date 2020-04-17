@@ -47,7 +47,7 @@
         &::before {
           content: " ";
           display: block;
-          padding-top: $gap;
+          margin-top: $gap;
         }
       }
     }
@@ -187,5 +187,12 @@
     // ================== /video ==================
 
 
+  }
+
+  .table-of-contents {
+    .active > div a {
+      transition: color .1s;
+      color: $theme-color;
+    }
   }
 }

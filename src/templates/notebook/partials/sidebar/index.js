@@ -39,6 +39,7 @@ export default function Sidebar({ location }) {
           className={styl.content}
           treeClassName="theme-tree"
           nodeClassName="theme-tree-node"
+          enableScrollIntoView
           activeID={findActiveID(treeData, paths)}
           node={treeData}
           nodeCreator={
