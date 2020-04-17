@@ -1,0 +1,15 @@
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .arrow {
+    transition: transform .25s;
+  }
+
+  &.open {
+    .arrow {
+      transform: rotate(90deg);
+    }
+  }
+}

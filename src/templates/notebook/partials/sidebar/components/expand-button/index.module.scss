@@ -1,0 +1,46 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.8em;
+  cursor: pointer;
+
+  .arrow {
+    line-height: .36em;
+    font-size: .8em;
+    transition: transform .25s;
+  }
+
+  &.collapse {
+    $translateY: .34em;
+
+    .up {
+      transform: translateY($translateY);
+    }
+
+    .down {
+      transform: translateY(-$translateY);
+    }
+  }
+
+  &.typeClose {
+    .arrow {
+      line-height: .6em;
+      font-size: .8em;
+      transition: transform .25s;
+    }
+
+    &.collapse {
+      $translateY: .41em;
+
+      .up {
+        transform: translateY($translateY);
+      }
+
+      .down {
+        transform: translateY(-$translateY);
+      }
+    }
+  }
+}

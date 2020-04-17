@@ -16,7 +16,7 @@
 
   &[class*=language-]::before {
     @include button;
-    content: "";
+    content: "text";
     position: absolute;
     top: 0;
     left: $code-block-gap;

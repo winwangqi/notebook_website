@@ -37,6 +37,7 @@
     .label {
       display: inline-block;
       width: 100%;
+      padding: .18em 0;
       @include text-ellipsis;
     }
 

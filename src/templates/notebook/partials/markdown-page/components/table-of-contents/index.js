@@ -70,7 +70,7 @@ export default function Index(props) {
     handleScroll()
   }
 
-  function handleScroll() {
+  const handleScroll = throttle(function handleScroll() {
     const item = itemTopOffsets.find((itemTopOffset, i) => {
       const nextItemTopOffset = itemTopOffsets[i + 1]
 
@@ -84,9 +84,7 @@ export default function Index(props) {
     })
 
     setActiveID(item ? item.id : '')
-  }
-
-
+  }, 16)
 
   return (
     <div className={cns('hidden-xs', 'hidden-sm', 'table-of-contents', styl.tableOfContents, className)}>

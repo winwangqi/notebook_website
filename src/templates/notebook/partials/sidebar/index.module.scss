@@ -35,10 +35,10 @@
   .content {
     position: sticky;
     top: 0;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
-    padding: 10px 14px;
 
     @include respond-to(lg) {
       width: $sidebar-width-lg;
@@ -46,6 +46,12 @@
 
     @include respond-to(xl) {
       width: $sidebar-width-xl;
+    }
+
+    .menuTree {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 14px;
     }
 
     ul {
@@ -60,6 +66,10 @@
       list-style: none;
     }
 
+    .treeLabel:hover {
+      background: #eee;
+    }
+
     .label {
       box-sizing: border-box;
       display: block;
@@ -67,22 +77,20 @@
       padding: 8px;
       @include text-ellipsis;
       transition: background-color 0.08s linear 0s, color 0.08s linear 0s;
-
-      &.plainText {
-        color: #999;
-      }
+      cursor: pointer;
     }
   }
 }
 
 .toggleButton {
   position: fixed;
-  right: 3em;
-  bottom: 3em;
-  width: 2.4em;
-  height: 2.4em;
-  line-height: 2.4em;
-  text-align: center;
+  right: 2em;
+  bottom: 2em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   background: #000;
   box-shadow: rgba(0, 0, 0, .3) 0 0 20px;

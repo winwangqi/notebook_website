@@ -19,8 +19,8 @@
     }
 
     .theme-tree {
-      .theme-tree-node {
-
+      .theme-tree-label:hover {
+        background: $background-lv2;
       }
 
       .active {
@@ -77,6 +77,10 @@
     // ================== list ==================
     ul, ol {
       margin-top: $gap;
+
+      ul, ol {
+        margin-top: .3em;
+      }
 
       li {
         margin-top: .3em;

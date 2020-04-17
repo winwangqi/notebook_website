@@ -6,9 +6,9 @@
 
 // You can delete this file if you're not using it
 import 'normalize.css'
-import '@fortawesome/fontawesome-free/css/all.css'
 import './src/styles/index.scss'
 
+// image lazy load
 import 'lazysizes'
 
 // Auto switch color model by prefers-color-scheme

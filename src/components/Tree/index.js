@@ -1,6 +1,8 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 
+import AnimateHeight from 'react-animate-height'
+
 import cns from 'classnames'
 import styl from './Tree.module.scss'
 
@@ -9,14 +11,29 @@ Tree.propTypes = {
   context: PropTypes.object,
   activeID: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   nodeCreator: PropTypes.func,
+  enableScrollIntoView: PropTypes.bool,
+  enableCollapse: PropTypes.bool,
   treeClassName: PropTypes.string,
   nodeClassName: PropTypes.string,
+  labelClassName: PropTypes.string,
   activeClassName: PropTypes.string,
+  onToggleNodeCollapse: PropTypes.func,
+  onGetActiveNode: PropTypes.func,
+}
+
+Tree.defaultProps = {
+  activeClassName: ''
 }
 
 Tree.defaultProps = {
   nodeCreator: (node) => <span>{node.label}</span>,
-  enableScrollIntoView: false
+  enableScrollIntoView: false,
+  enableCollapse: false,
+  treeClassName: '',
+  nodeClassName: '',
+  labelClassName: '',
+  onToggleNodeCollapse: Function.prototype,
+  onGetActiveNode: Function.prototype,
 }
 
 function Tree(props) {
@@ -30,8 +47,15 @@ function Tree(props) {
 }
 
 function Node(props) {
-  const { node, nodeCreator, activeID, nodeClassName, activeClassName, enableScrollIntoView } = props
+  const {
+    node, nodeCreator, activeID, nodeClassName, labelClassName, activeClassName,
+    enableScrollIntoView, enableCollapse,
+    onToggleNodeCollapse,
+    onGetActiveNode
+  } = props
   const active = node.id === activeID
+
+  const collapsible = enableCollapse && node.children
 
   const itemRef = useCallback(
     (node) => {
@@ -43,10 +67,33 @@ function Node(props) {
         // or clicking on linking guides or urls
         // line: 34 https://github.com/gatsbyjs/gatsby/blob/master/www/src/components/sidebar/item.js
         // await function () {}
+        onGetActiveNode(node)
         node.scrollIntoView({ block: 'center' })
       }
     },
     [active],
+  )
+
+  function handleExpand(e) {
+    e.stopPropagation()
+    collapsible && onToggleNodeCollapse(node)
+  }
+
+  const child = node.children && (
+    <ul>
+      {node.children.map((subNode) => (
+        <li key={subNode.id}>
+          <Node
+            {
+              ...{
+                ...props,
+                node: subNode
+              }
+            }
+          />
+        </li>
+      ))}
+    </ul>
   )
 
   return (
@@ -54,22 +101,29 @@ function Node(props) {
       className={cns(nodeClassName, { active, [activeClassName]: active })}
       ref={itemRef}
     >
-      {node.label && <div className={styl.label}>{nodeCreator(node)}</div>}
+      {node.label && (
+        <div
+          className={cns(styl.label, { [styl.open]: !node.collapse }, labelClassName)}
+          onClick={handleExpand}
+        >
+          {nodeCreator(node)}
+          {collapsible && (
+            <i className={cns('iconfont icon-arrow-right', styl.arrow)} />
+          )}
+        </div>
+      )}
       {node.children && (
-        <ul>
-          {node.children.map((subNode) => (
-            <li key={subNode.id}>
-              <Node
-                {
-                  ...{
-                    ...props,
-                    node: subNode
-                  }
-                }
-              />
-            </li>
-          ))}
-        </ul>
+        node.type === 'root' || !enableCollapse
+          ? child
+          : (
+            <AnimateHeight
+              height={node.collapse ? 0 : 'auto'}
+              easing="ease-out"
+              animateOpacity
+            >
+              {child}
+            </AnimateHeight>
+          )
       )}
     </div>
   )

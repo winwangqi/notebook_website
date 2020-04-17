@@ -1,0 +1,41 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1587133458731'); /* IE9 */
+  src: url('iconfont.eot?t=1587133458731#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO4AAsAAAAACGQAAANrAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDTgqDOIJ8ATYCJAMcCxAABCAFhG0HaxtPB8iemjwpkTaLQAIPwJiBQ0RQ7fdVVj8cYrUAKIEtAWhwQG4VHrBaeYD2JMP7E2fE/LmWnwJxxh/LAvPCS257kJ1cyiyrSQIp03UF1vw/6zYgaijIjF0V+Z9jqZfA1d/u2iWrLBJwPKABRRfZBrI3OlHfMHYT5UFcT6DdeCZ+6zbUt6NQObBbIM6dphIKTdnlNa2hFsqSY3PxWKFOd9LXkEf85+N/jgglKTJg300nKlRU3KxtfRVgjH0UQTGeF9pJZJgLyYkbpf5LAsL8XAHanWUEWgdpV0tSs77Z2LxqffU9RrPWVe/I364b/oNHISS5UkaUQHMn2CUVSpq1mENBs45D0KznkGg2cshpXnEoaX31AhmoQDe6cAHyuoide3QImVKIsuycFRYof2hZXt1RBGrheKEKRZ3T1/92fPNP+3f/dX7fTH7/fVf71nvDtx7puPmu08I7icq4+qa9Y/tdpaK9/dtvO6JcIv4le9785ObHdz+99dlO4dGjO3bwC5zcVkghn3bmAy1snn9tGckgYVg4FazbekU4W/ihGA66g9aJE4k6vmfMzofv9Pz7d1RPOydGR6Y/XvS8/9+/h11Peyam4ehdWWJ3xvSia2I2inkhRv7597hLRKb8hP6DJcuhIPr+qu3Fx6tmL/wl7Y/+GW1dJg8nJV/61+iooUoA2eCVSx+kJzjmNinbkVZwnalrGYGgb8Gygz35/+uIHPz02a/9Qt+YXHaT/2PQWvEjFS1nclcFHFVuD8e/J1BZIRgktGvHLwz3exnPONS6mVAbiiGpjINMbSoyx86FQoelUKqthHZzVJ3cYQAXIPI2zLYqQOh1AUm3zyDTy0Dm2GcoDPuCUm8EQLsdkXDODtNDay+7ApIAFcuTWFOYlyCXCA9aW4GOuiWeVHF6J3CflsJ2iy1bqgIv8DEO8I1RhxAEE848uFK4GbjdDOucjYAiLE4h9FyrlZR9kUVhHhRuLQ5IBKDCZJMwjYLxInRlITz3/a0ANcpNwmsGOuKdAOejrR2zs7C1QFbpva0GruUlPmMoB0EgMIJjPLBKwQvcMM9gevlWI4BCsHD2yOpyWaVFpK3eMr/R85xXQTvwvCpSZJFHEWVUUes4fIWzcTPXqFOExxu4NSICpNOeUOUyCpTxydAy56heqVGxz4sQAA==') format('woff2'),
+  url('iconfont.woff?t=1587133458731') format('woff'),
+  url('iconfont.ttf?t=1587133458731') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1587133458731#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e744";
+}
+
+.icon-arrow-lift:before {
+  content: "\e745";
+}
+
+.icon-aim:before {
+  content: "\e8c3";
+}
+
+.icon-category:before {
+  content: "\e747";
+}
+
+.icon-arrow-up:before {
+  content: "\e743";
+}
+
+.icon-arrow-down:before {
+  content: "\e7b2";
+}
+
