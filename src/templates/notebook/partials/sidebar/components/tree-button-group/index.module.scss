@@ -12,6 +12,7 @@
     cursor: pointer;
     color: #999;
     transition: color .14s;
+    user-select: none;
 
     &:hover {
       color: #333;

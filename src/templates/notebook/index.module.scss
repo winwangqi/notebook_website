@@ -1,3 +1,49 @@
+@import "variables";
+@import "./partials/sidebar/mixins";
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  // todo: manage z-index
+  z-index: 999;
+  background: #20232A;
+  line-height: $header-height;
+  color: #fff;
+
+  .lf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      margin-right: 8px;
+      margin-bottom: 4px;
+      width: 20px;
+      height: 20px;
+      background: url("@/images/logo.svg") center / contain no-repeat;
+    }
+  }
+
+  .rt {
+    margin-left: 3em;
+    font-size: .8em;
+  }
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  line-height: $footer-height;
+  font-size: 1em;
+  background: #20232A;
+}
+
 .markdownLayout {
   display: flex;
+  margin-top: $header-height;
 }

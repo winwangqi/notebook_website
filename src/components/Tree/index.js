@@ -108,7 +108,7 @@ function Node(props) {
         >
           {nodeCreator(node)}
           {collapsible && (
-            <i className={cns('iconfont icon-arrow-right', styl.arrow)} />
+            <i className={cns('iconfont icon-arrow-right theme-tree-label-arrow', styl.arrow)} />
           )}
         </div>
       )}

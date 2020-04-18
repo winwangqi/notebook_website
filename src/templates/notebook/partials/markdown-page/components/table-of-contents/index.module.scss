@@ -1,5 +1,6 @@
 @import "~@/styles/boot";
 @import "../../variables";
+@import "../../../../variables";
 
 .tableOfContents {
   position: relative;
@@ -13,7 +14,7 @@
 
   .wrapper {
     position: sticky;
-    top: 2em;
+    top: calc(2em + #{$header-height});
     display: inherit;
     box-sizing: border-box;
     padding: 0 1.2em;

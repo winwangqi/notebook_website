@@ -22,6 +22,14 @@ export default function Index({ location, data, pageContext: { title } }) {
       <Theme>
         <SEO title={title} />
 
+        <header className={styl.header}>
+          <div className={styl.lf}>
+            <i className={styl.logo}></i>
+            <span>Notebook</span>
+          </div>
+          <div className={styl.rt}>Note Everything</div>
+        </header>
+
         <div className={styl.markdownLayout}>
           <Sidebar location={location} />
 
@@ -30,6 +38,9 @@ export default function Index({ location, data, pageContext: { title } }) {
             mdx={data.mdx}
           />
         </div>
+        <footer className={styl.footer}>
+          <p>w@ngq! All rights reversed. @{new Date().getFullYear()}</p>
+        </footer>
       </Theme>
     </MDXProvider>
   )

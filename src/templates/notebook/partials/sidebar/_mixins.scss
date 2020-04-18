@@ -1,0 +1,14 @@
+@import "../markdown-page/variables";
+@import "~@/styles/boot";
+
+@mixin sidebar-width {
+  width: 100%;
+
+  @include respond-to(lg) {
+    width: $sidebar-width-lg;
+  }
+
+  @include respond-to(xl) {
+    width: $sidebar-width-xl;
+  }
+}

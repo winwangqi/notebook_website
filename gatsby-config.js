@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Notebook`,
-    description: `Notebook website`,
+    description: `Note Everything`,
     author: `w@ngq!`,
   },
   plugins: [
@@ -73,13 +73,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `notebook`,
+        short_name: `notebook`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#3740FF`,
+        theme_color: `#3740FF`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,

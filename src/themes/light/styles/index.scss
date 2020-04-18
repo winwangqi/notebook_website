@@ -31,6 +31,10 @@
           color: $theme-color;
         }
       }
+
+      .theme-tree-label-arrow {
+        font-size: 1.2em !important;
+      }
     }
   }
   // ================== /sidebar ==================
@@ -85,6 +89,10 @@
       li {
         margin-top: .3em;
         line-height: $line-height;
+
+        p {
+          margin-top: 0;
+        }
       }
     }
     // ================== /list ==================
@@ -189,14 +197,18 @@
       margin-top: $gap;
     }
     // ================== /video ==================
-
-
   }
 
   .table-of-contents {
+    a:hover {
+      color: $theme-color;
+      text-decoration: underline;
+    }
+
     .active > div a {
       transition: color .1s;
       color: $theme-color;
+      text-decoration: underline;
     }
   }
 }
