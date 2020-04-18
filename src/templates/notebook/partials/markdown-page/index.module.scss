@@ -1,9 +1,11 @@
 @import "~@/styles/boot";
 @import "variables";
+@import "../../variables";
 
 .markdownPage {
   flex: 1;
   min-width: 0;
+  min-height: calc(100vh - #{$header-height});
 
   .wrapper {
     box-sizing: border-box;
