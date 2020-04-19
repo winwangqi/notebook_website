@@ -39,7 +39,7 @@ export default function Index({ location, data, pageContext: { title } }) {
           />
         </div>
         <footer className={styl.footer}>
-          <p>w@ngq! All rights reversed. @{new Date().getFullYear()}</p>
+          <p>w@ngq! All rights reserved. @{new Date().getFullYear()}</p>
         </footer>
       </Theme>
     </MDXProvider>
