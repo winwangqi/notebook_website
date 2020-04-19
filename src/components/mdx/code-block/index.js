@@ -49,14 +49,15 @@ const CodeBlock = (props) => {
   return (
     <LazyHighlight code={content} language={language} theme={null}>
       {({ tokens, getLineProps, getTokenProps }) => (
-        <React.Fragment>
+        <div className={cns('gatsby-highlight', 'gatsby-code-block', styl.codeBlock)}>
           {title && (
             <div className={cns('gatsby-code-title', styl.title)}>
               <div>{title}</div>
             </div>
           )}
-          <div className={cns('gatsby-highlight', 'gatsby-code-block', styl.codeBlock)}>
-            <span className={styl.lineNumber}>
+
+          <div className={styl.codeBlockWrapper}>
+              <span className={styl.lineNumber}>
               {[...Array(tokens.length)].map((v, i) => <span key={i}/>)}
             </span>
 
@@ -95,7 +96,7 @@ const CodeBlock = (props) => {
               </pre>
             </div>
           </div>
-        </React.Fragment>
+        </div>
       )}
     </LazyHighlight>
   )

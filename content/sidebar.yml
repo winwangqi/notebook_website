@@ -2,96 +2,103 @@
 
 - 生活感悟与人生格言
 
-- 爱情的味道
-
-- 说话的艺术
-
-- 诗歌
-
 - 学习规划
 
-- 读书笔记:
+- 读书:
+  - 书单
+  - 读书笔记:
     - 自卑与超越
     - 爱的艺术
     - 少年维特的烦恼
     - 规模：复杂世界的简单法则
     - 以幽默的方式过一生
 
-- Notebook:
-    - 功能需求
-    - 技术选型
-
 - 计算机与程序:
-    - 程序设计思想:
-        - 接口设计
+  - 程序设计思想:
+    - 接口设计
 
-    - 工具:
-        - Git:
-            - Branch
-            - FAQs
+  - 工具:
+    - Git:
+      - Branch
+      - FAQs
 
-    - Redis:
-        - 基本类型
-        - 命令
+  - Redis:
+    - 基本类型
+    - 命令
 
-    - DynamoDB:
-        - FAQs
-
-    - CSS:
-        - 如何使用 CSS 自动切换明暗模式
-        - flex
-
-    - JavaScript:
-        - 学习资料
-        - 注意项
-
-    - Golang:
-        - 介绍
-        - 核心概念:
-            - 接口
-        - Package:
-            - Time:
-                - Format
-        - 类型转换
-        - 正则表达式
-        - 学习资源
-        - 生态系统
-        - 常见错误
-        - FAQs
-
-    - 微信开发:
-        - 获取用户头像模糊不清晰
-
-    - Linux:
-        - Command:
-            - chsh
-        - 用户管理
-
-    - 计算机科普
-
-    - 计算机基础:
-        - Mac:
-            - shortcut
-        # - Windows
-
-    - 服务器:
-        - 通过公网服务器访问内网服务器
-
-- English:
-    - EF:
-        - Meeting:
-            - Lesson1 Opening a meeting
-            - Lesson2 Discussing proposals in a meeting
-        - Music:
-            - Lession1 Talking about music you like
-    - 航空业:
-        - 缩写
+  - DynamoDB:
     - FAQs
 
+  - CSS:
+    - 如何使用 CSS 自动切换明暗模式
+    - flex
+
+  - JavaScript:
+    - 学习资料
+    - 注意项
+
+  - Golang:
+    - 介绍
+    - 核心概念:
+      - 接口
+    - Package:
+      - Time:
+        - Format
+    - 类型转换
+    - 正则表达式
+    - 学习资源
+    - 生态系统
+    - 常见错误
+    - FAQs
+
+  - 微信开发:
+    - 获取用户头像模糊不清晰
+
+  - Linux:
+    - Command:
+      - chsh
+    - 用户管理
+
+  - 计算机科普
+
+  - 计算机基础:
+    - Mac:
+      - shortcut
+    # - Windows
+
+  - 服务器:
+    - 通过公网服务器访问内网服务器
+
+  - 正则表达式
+
+  - markdown 生态
+
+- English:
+  - EF:
+    - Meeting:
+      - Lesson1 Opening a meeting
+      - Lesson2 Discussing proposals in a meeting
+    - Music:
+      - Lession1 Talking about music you like
+  - 航空业:
+    - 缩写
+  - FAQs
+
 - Writing:
-    - 如何书写技术文档:
-        - 介绍
-        - 文档体系
-        - 参考资料
+  - 如何书写技术文档:
+    - 介绍
+    - 文档体系
+    - 参考资料
 
 - YouTube
+
+- 爱情的味道
+
+- 说话的艺术
+
+- 诗歌
+
+- 关于此网站:
+  - 功能需求
+  - markdown features
+  - 技术选型

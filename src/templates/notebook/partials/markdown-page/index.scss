@@ -73,4 +73,9 @@
   img {
     width: 100%;
   }
+
+  .mermaid {
+    margin: $section-gap 0;
+    overflow: auto;
+  }
 }

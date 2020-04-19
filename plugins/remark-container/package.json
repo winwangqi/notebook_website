@@ -1,0 +1,81 @@
+{
+  "_from": "remark-container",
+  "_id": "remark-container@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-0+1U48Gsiaq416PWGP7DRwXGMI8UvVO0EJpnH0CJR8sRvLQ6fAIYuVAOgV6hRY3ixoD3nrHlrK8RQlxOx4ZmPQ==",
+  "_location": "/remark-container",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "remark-container",
+    "name": "remark-container",
+    "escapedName": "remark-container",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/remark-container/-/remark-container-0.1.1.tgz",
+  "_shasum": "0b918cd040bac106c28f5edc4dcf29b70613222b",
+  "_spec": "remark-container",
+  "_where": "D:\\Workspace\\Playground\\notebook_website",
+  "author": {
+    "name": "zhengzhirong",
+    "email": "zhengzwing@gmail.com"
+  },
+  "browser": {
+    "index.js": "./dist/index.umd.js"
+  },
+  "bugs": {
+    "url": "https://github.com/zWingz/remark-container/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "markdown container like [markdown-it-container](https://github.com/markdown-it/markdown-it-container)",
+  "devDependencies": {
+    "bili": "^4.4.0",
+    "cheerio": "^1.0.0-rc.2",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.1.0",
+    "remark": "^10.0.1",
+    "remark-html": "^9.0.0",
+    "remark-parse": "^6.0.3",
+    "unist-util-visit": "^1.4.0"
+  },
+  "homepage": "https://github.com/zWingz/remark-container#readme",
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js",
+      "!**/node_modules/**"
+    ]
+  },
+  "keywords": [
+    "remark",
+    "remark-plugin",
+    "markdown-container",
+    "markdown"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "remark-container",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zWingz/remark-container.git"
+  },
+  "scripts": {
+    "build": "bili --format umd --module-name remarkContainer index.js",
+    "lint": "eslint index.js",
+    "prebuild": "yarn test",
+    "prepublish": "yarn build",
+    "test": "jest"
+  },
+  "version": "0.1.1"
+}

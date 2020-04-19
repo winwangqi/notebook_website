@@ -3,18 +3,7 @@
 @import "variables";
 @import "mixins";
 
-.title {
-  padding-left: $code-block-gap;
-  margin-bottom: -.5em;
-  line-height: 2.2em;
-  font-size: 1em;
-  border-bottom: 1px solid #ccc;
-  color: #CCC;
-  background: #2D2D2D;
-}
-
 .codeBlock {
-  display: flex;
   margin-left: -$page-side-gap;
   margin-right: -$page-side-gap;
   font-size: .9em;
@@ -23,6 +12,19 @@
   @include respond-to(lg) {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .title {
+    padding-left: $code-block-gap;
+    line-height: 2.2em;
+    font-size: 1em;
+    border-bottom: 1px solid #ccc;
+    color: #CCC;
+    background: #282C34;
+  }
+
+  .codeBlockWrapper {
+    display: flex;
   }
 
   .lineNumber {

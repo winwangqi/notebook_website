@@ -24,7 +24,9 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^3.2.2",
     "gatsby-remark-images-medium-zoom": "^1.5.0",
+    "gatsby-remark-import-code": "^0.1.1",
     "gatsby-remark-lazy-load": "^1.0.2",
+    "gatsby-remark-mermaid": "^1.2.0",
     "gatsby-remark-prismjs": "^3.4.1",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
@@ -43,7 +45,9 @@
     "react": "^16.13.1",
     "react-animate-height": "^2.0.20",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "remark-breaks": "^1.0.5",
+    "remark-container": "^0.1.1"
   },
   "devDependencies": {
     "js-yaml": "^3.13.1",
@@ -56,7 +60,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop -p 7777 -o --no-cache",
+    "develop": "gatsby clean && gatsby develop -p 7777 -o --no-cache",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

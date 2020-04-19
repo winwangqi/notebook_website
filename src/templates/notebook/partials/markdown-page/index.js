@@ -6,6 +6,7 @@ import TableOfContents from './components/table-of-contents'
 import cns from 'classnames'
 import './index.scss'
 import styl from './index.module.scss'
+import './plugins/remark-container/classic.scss'
 
 export default function(props) {
   const { mdx } = props

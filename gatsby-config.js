@@ -46,6 +46,22 @@ module.exports = {
               rel: "nofollow"
             }
           },
+          {
+            resolve: 'gatsby-remark-mermaid',
+            options: {
+              language: 'mermaid',
+              theme: 'default',
+              viewport: {
+                width: 200,
+                height: 200
+              }
+            }
+          },
+          `gatsby-remark-import-code`,
+        ],
+        remarkPlugins: [
+          require('remark-breaks'),
+          require('./plugins/remark-container'),
         ],
       },
     },

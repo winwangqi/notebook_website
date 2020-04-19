@@ -1,0 +1,118 @@
+@mixin non-plain {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: .4em;
+  border-style: solid;
+}
+
+.remark-container {
+  margin: 2em 0;
+  padding: .8em 1.6em .8em .8em;
+
+  color: #111;
+  word-break: break-word;
+  background-color: #F5F7F9;
+
+  .remark-container-title {
+    margin-top: 0;
+    margin-bottom: .6em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .remark-container-content {
+    p {
+      margin-top: 0;
+    }
+
+    p + p {
+      margin-top: .2em;
+    }
+  }
+
+  &.info,
+  &.important {
+    @include non-plain;
+    $color: #3498db;
+
+    background-color: rgba(52, 152, 219, 0.1);
+    border-color: $color;
+
+    .remark-container-title {
+      color: $color;
+    }
+  }
+
+  &.tip,
+  &.success {
+    @include non-plain;
+    $color: #2ecc71;
+
+    background-color: rgba(46, 204, 113, 0.1);
+    border-color: $color;
+
+    .remark-container-title {
+      color: $color;
+    }
+  }
+
+  &.note {
+    @include non-plain;
+    $color: #f1c40f;
+
+    background-color: rgba(241, 196, 15, 0.1);
+    border-color: $color;
+
+    .remark-container-title {
+      color: $color;
+    }
+  }
+
+  &.caution,
+  &.warning {
+    @include non-plain;
+    $color: #e67e22;
+
+    background-color: rgba(230, 126, 34, 0.1);
+
+    border-color: $color;
+
+    .remark-container-title {
+      color: $color;
+    }
+  }
+
+  &.danger {
+    @include non-plain;
+    $color: #e74c3c;
+
+    background-color: rgba(231, 76, 60, 0.1);
+
+    border-color: $color;
+
+    .remark-container-title {
+      color: $color;
+    }
+  }
+
+  &.other {
+    @include non-plain;
+    $color: #7633db;
+    background-color: rgba(118, 51, 219, 0.1);
+    border-color: $color;
+
+    .remark-container-title {
+      color: $color;
+    }
+  }
+
+  &.plain {
+    border: none;
+
+    .remark-container-title {
+      font-weight: initial;
+      text-transform: initial;
+    }
+  }
+}
