@@ -89,7 +89,7 @@ class ComponentComponentComponentComponent extends React.Component {
 
 ## plugins
 
-### remark-admonitions
+### remark-container
 
 :::info
 info

@@ -20,7 +20,7 @@ function plugin(opt = {}) {
       return true
     }
     // const [input, type, title, content] = match
-    console.log(match, '------------')
+
     const input = match[0]
     const type = match[1]
     const title = match[2]
