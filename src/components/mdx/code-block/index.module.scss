@@ -37,6 +37,7 @@
 
     & > span {
       display: block;
+      height: $code-line-height;
       pointer-events: none;
       counter-increment: linenumber;
 

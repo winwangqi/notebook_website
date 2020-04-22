@@ -21,6 +21,8 @@
     - Git:
       - Branch
       - FAQs
+    - Vim:
+      - 基础教程
 
   - Redis:
     - 基本类型
