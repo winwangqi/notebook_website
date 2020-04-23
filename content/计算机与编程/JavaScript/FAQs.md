@@ -45,3 +45,18 @@ observer.observe(targetNode, config)
 // Later, you can stop observing
 observer.disconnect()
 ```
+
+
+## 如何讲元素滚动到浏览器窗口可视区域内？
+
+使用 `Element.scrollIntoView()` 方法。
+
+详情查阅 [MDN: Element.scrollIntoView()](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/scrollIntoView)
+
+示例：
+
+```js
+element.scrollIntoView(); // 等同于element.scrollIntoView(true) 
+element.scrollIntoView(alignToTop); // Boolean型参数 
+element.scrollIntoView(scrollIntoViewOptions); // Object型参数
+```
