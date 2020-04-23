@@ -1,6 +1,6 @@
 import src from './ef-meeting-vocabulary-proposals.mp4'
 
-# Discussing proposals in a meeting
+在会议中讨论提案
 
 <Video src="./ef-meeting-vocabulary-proposals.mp4" />
 
@@ -20,13 +20,13 @@ import src from './ef-meeting-vocabulary-proposals.mp4'
 以下是提出和讨论议案可以用到的词汇：
 
 - How could we take the idea one step **further**?
+  我们怎么可以让这个问题的讨论更进一步？
+
 - How do you think about team building? Would that solve the problem?
+  你怎么看团队建设？团队建设可以解决问题吗？
+
 - We need to do something to improve employee **morale**.
-
-
-- 我们怎么可以让这个问题的讨论更进一步？
-- 你怎么看团队建设？团队建设可以解决问题吗？
-- 我们需要提高员工士气。
+  我们需要提高员工士气。
 
 
 - What about the solution I **proposed** last month?
@@ -38,90 +38,109 @@ import src from './ef-meeting-vocabulary-proposals.mp4'
 
 
 - How could take the idea one step further?
+  怎样让讨论更深入呢？
+
 - The negotiations are off to g good start.
+  谈判会有一个良好的开端。
+
 - What exactly do you propose as a solution?
+  那么你的解决方案到底是什么？
+
 - I can't promise you a bigger budget for that project.
+  我不能保证可以给这个项目增加预算。
+
 - Every employee is evaluated by a manager.
+  每个员工都会由一名经理评估。
+
 - Do team-building exercises improve morale.
-
-
-- 怎样让讨论更深入呢？
-- 谈判会有一个良好的开端。
-- 那么你的解决方案到底是什么？
-- 我不能保证可以给这个项目增加预算。
-- 每个员工都会由一名经理评估。
-- 团队建设训练是否可以提高士气？
+  团队建设训练是否可以提高士气？
 
 
 ## Expression: Agreeing and disagreeing
 
 - I'm not sure I agree with that.
-- I really disagree.
-- I really like that idea.
-- I think so, too.
-- I think those are all excellent ideas.
-
-
 - 我不敢说我同意那一点。
-- 我坚决不同意。
-- 我很喜欢那种想法。
-- 我也这么看。
-- 我认为那些点子都非常不错。
-  
+
+- I really disagree.
+  我坚决不同意。
+
+- I really like that idea.
+  我很喜欢那种想法。
+
+- I think so, too.
+  我也这么看。
+
+- I think those are all excellent ideas.
+  我认为那些点子都非常不错。
+
+
 ### 同意和不同意
 
 对某人或某事表示同意或不同意有很多种说法。以下表示同意：
 
 - Yeah, that would be OK.(mild agreement)
+  是的，这样可以。（温和）
+
 - I think so, too.(agreement)
+  我也这么想。（直接）
+
 - I agree with you.(agreement)
+  我同意你。（直接）
+
 - We're on the same page.(agreement)
+  我们意见一致。（直接）
+
 - I really like that idea.(strong agreement)
+  我真的喜欢这个主意。（强烈）
+
 - I think those are excellent ideas.(strong agreement)
+  我认为这些主意非常棒。（强烈）
 
-
-- 是的，这样可以。（温和）
-- 我也这么想。（直接）
-- 我同意你。（直接）
-- 我们意见一致。（直接）
-- 我真的喜欢这个主意。（强烈）
-- 我认为这些主意非常棒。（强烈）
 
 以下是不同意的表达：
 
 - I'm not sure I agree with that.(mild disagreement)
+  我不确定我是否同意（温和）
+
 - I'm sorry, but I disagree.(polite disagreement)
+  对不起，我不同意。（礼貌）
+
 - I'm not with you on that.(disagreement)
+  我不同意你的观点。（直接）
+
 - I really disagree with you.(strong disagreement)
+  我真的不同意你。（强烈）
+
 - I think that's a terrible idea.(very strong disagreement)
+  我认为这个想法很糟糕。（非常强烈）
 
-
-- 我不确定我是否同意（温和）
-- 对不起，我不同意。（礼貌）
-- 我不同意你的观点。（直接）
-- 我真的不同意你。（强烈）
-- 我认为这个想法很糟糕。（非常强烈）
 
 ## Expression: Making proposals
 
 - What solution can I propose?
+  我能够提出什么样的解决方案？
+
 - One way to solve th problem might be ...
+  一种解决问题的办法可能是……
+
 - At least let's send them to ...
+  至少让我们把他们送到……
+
 - I'd like to propose ...
+  我想提议……
+
 - What do you have in mind?
+  你有什么想法？
+
 - How difficult would it be to ...?
+  ……会有多难？
+
 - Let's take that one step further.
+  让我们再进一步。
+
 - I can't make any promises, but ...
+  我做不了保证，但是……
 
-
-- 我能够提出什么样的解决方案？
-- 一种解决问题的办法可能是……
-- 至少让我们把他们送到……
-- 我想提议……
-- 你有什么想法？
-- ……会有多难？
-- 让我们再进一步。
-- 我做不了保证，但是……
  
 ### 提议
 
@@ -130,22 +149,24 @@ import src from './ef-meeting-vocabulary-proposals.mp4'
 #### 间接或礼貌的提议
 
 - **One way to solve the problem might be to** increase the training budget.
+  增加培训预算可以是解决问题的一个方法。
+  
 - **At least let's talk about** increasing the training budget.
+  至少要讨论一下增加培训预算的问题。
+  
 - **How difficult would it be to** increase the training bueget?
-
-
-- 增加培训预算可以是解决问题的一个方法。
-- 至少要讨论一下增加培训预算的问题。
-- 增加培训预算很难吗？
+  增加培训预算很难吗？
 
 #### 正式或直接的提议
 
 - **I'd like to propose that** we increase the training budget.
+  我想提议提高培训预算。
+  
 - **I propose that** we increase the training budget.
+  我提议提高培训预算。
+  
 - **Let's take that one step further and** increase the training budget.
+  让我们再进一步，增加培训预算。
 
 
-- 我想提议提高培训预算。
-- 我提议提高培训预算。
-- 让我们再进一步，增加培训预算。
 

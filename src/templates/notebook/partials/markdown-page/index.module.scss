@@ -15,7 +15,7 @@
     flex: 1;
     margin: 0 auto;
     max-width: 1600px;
-    padding: $page-side-gap;
+    padding: $page-side-gap $page-side-gap $page-side-gap * 3;
 
     .markdownWrapper {
       flex: 1;

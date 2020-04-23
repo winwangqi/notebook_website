@@ -46,7 +46,6 @@ FEMALE: What happened?
 MALE: Well, I'm used to loud music, but now I seem to like quiet music, too. Surprising, huh?
 FEMALE: Wow. That's a big change! I guess I shouldn't be surprised. You like change.
 MALE: Yeah. I guess I do.
-
 女：你在听什么？
 男：Clunk
 女：哦，Clunk。那个朋克歌手？
