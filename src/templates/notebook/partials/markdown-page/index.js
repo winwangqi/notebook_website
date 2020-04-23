@@ -69,7 +69,7 @@ export default function(props) {
   )
 }
 
-function getItemIDs(tableOfContents) {
+function getItemIDs(tableOfContents = []) {
   const IDs = []
 
   ;(function getItems(list) {
