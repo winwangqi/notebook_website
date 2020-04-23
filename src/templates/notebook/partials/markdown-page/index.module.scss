@@ -3,6 +3,7 @@
 @import "../../variables";
 
 .markdownPage {
+  position: relative;
   flex: 1;
   min-width: 0;
   min-height: calc(100vh - #{$header-height});

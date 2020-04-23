@@ -42,7 +42,7 @@
       box-sizing: border-box;
       display: block;
       width: 100%;
-      padding: 1.2em .6em;
+      padding: 1em .6em;
       @include text-ellipsis;
       transition: background-color 0.08s linear 0s, color 0.08s linear 0s;
       cursor: pointer;
@@ -52,7 +52,7 @@
       width: $sidebar-width-lg;
 
       .label {
-        padding: .8em .6em;
+        padding: .6em;
       }
     }
 

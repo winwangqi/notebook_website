@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import TableOfContents from './components/table-of-contents'
+
+import { throttle } from 'lodash'
 
 import cns from 'classnames'
 import './index.scss'
@@ -11,15 +13,88 @@ import './plugins/remark-container/classic.scss'
 export default function(props) {
   const { mdx } = props
 
+  const [itemTopOffsets, setItemTopOffsets] = useState([])
+
+  const markdownWrapperRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new MutationObserver(calculateItemTopOffsets)
+    observer.observe(
+      markdownWrapperRef.current,
+      { attributes: true, childList: true, subtree: true },
+    )
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    calculateItemTopOffsets()
+  }, [mdx.tableOfContents])
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [itemTopOffsets])
+
+  function calculateItemTopOffsets() {
+    setItemTopOffsets(
+      getElementTopOffsetsByID(
+        getItemIDs(mdx.tableOfContents.items),
+      ),
+    )
+  }
+
+  const handleResize = throttle(function handleResize() {
+    calculateItemTopOffsets()
+  }, 16)
+
   return (
     <main className={styl.markdownPage}>
       <div className={styl.wrapper}>
-        <div className={cns('markdown', styl.markdownWrapper)}>
+        <div
+          className={cns('markdown', styl.markdownWrapper)}
+          ref={markdownWrapperRef}
+        >
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </div>
 
-        <TableOfContents className={styl.toc} tableOfContents={mdx.tableOfContents.items} />
+        <TableOfContents
+          className={styl.toc}
+          itemTopOffsets={itemTopOffsets}
+          tableOfContents={mdx.tableOfContents.items}
+        />
       </div>
     </main>
   )
+}
+
+function getItemIDs(tableOfContents) {
+  const IDs = []
+
+  ;(function getItems(list) {
+    list.forEach(item => {
+      IDs.push(item.url.slice(1))
+      if (item.items) {
+        getItems(item.items)
+      }
+    })
+  })(tableOfContents)
+
+  return IDs
+}
+
+function getElementTopOffsetsByID(itemIDs) {
+  return itemIDs
+    .map(id => {
+      const element = document.getElementById(id)
+
+      if (!element) return null
+
+      return {
+        id,
+        offsetTop: element.offsetTop,
+      }
+    })
+    .filter(item => item)
 }
