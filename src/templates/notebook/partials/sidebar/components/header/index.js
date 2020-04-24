@@ -32,6 +32,10 @@ function Index(props) {
   const [searchIsOpen, setSearchIsOpen] = useState(false)
   const [inputValue, setInputValue] = useState('')
 
+  useEffect(() => {
+    onSearchStatusChange(searchIsOpen)
+  }, [searchIsOpen])
+
   function handleOpenSearch() {
     setSearchIsOpen(true)
   }
@@ -51,10 +55,6 @@ function Index(props) {
     setInputValue(value)
     onSearchInputChange(value)
   }
-
-  useEffect(() => {
-    onSearchStatusChange(searchIsOpen)
-  }, [searchIsOpen])
 
   return (
     <div className={styl.header}>

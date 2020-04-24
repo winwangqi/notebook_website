@@ -22,7 +22,11 @@ function Index(props) {
   return (
     <div className={styl.searchInput}>
       <div className={styl.inputWrapper}>
-        <input type="text" value={value} onChange={onChange} />
+        <input
+          type="text"
+          value={value}
+          onChange={onChange}
+        />
         {value && (
           <i
             className={cns('iconfont icon-reeor-fill', styl.icon)}
