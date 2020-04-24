@@ -38,9 +38,6 @@ export default function Index({ location, data, pageContext: { title } }) {
             mdx={data.mdx}
           />
         </div>
-        <footer className={styl.footer}>
-          <p>w@ngq! All rights reserved. @{new Date().getFullYear()}</p>
-        </footer>
       </Theme>
     </MDXProvider>
   )

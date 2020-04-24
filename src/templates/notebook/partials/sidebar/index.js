@@ -4,41 +4,55 @@ import { Link } from 'gatsby'
 import menuList from '@/../content/sidebar.yml'
 
 import Tree from '@/components/Tree'
-import TreeButtonGroup from './components/tree-button-group'
+import Header from './components/header'
 import ExpandButton from './components/expand-button'
 
-import cloneDeep from 'lodash/cloneDeep'
+import { createTree, findActiveID, flattenTree, updateTreeDataCollapse, filterTree } from './utils/tree'
+import { initSearch } from './utils/search'
 
 import cns from 'classnames'
 import styl from './index.module.scss'
 
-const initialTreeData = createTree(menuList)
+export const initialTreeData = createTree(menuList)
 
 export default function Sidebar({ location }) {
   const [sideBarIsOpen, setSideBarIsOpen] = useState(false)
   const [activeID, setActiveID] = useState(findActiveID(initialTreeData, location))
-  const [treeData, setTreeData] = useState(
-    updateTreeDataCollapse({
-      treeData: initialTreeData,
-      id: activeID,
-      collapse: false,
-      chain: true
-    })
-  )
+  const [treeData, setTreeData] = useState(initTreeData)
+  const [searchEngine] = useState(() => initSearch(flattenTree(initialTreeData, true)))
+  const [searched, setSearched] = useState(false)
+  const [searchedTreeData, setSearchedTreeData] = useState(null)
   const activeNode = useRef()
-
 
   useEffect(() => {
     setActiveID(findActiveID(treeData, location))
   }, [location])
 
+  function initTreeData() {
+    return updateTreeDataCollapse({
+      treeData: initialTreeData,
+      id: activeID,
+      collapse: false,
+      chain: true,
+    })
+  }
+
   function handleToggleSideBar() {
     setSideBarIsOpen(!sideBarIsOpen)
   }
 
-  function handleToggleNodeCollapse(node) {
+  function handleToggleDefaultTreeNodeCollapse(node) {
     setTreeData(updateTreeDataCollapse({
       treeData,
+      id: node.id,
+      toggle: true,
+      chain: false,
+    }))
+  }
+
+  function handleToggleSearchedTreeNodeCollapse(node) {
+    setSearchedTreeData(updateTreeDataCollapse({
+      treeData: searchedTreeData,
       id: node.id,
       toggle: true,
       chain: false,
@@ -49,18 +63,39 @@ export default function Sidebar({ location }) {
     setTreeData(updateTreeDataCollapse({
       treeData,
       id: 'all',
-      collapse: !expand
+      collapse: !expand,
     }))
   }
 
   function handleLocateCurrent() {
     activeNode.current && activeNode.current.scrollIntoView({ block: 'center' })
     setTreeData(updateTreeDataCollapse({
-      treeData,
+      treeData: initTreeData(),
       id: activeID,
       collapse: false,
       chain: true,
     }))
+  }
+
+  function handleSearchInputChange(value) {
+    if (!value) {
+      setSearched(false)
+      return
+    }
+
+    const filterIDList = searchEngine.search(value).map(v => v.id)
+    setSearched(true)
+    setSearchedTreeData(updateTreeDataCollapse({
+      treeData: filterTree(initialTreeData, filterIDList),
+      id: 'all',
+      collapse: false,
+    }))
+  }
+
+  function handleSearchStatusChange(value) {
+    if (!value) {
+      setSearched(false)
+    }
   }
 
   function handleGetActiveNode(node) {
@@ -79,28 +114,35 @@ export default function Sidebar({ location }) {
         )}
       >
         <div className={styl.content}>
-          <TreeButtonGroup
+          <Header
             onToggleExpand={handleToggleExpand}
             onLocateCurrent={handleLocateCurrent}
+            onSearchInputChange={handleSearchInputChange}
+            onSearchStatusChange={handleSearchStatusChange}
           />
 
-          <Tree
-            className={styl.menuTree}
-            treeClassName="theme-tree"
-            nodeClassName="theme-tree-node"
-            labelClassName={cns('theme-tree-label', styl.treeLabel)}
-            enableScrollIntoView
-            enableCollapse
-            activeID={activeID}
-            node={treeData}
-            nodeCreator={
-              node => node.context
-                ? <Link to={node.context.path} title={node.label} className={styl.label}>{node.label}</Link>
-                : <span title={node.label} className={styl.label}>{node.label}</span>
-            }
-            onToggleNodeCollapse={handleToggleNodeCollapse}
-            onGetActiveNode={handleGetActiveNode}
-          />
+          {searched
+            ? (
+              searchedTreeData && searchedTreeData.children.length > 0
+                ? (
+                  <SidebarTree
+                    key={0}
+                    activeID={activeID}
+                    treeData={searchedTreeData}
+                    onToggleNodeCollapse={handleToggleSearchedTreeNodeCollapse}
+                  />
+                ) : (
+                  <div className={styl.noSearchResult}>无搜索结果</div>
+                )
+            ) : (
+              <SidebarTree
+                key={1}
+                activeID={activeID}
+                treeData={treeData}
+                onToggleNodeCollapse={handleToggleDefaultTreeNodeCollapse}
+                onGetActiveNode={handleGetActiveNode}
+              />
+            )}
         </div>
       </aside>
 
@@ -112,106 +154,37 @@ export default function Sidebar({ location }) {
         )}
         onClick={handleToggleSideBar}
       >
-        <ExpandButton collapse={sideBarIsOpen} typeClose />
+        <ExpandButton collapse={sideBarIsOpen} typeClose/>
       </div>
     </>
   )
 }
 
-function createTree(list) {
-  function createChildren(list, idPrefix = '', relativePath = '/') {
-    const buildPath = label => relativePath + label + '/'
-
-    return list.map((item, index) => {
-      const id = [idPrefix, String(index)].filter(Boolean).join('-')
-
-      if (typeof item === 'string') {
-        return {
-          id,
-          label: item,
-          context: {
-            path: buildPath(item),
-          },
-        }
-      }
-
-      const [label, value] = Object.entries(item)[0]
-      return {
-        id,
-        label,
-        collapse: true,
-        children: createChildren(value, id, buildPath(label)),
-      }
-    })
-  }
-
-  return {
-    id: 'root',
-    type: 'root',
-    children: createChildren(list),
-  }
+SidebarTree.defaultProps = {
+  onToggleNodeCollapse: Function.prototype,
+  onGetActiveNode: Function.prototype,
 }
 
-function updateTreeDataCollapse(options) {
-  const { treeData, id = '', collapse = true, toggle = false, chain = false } = options
+function SidebarTree(props) {
+  const { activeID, treeData, onToggleNodeCollapse, onGetActiveNode } = props
 
-  const tree = cloneDeep(treeData)
-
-  function visit(treeData) {
-    if (treeData.children) {
-      if (treeData.type !== 'root') {
-        if (id === 'all') {
-          treeData.collapse = collapse
-        } else if (chain ? id.startsWith(treeData.id) : id === treeData.id) {
-          treeData.collapse = toggle ? !treeData.collapse : collapse
-        }
+  return (
+    <Tree
+      className={styl.menuTree}
+      treeClassName="theme-tree"
+      nodeClassName="theme-tree-node"
+      labelClassName={cns('theme-tree-label', styl.treeLabel)}
+      enableScrollIntoView
+      enableCollapse
+      activeID={activeID}
+      node={treeData}
+      nodeCreator={
+        node => node.context
+          ? <Link to={node.context.path} title={node.label} className={styl.label}>{node.label}</Link>
+          : <span title={node.label} className={styl.label}>{node.label}</span>
       }
-      treeData.children = treeData.children.map(item => visit(item))
-    }
-
-    return treeData
-  }
-
-  return visit(tree)
-}
-
-function findActiveID(tree, location) {
-  const paths = location.pathname.split('/')
-    .filter(Boolean)
-    .map((item) => decodeURIComponent(item))
-
-  function find(tree, paths, pathIndex = 0) {
-    const path = paths[pathIndex]
-
-    for (let i = 0; i < tree.children.length; i++) {
-      const child = tree.children[i]
-      if (child.label === path) {
-        if (child.children) {
-          return find(child, paths, pathIndex + 1)
-        }
-
-        return child.id
-      }
-    }
-
-    return ''
-  }
-
-  return find(tree, paths)
-}
-
-function findTreeNode(treeData, id) {
-  function find(treeData) {
-    if (treeData.id === id) {
-      return treeData
-    }
-    if (treeData.children) {
-      for (let i = 0; i < treeData.children.length; i++) {
-        const node = find(treeData.children[i])
-        if (node) return node
-      }
-    }
-  }
-
-  return find(treeData)
+      onToggleNodeCollapse={onToggleNodeCollapse}
+      onGetActiveNode={onGetActiveNode}
+    />
+  )
 }

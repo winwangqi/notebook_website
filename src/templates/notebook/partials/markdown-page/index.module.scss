@@ -6,7 +6,6 @@
   position: relative;
   flex: 1;
   min-width: 0;
-  min-height: calc(100vh - #{$header-height});
 
   .wrapper {
     box-sizing: border-box;
@@ -15,6 +14,7 @@
     flex: 1;
     margin: 0 auto;
     max-width: 1600px;
+    min-height: calc(100vh - #{$header-height});
     padding: $page-side-gap $page-side-gap $page-side-gap * 3;
 
     .markdownWrapper {
@@ -27,4 +27,14 @@
       margin-left: $page-side-gap;
     }
   }
+}
+
+
+.footer {
+  text-align: center;
+  line-height: 100px;
+  color: #111;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  font-size: 1em;
 }

@@ -1,22 +1,16 @@
+@import "../../mixins";
+
 .buttonGroup {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid #ececec;
 
   .button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: .8em 0;
-    cursor: pointer;
-    color: #999;
-    transition: color .14s;
-    user-select: none;
-
-    &:hover {
-      color: #333;
-    }
+    @include icon-button;
 
     .icon {
       font-size: 2em;
@@ -35,7 +29,13 @@
 
     &.locate {
       .icon {
-        font-size: 1.08em;
+        font-size: .844em;
+      }
+    }
+
+    &.search {
+      .icon {
+        font-size: 1.28em;
       }
     }
   }

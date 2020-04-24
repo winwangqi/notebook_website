@@ -33,6 +33,7 @@
     "gatsby-transformer-sharp": "^2.4.4",
     "gatsby-transformer-yaml": "^2.3.1",
     "install": "^0.13.0",
+    "js-search": "^2.0.0",
     "lazysizes": "^5.2.0",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
@@ -41,7 +42,6 @@
     "prism-react-renderer": "^1.0.2",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",
-    "rc-tree": "^3.1.5",
     "react": "^16.13.1",
     "react-animate-height": "^2.0.20",
     "react-dom": "^16.13.1",
@@ -50,6 +50,9 @@
     "remark-container": "^0.1.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.4.0",
+    "jest": "^25.4.0",
     "js-yaml": "^3.13.1",
     "prettier": "^1.19.1",
     "source-map-loader": "^0.2.4"

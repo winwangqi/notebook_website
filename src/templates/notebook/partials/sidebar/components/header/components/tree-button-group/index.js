@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import ExpandButton from '../expand-button'
+import ExpandButton from '../../../../components/expand-button'
 
 import cns from 'classnames'
 import styl from './index.module.scss'
@@ -11,11 +11,13 @@ Index.propTypes = {
   text: PropTypes.string,
   onToggleExpand: PropTypes.func,
   onLocateCurrent: PropTypes.func,
+  onSearch: PropTypes.func,
 }
 
 Index.defaultProps = {
   onToggleExpand: Function.prototype,
   onLocateCurrent: Function.prototype,
+  onSearch: Function.prototype,
 }
 
 function Index(props) {
@@ -35,12 +37,17 @@ function Index(props) {
         onClick={handleExpand}
       >
         <ExpandButton collapse={expand} />
-        <span className={styl.text}>全部{expand ? '收起' : '展开'}</span>
+        <span className={styl.text}>{expand ? '收起' : '展开'}</span>
       </div>
 
       <div className={cns(styl.button, styl.locate)} onClick={props.onLocateCurrent}>
         <i className={cns('iconfont icon-aim', styl.icon)} />
-        <span className={styl.text}>定位当前</span>
+        <span className={styl.text}>定位</span>
+      </div>
+
+      <div className={cns(styl.button, styl.search)} onClick={props.onSearch}>
+        <i className={cns('iconfont icon-search', styl.icon)} />
+        <span className={styl.text}>搜索</span>
       </div>
     </div>
   )

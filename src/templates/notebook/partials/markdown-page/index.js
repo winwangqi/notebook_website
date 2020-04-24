@@ -9,6 +9,7 @@ import cns from 'classnames'
 import './index.scss'
 import styl from './index.module.scss'
 import './plugins/remark-container/classic.scss'
+import Theme from '@/components/theme'
 
 export default function(props) {
   const { mdx } = props
@@ -65,6 +66,10 @@ export default function(props) {
           tableOfContents={mdx.tableOfContents.items}
         />
       </div>
+
+      <footer className={styl.footer}>
+        <p>w@ngq! All rights reserved. @{new Date().getFullYear()}</p>
+      </footer>
     </main>
   )
 }

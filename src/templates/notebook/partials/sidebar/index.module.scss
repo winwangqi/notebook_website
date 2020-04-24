@@ -38,6 +38,11 @@
     height: calc(100vh - #{$header-height});
     box-sizing: border-box;
 
+    .noSearchResult {
+      padding-top: 1em;
+      text-align: center;
+    }
+
     .label {
       box-sizing: border-box;
       display: block;

@@ -1,0 +1,28 @@
+@import "../../mixins";
+
+.searchInput {
+  flex: 1;
+
+  .inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 100%;
+      padding: .26em 1.8em .26em .44em;
+      outline: none;
+      border: 1px solid #ddd;
+    }
+
+    i.icon {
+      position: absolute;
+      top: 50%;
+      right: .4em;
+      font-size: 1.2em;
+      transform: translateY(-50%);
+      @include icon-button;
+    }
+  }
+}
