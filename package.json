@@ -58,7 +58,7 @@
     "source-map-loader": "^0.2.4"
   },
   "keywords": [
-    "gatsby"
+    "notebook"
   ],
   "license": "MIT",
   "scripts": {
@@ -68,13 +68,13 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/winwangqi/notebook_website"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/winwangqi/notebook_website/issues"
   }
 }
