@@ -1,3 +1,4 @@
+import { flatten } from 'lodash'
 import * as JsSearch from 'js-search'
 
 export function initSearch(documents) {
@@ -6,10 +7,12 @@ export function initSearch(documents) {
   const originTokenize = search.tokenizer.tokenize
 
   search.tokenizer.tokenize = function(text) {
-    return text.split('/')
-      .filter(Boolean)
-      .map(v => v.split(/\s+/)).flat()
-      .map((segment) => {
+    return flatten(
+      flatten(
+        text.split('/')
+          .filter(Boolean)
+          .map(v => v.split(/\s+/)),
+      ).map((segment) => {
         const enReg = /^[a-zA-Z0-9$@$!%*?&#^-_. +]+$/
 
         if (enReg.test(segment)) {
@@ -18,7 +21,7 @@ export function initSearch(documents) {
 
         return segment.split('')
       })
-      .flat()
+    )
   }
 
   search.addIndex('label')
