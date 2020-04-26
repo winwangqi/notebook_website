@@ -1,0 +1,215 @@
+{
+  "content": {
+    "video": {
+      "url": "https://cns2.ef-cdn.com/Juno/13/81/22/v/138122/GE_10.1.1_v2.mp4",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!138122"
+    },
+    "poster": {
+      "url": "https://cns2.ef-cdn.com/Juno/14/13/57/v/141357/GE_10.1.1.2.1.jpg",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!141357"
+    },
+    "scripts": [
+      {
+        "txt": "[JOAN] Okay. Let's get started. Do you all have the agenda?",
+        "startTime": "00:00:873",
+        "endTime": "00:04:840"
+      },
+      {
+        "txt": "[JOAN] The purpose of this meeting is to talk about our relationship with Sunset Computers since the merger.",
+        "startTime": "00:05:349",
+        "endTime": "00:11:904"
+      },
+      {
+        "txt": "[JOAN] The five of us are here because we do the most business with them.",
+        "startTime": "00:11:904",
+        "endTime": "00:15:986"
+      },
+      {
+        "txt": "[JOAN] The first item on the agenda is news about Sunset. Are you all aware that Archie Morgan, their CEO, has resigned?",
+        "startTime": "00:16:222",
+        "endTime": "00:24:118"
+      },
+      {
+        "txt": "[HARRY] I didn't know that.",
+        "startTime": "00:24:118",
+        "endTime": "00:25:047"
+      },
+      {
+        "txt": "[SALLY] No, neither did I.",
+        "startTime": "00:25:047",
+        "endTime": "00:26:243"
+      },
+      {
+        "txt": "[JOAN] Yes, well, our relationship with him just wasn't working. Sunset's chief financial officer, Mary Ozaki, will also be leaving.",
+        "startTime": "00:26:243",
+        "endTime": "00:37:009"
+      },
+      {
+        "txt": "[SIMON] That’s good news.",
+        "startTime": "00:37:009",
+        "endTime": "00:38:348"
+      },
+      {
+        "txt": "[SIMON] I'm sorry, but it's time for a change over there.",
+        "startTime": "00:42:018",
+        "endTime": "00:44:130"
+      },
+      {
+        "txt": "[JOAN] Okay. Let’s move on to the next item.",
+        "startTime": "00:44:130",
+        "endTime": "00:48:330"
+      },
+      {
+        "txt": "[JOAN] I’ll probably be flying out to meet the Sunset executives on Monday.",
+        "startTime": "00:48:330",
+        "endTime": "00:53:433"
+      },
+      {
+        "txt": "[JOAN] The CEO’s in a meeting about this right now. I'll have more information later today.",
+        "startTime": "00:53:433",
+        "endTime": "00:58:872"
+      },
+      {
+        "txt": "[TODD] Okay.",
+        "startTime": "00:58:872",
+        "endTime": "00:59:452"
+      },
+      {
+        "txt": "[JOAN] The last item on the agenda is our problems with Sunset.",
+        "startTime": "00:59:452",
+        "endTime": "01:03:530"
+      },
+      {
+        "txt": "[JOAN] I've been hearing some complaints from different people here, but I need more detailed information.",
+        "startTime": "01:03:530",
+        "endTime": "01:10:914"
+      },
+      {
+        "txt": "[SALLY] If you ask me, the primary problem’s communication, or lack of it.",
+        "startTime": "01:11:042",
+        "endTime": "01:16:368"
+      },
+      {
+        "txt": "[JOAN] Could you be more specific, Sally?",
+        "startTime": "01:16:610",
+        "endTime": "01:18:675"
+      },
+      {
+        "txt": "[SALLY] Well, they're very slow in answering our questions.",
+        "startTime": "01:18:675",
+        "endTime": "01:21:544"
+      },
+      {
+        "txt": "[SALLY] For instance, just yesterday, I phoned their director of marketing and left a message. Then I sent an email. Still no answer.",
+        "startTime": "01:22:048",
+        "endTime": "01:30:490"
+      },
+      {
+        "txt": "[HARRY] Do they even have cellphones?",
+        "startTime": "01:30:749",
+        "endTime": "01:32:431"
+      },
+      {
+        "txt": "[HARRY] I'm serious. I can't get cellphone numbers from them.",
+        "startTime": "01:33:048",
+        "endTime": "01:36:404"
+      },
+      {
+        "txt": "[TODD] A huge challenge for me is figuring out who's responsible for what.",
+        "startTime": "01:36:404",
+        "endTime": "01:40:409"
+      },
+      {
+        "txt": "[SIMON] I have to say that their director of engineering, Ed Fife, is incredible. He gets me what I need quickly, and it's always accurate.",
+        "startTime": "01:40:409",
+        "endTime": "01:47:893"
+      },
+      {
+        "txt": "[JOAN] Hmm. This is all very interesting.",
+        "startTime": "01:47:893",
+        "endTime": "01:50:957"
+      }
+    ],
+    "continuousPlayMovie": true,
+    "words": [
+      {
+        "txt": "Let's get started.",
+        "translation": {
+          "translation": "我们开始吧。",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/06/97/v/140697/GE_10.1.1.2.1_1_v3.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140697"
+          }
+        },
+        "timeline": "00:03:210"
+      },
+      {
+        "txt": "Do you all have the agenda?",
+        "translation": {
+          "translation": "大家都拿到议事日程了吗？",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/06/98/v/140698/GE_10.1.1.2.1_2_v3.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140698"
+          }
+        },
+        "timeline": "00:04:798"
+      },
+      {
+        "txt": "The purpose of this meeting is to ...",
+        "translation": {
+          "translation": "本次会议的目的是……",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/06/99/v/140699/GE_10.1.1.2.1_3_v3.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140699"
+          }
+        },
+        "timeline": "00:11:969"
+      },
+      {
+        "txt": "The five of us are here because ...",
+        "translation": {
+          "translation": "我们五个人来到这里，是因为……",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/00/v/140700/GE_10.1.1.2.1_4_v3.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140700"
+          }
+        },
+        "timeline": "00:15:930"
+      },
+      {
+        "txt": "The first item on the agenda is ...",
+        "translation": {
+          "translation": "会议议程第一项是……",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/06/96/v/140696/GE_10.1.1.2.1_5_v3.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140696"
+          }
+        },
+        "timeline": "00:20:044"
+      }
+    ]
+  },
+  "templateCode": "MoviePre",
+  "references": {
+    "title": "",
+    "desc": "",
+    "standardInstruction": "Watch the video and study the language."
+  },
+  "maxAge": 86400,
+  "collapsed": false,
+  "id": "activity_content!277430"
+}

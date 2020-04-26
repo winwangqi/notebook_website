@@ -1,0 +1,219 @@
+{
+  "content": {
+    "video": {
+      "url": "https://cns2.ef-cdn.com/Juno/13/81/23/v/138123/GE_10.1.2_v2.mp4",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!138123"
+    },
+    "poster": {
+      "url": "https://cns2.ef-cdn.com/Juno/14/13/59/v/141359/GE_10.1.2.1.1.jpg",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!141359"
+    },
+    "scripts": [
+      {
+        "txt": "[JOAN] All right, so communication has really been the big issue with Sunset.",
+        "startTime": "00:01:145",
+        "endTime": "00:06:328"
+      },
+      {
+        "txt": "[JOAN] What can we do about it? I mean, when I’m there on Monday, in a meeting with them, what solution can I propose?",
+        "startTime": "00:07:062",
+        "endTime": "00:14:025"
+      },
+      {
+        "txt": "[SALLY] Well, a new CEO and CFO is a good start, but is it enough? One way to solve the problem might be to replace even more managers.",
+        "startTime": "00:14:025",
+        "endTime": "00:24:381"
+      },
+      {
+        "txt": "[SIMON] I'm not sure I agree with that.",
+        "startTime": "00:24:381",
+        "endTime": "00:25:835"
+      },
+      {
+        "txt": "[TODD] And I really disagree. We have to be careful about their morale. They're losing their two biggest executives. That's a huge change already.",
+        "startTime": "00:27:204",
+        "endTime": "00:36:370"
+      },
+      {
+        "txt": "[HARRY] Well, at least let's send them to some communication training. They're awful!",
+        "startTime": "00:36:370",
+        "endTime": "00:40:712"
+      },
+      {
+        "txt": "[JOAN] That's a possibility.",
+        "startTime": "00:40:712",
+        "endTime": "00:42:109"
+      },
+      {
+        "txt": "[TODD] I'd like to propose some formal team-building.",
+        "startTime": "00:42:522",
+        "endTime": "00:45:126"
+      },
+      {
+        "txt": "[JOAN] Okay. What do you have in mind?",
+        "startTime": "00:45:126",
+        "endTime": "00:46:822"
+      },
+      {
+        "txt": "[TODD] How difficult would it be to bring some of the Sunset managers here for, say, a week?",
+        "startTime": "00:46:822",
+        "endTime": "00:53:165"
+      },
+      {
+        "txt": "[JOAN] Well, it's not in the budget, but...",
+        "startTime": "00:53:165",
+        "endTime": "00:55:886"
+      },
+      {
+        "txt": "[SALLY] I really like that idea. We need to meet these people.",
+        "startTime": "00:55:886",
+        "endTime": "00:59:542"
+      },
+      {
+        "txt": "[HARRY] I think so, too. If they come here and see how we do things...",
+        "startTime": "00:59:542",
+        "endTime": "01:03:797"
+      },
+      {
+        "txt": "[SIMON] Let's take that one step further and send people over there, too. We need to start building personal relationships with them.",
+        "startTime": "01:03:797",
+        "endTime": "01:10:290"
+      },
+      {
+        "txt": "[JOAN] Well, I think those are all excellent ideas. I can't make any promises, but I'll try to find some money for them.",
+        "startTime": "01:10:290",
+        "endTime": "01:16:919"
+      },
+      {
+        "txt": "[TODD] And, of course, if you do go there, you're going to be evaluating their managers.",
+        "startTime": "01:16:919",
+        "endTime": "01:21:290"
+      },
+      {
+        "txt": "[JOAN] Of course.",
+        "startTime": "01:21:290",
+        "endTime": "01:22:268"
+      }
+    ],
+    "continuousPlayMovie": true,
+    "words": [
+      {
+        "txt": "propose",
+        "translation": {
+          "translation": "提议",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/11/v/140711/GE_10.1.2.1.1_1_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140711"
+          }
+        },
+        "timeline": "00:14:010"
+      },
+      {
+        "txt": "a good start",
+        "translation": {
+          "translation": "好的开始",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/12/v/140712/GE_10.1.2.1.1_2_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140712"
+          }
+        },
+        "timeline": "00:18:649"
+      },
+      {
+        "txt": "morale",
+        "translation": {
+          "translation": "士气",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/13/v/140713/GE_10.1.2.1.1_3_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140713"
+          }
+        },
+        "timeline": "00:31:112"
+      },
+      {
+        "txt": "team building",
+        "translation": {
+          "translation": "团队建设",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/14/v/140714/GE_10.1.2.1.1_4_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140714"
+          }
+        },
+        "timeline": "00:45:076"
+      },
+      {
+        "txt": "budget",
+        "translation": {
+          "translation": "预算",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/15/v/140715/GE_10.1.2.1.1_5_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140715"
+          }
+        },
+        "timeline": "00:55:760"
+      },
+      {
+        "txt": "further",
+        "translation": {
+          "translation": "更进一步地",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/16/v/140716/GE_10.1.2.1.1_6_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140716"
+          }
+        },
+        "timeline": "01:07:279"
+      },
+      {
+        "txt": "promises",
+        "translation": {
+          "translation": "承诺",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/17/v/140717/GE_10.1.2.1.1_7_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140717"
+          }
+        },
+        "timeline": "01:17:087"
+      },
+      {
+        "txt": "evaluating",
+        "translation": {
+          "translation": "评定",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/10/v/140710/GE_10.1.2.1.1_8_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140710"
+          }
+        },
+        "timeline": "01:21:130"
+      }
+    ]
+  },
+  "templateCode": "MoviePre",
+  "references": {
+    "title": "",
+    "desc": "",
+    "standardInstruction": "Watch the video and study the language."
+  },
+  "maxAge": 86400,
+  "collapsed": false,
+  "id": "activity_content!277454"
+}

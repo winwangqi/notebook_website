@@ -6,6 +6,7 @@ import styl from './index.module.scss'
 
 Index.propTypes = {
   src: PropTypes.string.isRequired,
+  poster: PropTypes.string,
   iframe: PropTypes.bool,
 }
 
@@ -28,9 +29,16 @@ function Index(props) {
               src={props.src}
               allowFullScreen={true}
             />
-            )
-          // eslint-disable jsx-a11y/media-has-caption
-          : <video src={props.src} width="100%" controls />}
+          ) : (
+            // eslint-disable jsx-a11y/media-has-caption
+            <video
+              src={props.src}
+              poster={props.poster}
+              width="100%"
+              controls
+            />
+          )
+        }
       </div>
     </div>
   )

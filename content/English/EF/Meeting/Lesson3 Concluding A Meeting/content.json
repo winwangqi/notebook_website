@@ -1,0 +1,225 @@
+{
+  "content": {
+    "video": {
+      "url": "https://cns2.ef-cdn.com/Juno/13/81/24/v/138124/GE_10.1.3_v2.mp4",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!138124"
+    },
+    "poster": {
+      "url": "https://cns2.ef-cdn.com/Juno/14/13/62/v/141362/GE_10.1.3.1.1.jpg",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!141362"
+    },
+    "scripts": [
+      {
+        "txt": "[JOAN] So, I just had a short meeting with our CEO, David.",
+        "startTime": "00:04:043",
+        "endTime": "00:09:647"
+      },
+      {
+        "txt": "[JOAN] I’ve been given the task of coming up with a plan of coordination between our two companies. I’ll be flying out there on Monday.",
+        "startTime": "00:09:647",
+        "endTime": "00:17:905"
+      },
+      {
+        "txt": "[HARRY] Congratulations!",
+        "startTime": "00:17:905",
+        "endTime": "00:19:216"
+      },
+      {
+        "txt": "[JOAN] Thank you, Harry. Now, as I was saying, it’ll be my job to get the two companies working together smoothly.",
+        "startTime": "00:19:216",
+        "endTime": "00:25:829"
+      },
+      {
+        "txt": "[JOAN] I'll probably be flying back and forth for the next few weeks. Todd will be in charge here whenever I'm at Sunset.",
+        "startTime": "00:25:829",
+        "endTime": "00:34:633"
+      },
+      {
+        "txt": "[JOAN] That’s going to involve a lot of planning, and I don't have much time, so, uh, let’s conclude this meeting quickly.",
+        "startTime": "00:34:633",
+        "endTime": "00:42:289"
+      },
+      {
+        "txt": "[JOAN] Now, where was I? Oh, yes. As a next step, in the next week or so, please keep me informed about any problems that you're having with Sunset.",
+        "startTime": "00:42:289",
+        "endTime": "00:54:769"
+      },
+      {
+        "txt": "[JOAN] Give me details. I’d really appreciate your input on this.",
+        "startTime": "00:54:769",
+        "endTime": "00:59:638"
+      },
+      {
+        "txt": "[JOAN] Let me see. I’ll, uh, follow up on the idea of team building, and I’ll also send an email summarizing this meeting.",
+        "startTime": "00:59:638",
+        "endTime": "01:07:063"
+      },
+      {
+        "txt": "[JOAN] Oh, and, uh, one more thing: This discussion is confidential. Nothing leaves this room.",
+        "startTime": "01:07:063",
+        "endTime": "01:14:350"
+      },
+      {
+        "txt": "[TODD] Yes, please. No talking about firing people at Sunset or flying them here. Those poor people have enough rumors to worry about already.",
+        "startTime": "01:14:350",
+        "endTime": "01:25:245"
+      },
+      {
+        "txt": "[JOAN] Okay. That’s it for now. Thank you all for coming.",
+        "startTime": "01:25:245",
+        "endTime": "01:29:170"
+      },
+      {
+        "txt": "[JOAN] Uh, Todd and Simon. Could you stay behind?",
+        "startTime": "01:33:329",
+        "endTime": "01:36:407"
+      }
+    ],
+    "continuousPlayMovie": true,
+    "words": [
+      {
+        "txt": "task",
+        "translation": {
+          "translation": "任务",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/56/v/140756/GE_10.1.3.1.1_1_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140756"
+          }
+        },
+        "timeline": "00:11:550"
+      },
+      {
+        "txt": "coming up with",
+        "translation": {
+          "translation": "提出",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/57/v/140757/GE_10.1.3.1.1_2_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140757"
+          }
+        },
+        "timeline": "00:12:700"
+      },
+      {
+        "txt": "coordination",
+        "translation": {
+          "translation": "协作",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/58/v/140758/GE_10.1.3.1.1_3_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140758"
+          }
+        },
+        "timeline": "00:14:449"
+      },
+      {
+        "txt": "smoothly",
+        "translation": {
+          "translation": "平稳地，流畅地",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/59/v/140759/GE_10.1.3.1.1_4_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140759"
+          }
+        },
+        "timeline": "00:25:826"
+      },
+      {
+        "txt": "back and forth",
+        "translation": {
+          "translation": "来回地，反复地",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/60/v/140760/GE_10.1.3.1.1_5_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140760"
+          }
+        },
+        "timeline": "00:29:849"
+      },
+      {
+        "txt": "in charge",
+        "translation": {
+          "translation": "负责，主管",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/61/v/140761/GE_10.1.3.1.1_6_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140761"
+          }
+        },
+        "timeline": "00:34:865"
+      },
+      {
+        "txt": "involve",
+        "translation": {
+          "translation": "涉及",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/62/v/140762/GE_10.1.3.1.1_7_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140762"
+          }
+        },
+        "timeline": "00:39:528"
+      },
+      {
+        "txt": "conclude",
+        "translation": {
+          "translation": "结束",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/63/v/140763/GE_10.1.3.1.1_8_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140763"
+          }
+        },
+        "timeline": "00:42:149"
+      },
+      {
+        "txt": "keep me informed",
+        "translation": {
+          "translation": "让我了解情况",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/54/v/140754/GE_10.1.3.1.1_9_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140754"
+          }
+        },
+        "timeline": "00:54:819"
+      },
+      {
+        "txt": "rumors",
+        "translation": {
+          "translation": "谣言",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/55/v/140755/GE_10.1.3.1.1_10_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140755"
+          }
+        },
+        "timeline": "01:25:231"
+      }
+    ]
+  },
+  "templateCode": "MoviePre",
+  "references": {
+    "title": "",
+    "desc": "",
+    "standardInstruction": "Watch the video and study the language."
+  },
+  "maxAge": 86400,
+  "collapsed": false,
+  "id": "activity_content!277481"
+}
