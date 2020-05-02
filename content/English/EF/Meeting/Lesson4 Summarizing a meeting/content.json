@@ -1,0 +1,242 @@
+{
+  "content": {
+    "video": {
+      "url": "https://cns2.ef-cdn.com/Juno/13/81/25/v/138125/GE_10.1.4_v2.mp4",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!138125"
+    },
+    "poster": {
+      "url": "https://cns2.ef-cdn.com/Juno/14/13/65/v/141365/GE_10.1.4.1.1.jpg",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!141365"
+    },
+    "scripts": [
+      {
+        "txt": "[JOAN] Okay, so David met with the board of directors this morning. They've decided to move quickly to integrate the two companies.",
+        "startTime": "00:00:662",
+        "endTime": "00:08:300"
+      },
+      {
+        "txt": "[TODD] Smart move. Finally.",
+        "startTime": "00:08:300",
+        "endTime": "00:11:478"
+      },
+      {
+        "txt": "[JOAN] Yes. Simon made me aware of major problems there three months ago. I did tell David about it, but, CEOs sometimes just...",
+        "startTime": "00:11:478",
+        "endTime": "00:22:845"
+      },
+      {
+        "txt": "[JOAN] Anyway, after listening to Sally and Harry today, I wish that I'd pushed David more. Now the board is not happy.",
+        "startTime": "00:22:845",
+        "endTime": "00:31:221"
+      },
+      {
+        "txt": "TODD] We all should've pushed David more.",
+        "startTime": "00:31:221",
+        "endTime": "00:34:399"
+      },
+      {
+        "txt": "[JOAN] Yes, maybe we should have. But what’s done is done. Now, I need help with a decision. The board has decided not to replace the CEO of Sunset.",
+        "startTime": "00:34:399",
+        "endTime": "00:46:849"
+      },
+      {
+        "txt": "[SIMON] I'm not surprised.",
+        "startTime": "00:46:849",
+        "endTime": "00:48:398"
+      },
+      {
+        "txt": "[TODD] It's a reasonable move. If we're integrating the two companies, we don't need two CEOs.",
+        "startTime": "00:48:398",
+        "endTime": "00:56:237"
+      },
+      {
+        "txt": "[JOAN] But we'll be hiring a chief operating officer for Sunset.",
+        "startTime": "00:56:237",
+        "endTime": "01:00:206"
+      },
+      {
+        "txt": "[SIMON] A COO? That makes sense. Someone has to be in charge over there.",
+        "startTime": "01:00:206",
+        "endTime": "01:05:181"
+      },
+      {
+        "txt": "[JOAN] And I was offered the job.",
+        "startTime": "01:05:181",
+        "endTime": "01:07:345"
+      },
+      {
+        "txt": "[TODD] Should we congratulate you?",
+        "startTime": "01:09:005",
+        "endTime": "01:12:770"
+      },
+      {
+        "txt": "[JOAN] No. I turned it down. I have a great team and family in this city. And Sunset is a mess.",
+        "startTime": "01:12:770",
+        "endTime": "01:20:225"
+      },
+      {
+        "txt": "[SIMON] I'm glad that you're staying. And I think that I know why I'm in this meeting.",
+        "startTime": "01:20:225",
+        "endTime": "01:24:603"
+      },
+      {
+        "txt": "[JOAN] Tell me about your friend, Ed Fife.",
+        "startTime": "01:24:603",
+        "endTime": "01:27:107"
+      },
+      {
+        "txt": "[SIMON] Oh, he's wonderful. Excellent manager. His team loves him.",
+        "startTime": "01:27:107",
+        "endTime": "01:32:087"
+      },
+      {
+        "txt": "[JOAN] Thanks. I'll talk to him when I'm at Sunset. Well, that's it for now. Thanks for everything, guys.",
+        "startTime": "01:32:087",
+        "endTime": "01:39:986"
+      },
+      {
+        "txt": "[TODD] Any doubts or regrets about turning down the job?",
+        "startTime": "01:43:004",
+        "endTime": "01:48:223"
+      },
+      {
+        "txt": "[JOAN] None.",
+        "startTime": "01:48:223",
+        "endTime": "01:49:876"
+      }
+    ],
+    "continuousPlayMovie": true,
+    "words": [
+      {
+        "txt": "board of directors",
+        "translation": {
+          "translation": "董事会",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/78/v/140778/GE_10.1.4.1.1_1_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140778"
+          }
+        },
+        "timeline": "00:04:661"
+      },
+      {
+        "txt": "integrate",
+        "translation": {
+          "translation": "合并",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/79/v/140779/GE_10.1.4.1.1_2_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140779"
+          }
+        },
+        "timeline": "00:08:210"
+      },
+      {
+        "txt": "replace",
+        "translation": {
+          "translation": "替代",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/80/v/140780/GE_10.1.4.1.1_3_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140780"
+          }
+        },
+        "timeline": "00:46:900"
+      },
+      {
+        "txt": "chief operating officer",
+        "translation": {
+          "translation": "首席运营官",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/81/v/140781/GE_10.1.4.1.1_4_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140781"
+          }
+        },
+        "timeline": "01:00:107"
+      },
+      {
+        "txt": "That makes sense.",
+        "translation": {
+          "translation": "那很有道理。",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/82/v/140782/GE_10.1.4.1.1_5_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140782"
+          }
+        },
+        "timeline": "01:02:968"
+      },
+      {
+        "txt": "I turned it down.",
+        "translation": {
+          "translation": "我拒绝了它。",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/83/v/140783/GE_10.1.4.1.1_6_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140783"
+          }
+        },
+        "timeline": "01:14:930"
+      },
+      {
+        "txt": "a mess",
+        "translation": {
+          "translation": "一团糟",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/84/v/140784/GE_10.1.4.1.1_7_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140784"
+          }
+        },
+        "timeline": "01:20:081"
+      },
+      {
+        "txt": "doubts",
+        "translation": {
+          "translation": "怀疑",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/85/v/140785/GE_10.1.4.1.1_8_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140785"
+          }
+        },
+        "timeline": "01:45:060"
+      },
+      {
+        "txt": "regrets",
+        "translation": {
+          "translation": "遗憾",
+          "audio": {
+            "url": "https://cns2.ef-cdn.com/Juno/14/07/77/v/140777/GE_10.1.4.1.1_9_v2.mp3",
+            "maxAge": 3600,
+            "collapsed": false,
+            "id": "media!140777"
+          }
+        },
+        "timeline": "01:46:119"
+      }
+    ]
+  },
+  "templateCode": "MoviePre",
+  "references": {
+    "title": "",
+    "desc": "",
+    "standardInstruction": "Watch the video and study the language."
+  },
+  "maxAge": 86400,
+  "collapsed": false,
+  "id": "activity_content!277517"
+}

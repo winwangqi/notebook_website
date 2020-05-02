@@ -43,17 +43,13 @@
     - FAQs
 
   - Golang:
-    - 介绍
     - 核心概念:
+      - 数据类型
       - 接口
-    - Package:
-      - Time:
-        - Format
     - 类型转换
     - 正则表达式
     - 学习资源
     - 生态系统
-    - 常见错误
     - FAQs
 
   - 微信开发:
@@ -85,7 +81,8 @@
     - Meeting:
       - Lesson1 Opening a meeting
       - Lesson2 Discussing proposals in a meeting
-      - Lesson3 Concluding A Meeting
+      - Lesson3 Concluding a meeting
+      - Lesson4 Summarizing a meeting
     - Music:
       - Lession1 Talking about music you like
   - 航空业:

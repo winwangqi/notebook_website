@@ -34,11 +34,18 @@ export default function Index(props) {
 
   if (tableOfContents.length === 0) return null
 
-  const [treeData] = useState(() => ({
+  const [treeData, setTreeData] = useState(() => ({
     id: -1,
     children: createTreeData(tableOfContents),
   }))
   const [activeID, setActiveID] = useState('')
+
+  useEffect(() => {
+    setTreeData({
+      id: -1,
+      children: createTreeData(tableOfContents),
+    })
+  }, [tableOfContents])
 
   useEffect(() => {
     handleScroll()

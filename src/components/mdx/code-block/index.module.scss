@@ -97,6 +97,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    user-select: none;
     //background: #34496A;
     background: transparent;
     transition: color .3s, background-color .3s;
