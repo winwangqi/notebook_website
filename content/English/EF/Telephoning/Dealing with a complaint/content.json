@@ -1,0 +1,237 @@
+{
+  "content": {
+    "video": {
+      "url": "https://cns2.ef-cdn.com/Juno/23/72/2/v/23722/TE2_700V.mp4",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!23722"
+    },
+    "scripts": [
+      {
+        "txt": "[PRESENTER] Surveys suggest that people are more likely to get angry on the phone than they are face to face. When someone shouts at you down a phone line, how do you handle it?",
+        "startTime": "00:00:260",
+        "endTime": "00:11:090"
+      },
+      {
+        "txt": "[PA] Design Incorporated. Danielle speaking. How can I help you?... I'll, I'll just transfer your call. Please hold.",
+        "startTime": "00:15:239",
+        "endTime": "00:27:979"
+      },
+      {
+        "txt": "[YOUNG EXEC] Hello. Mark Fisher, Assistant Sales Manager. How can I help you?",
+        "startTime": "00:31:016",
+        "endTime": "00:39:136"
+      },
+      {
+        "txt": "[CLIENT] This is John Humphreys from the Wentworth Group! Yeah I'm calling to let you know that I'm not happy with the new designs!",
+        "startTime": "00:39:280",
+        "endTime": "00:46:520"
+      },
+      {
+        "txt": "[YOUNG EXEC] Mr. Humphreys, I'm sorry to hear that. What can I do to solve the problem?",
+        "startTime": "00:47:030",
+        "endTime": "00:50:810"
+      },
+      {
+        "txt": "[PRESENTER] Notice how Mark stays calm, positive and helpful.",
+        "startTime": "00:51:610",
+        "endTime": "00:55:950"
+      },
+      {
+        "txt": "[CLIENT] Do you know what you can do? You can take your designs and throw them in the trash can! And another thing, the price was not what we agreed on...",
+        "startTime": "00:56:589",
+        "endTime": "01:05:319"
+      },
+      {
+        "txt": "[YOUNG EXEC] So, let me get this straight. You're not happy with the designs and you think the price is too high?",
+        "startTime": "01:05:970",
+        "endTime": "01:11:560"
+      },
+      {
+        "txt": "[CLIENT] What are you, a parrot?! That's just what I've been saying! You...",
+        "startTime": "01:12:530",
+        "endTime": "01:19:230"
+      },
+      {
+        "txt": "[YOUNG EXEC] ...I'm sorry, I can't hear you. You're breaking up.",
+        "startTime": "01:19:949",
+        "endTime": "01:25:310"
+      },
+      {
+        "txt": "[INTERN] Did you just hang up on a client?",
+        "startTime": "01:31:949",
+        "endTime": "01:33:969"
+      },
+      {
+        "txt": "[YOUNG EXEC] Humphreys. From the Wentworth Group.",
+        "startTime": "01:35:240",
+        "endTime": "01:37:300"
+      },
+      {
+        "txt": "[INTERN] Oh... Last summer I worked as a waitress. You know what I used to do when I had a rude customer?",
+        "startTime": "01:38:323",
+        "endTime": "01:46:353"
+      },
+      {
+        "txt": "[YOUNG EXEC] No.",
+        "startTime": "01:48:510",
+        "endTime": "01:48:680"
+      },
+      {
+        "txt": "[INTERN] I killed them with kindness.",
+        "startTime": "01:49:716",
+        "endTime": "01:51:746"
+      },
+      {
+        "txt": "[YOUNG EXEC] What?",
+        "startTime": "01:52:509",
+        "endTime": "01:52:709"
+      },
+      {
+        "txt": "[INTERN] I killed them with kindness. When someone is rude to you, the best thing is to be polite. That way, you stay in control.",
+        "startTime": "01:53:575",
+        "endTime": "02:00:785"
+      },
+      {
+        "txt": "[YOUNG EXEC] His voicemail... Hi, this is Mark Fisher from Design Inc. I'd like to begin by apologizing; we seemed to get cut off during our last call... I want you to know that Design Inc. is making the Wentworth Group our top priority. We'll have a new design ready by the end of the week, and I'm positive you'll be satisfied. Okay... Thanks for your time.",
+        "startTime": "02:20:000",
+        "endTime": "02:42:900"
+      }
+    ],
+    "questions": [
+      {
+        "_id": "q_1",
+        "txt": "What is John Humphreys angry about?  ",
+        "timeline": "01:12:000",
+        "options": [
+          {
+            "_id": "o_1_1",
+            "txt": "The line is bad and he can't hear what Mark is saying.",
+            "selected": false
+          },
+          {
+            "_id": "o_1_2",
+            "txt": "He doesn't like the designs and the price is too high.",
+            "selected": false
+          },
+          {
+            "_id": "o_1_3",
+            "txt": "He thinks the designs are fine but the price is not what they agreed.",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_2",
+        "txt": "Why does Mark hang up?  ",
+        "timeline": "01:26:530",
+        "options": [
+          {
+            "_id": "o_2_1",
+            "txt": "He was intending to call Humphreys' voicemail.",
+            "selected": false
+          },
+          {
+            "_id": "o_2_2",
+            "txt": "He didn't like being shouted at by Humphreys.",
+            "selected": false
+          },
+          {
+            "_id": "o_2_3",
+            "txt": "The line was bad and he couldn't hear what Humphreys was saying.",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_3",
+        "txt": "When did Danielle learn how to 'kill with kindness'?  ",
+        "timeline": "01:52:000",
+        "options": [
+          {
+            "_id": "o_3_1",
+            "txt": "while working as a secretary",
+            "selected": false
+          },
+          {
+            "_id": "o_3_2",
+            "txt": "while working in a call center",
+            "selected": false
+          },
+          {
+            "_id": "o_3_3",
+            "txt": "while working in a restaurant",
+            "selected": false
+          }
+        ]
+      }
+    ]
+  },
+  "scoring": {
+    "questions": [
+      {
+        "_id": "q_1",
+        "options": [
+          {
+            "_id": "o_1_1",
+            "selected": false
+          },
+          {
+            "_id": "o_1_2",
+            "selected": true
+          },
+          {
+            "_id": "o_1_3",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_2",
+        "options": [
+          {
+            "_id": "o_2_1",
+            "selected": false
+          },
+          {
+            "_id": "o_2_2",
+            "selected": true
+          },
+          {
+            "_id": "o_2_3",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_3",
+        "options": [
+          {
+            "_id": "o_3_1",
+            "selected": false
+          },
+          {
+            "_id": "o_3_2",
+            "selected": false
+          },
+          {
+            "_id": "o_3_3",
+            "selected": true
+          }
+        ]
+      }
+    ]
+  },
+  "templateCode": "MovieQuestion",
+  "references": {
+    "title": "",
+    "desc": ""
+  },
+  "filterOptions": {
+    "random": true,
+    "optionNo": 3
+  },
+  "maxAge": 86400,
+  "collapsed": false,
+  "id": "activity_content!252123"
+}

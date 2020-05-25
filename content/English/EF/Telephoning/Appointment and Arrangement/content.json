@@ -1,0 +1,242 @@
+{
+  "content": {
+    "video": {
+      "url": "https://cns2.ef-cdn.com/Juno/23/72/1/v/23721/TE1_700V.mp4",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!23721"
+    },
+    "scripts": [
+      {
+        "txt": "[PRESENTER] Hello? Hey, yeah, yeah, I'm fine. How are you? Okay. Alright, I got a few things going on here. I'll speak to you later about it, Okay? Uh... you know... I'll call you at about 5 o'clock. All right. Thanks a lot. Bye bye.",
+        "startTime": "00:04:260",
+        "endTime": "00:17:750"
+      },
+      {
+        "txt": "[PRESENTER] Now that wasn't a business call. If it had been, my language would have been much more formal.",
+        "startTime": "00:18:960",
+        "endTime": "00:24:730"
+      },
+      {
+        "txt": "[PA] Good morning. Design Incorporated, Danielle speaking. How can I help you?... Well, I'm afraid he's in a meeting right now. May I ask who's calling?",
+        "startTime": "00:26:879",
+        "endTime": "00:40:239"
+      },
+      {
+        "txt": "[PA] Hold on a moment, Mr. Novak, I'll just check his schedule... Well, he's free tomorrow afternoon at 2.30...",
+        "startTime": "00:42:643",
+        "endTime": "00:52:823"
+      },
+      {
+        "txt": "[PA] Uh-huh... So that's Wednesday the 3rd of June, at 2.30 p.m. I'll let him know. Could I have your number please?",
+        "startTime": "00:54:820",
+        "endTime": "01:05:420"
+      },
+      {
+        "txt": "[PA] Uh-huh... Let me just read that back to you. That's 333 6393, extension 919. Good. I'll call back later and confirm...",
+        "startTime": "01:12:674",
+        "endTime": "01:28:724"
+      },
+      {
+        "txt": "[PA] Thank you. Bye.",
+        "startTime": "01:29:953",
+        "endTime": "01:31:523"
+      },
+      {
+        "txt": "[PRESENTER] Listen to Danielle's polite, formal phone language.",
+        "startTime": "01:33:513",
+        "endTime": "01:36:533"
+      },
+      {
+        "txt": "[PA] Well, I'm afraid he's in a meeting right now ... May I ask who's calling? ... Could I have your number please?",
+        "startTime": "01:39:863",
+        "endTime": "01:46:883"
+      },
+      {
+        "txt": "[PA] Let me just read that back to you. That's 333 6393, extension 919...",
+        "startTime": "01:52:956",
+        "endTime": "02:00:536"
+      },
+      {
+        "txt": "[CHAIRMAN] So, Danielle. Tomorrow's schedule?",
+        "startTime": "02:06:740",
+        "endTime": "02:08:370"
+      },
+      {
+        "txt": "[PA] Eh, well... You have a meeting with Claire Fairbanks at 9 a.m ... Lunch with the Wentworth Group at 12... And, yeah, Scott Novak phoned. I scheduled a meeting with him for 2.30...",
+        "startTime": "02:09:560",
+        "endTime": "02:26:980"
+      },
+      {
+        "txt": "[CHAIRMAN] Danielle, I'm going to the dentist's tomorrow afternoon.",
+        "startTime": "02:28:630",
+        "endTime": "02:30:760"
+      },
+      {
+        "txt": "[PA] Oh. I'm sorry. I didn't know. But I checked your schedule and it didn't say anything...",
+        "startTime": "02:35:080",
+        "endTime": "02:42:000"
+      },
+      {
+        "txt": "[CHAIRMAN] Danielle, reschedule it, now. please.",
+        "startTime": "02:42:160",
+        "endTime": "02:44:220"
+      },
+      {
+        "txt": "[PA] Sure.",
+        "startTime": "02:46:010",
+        "endTime": "02:46:319"
+      },
+      {
+        "txt": "[PA] Good afternoon, this is Danielle from Design Incorporated. I'd like to speak to Mr. Novak please ... Yes, I'll hold.",
+        "startTime": "03:02:579",
+        "endTime": "03:12:179"
+      },
+      {
+        "txt": "[PA] Mr. Novak? Hi, it's Danielle from Design Incoporated... I'm afraid something's come up. Would you mind if we rescheduled your appointment tomorrow with Mr. Henriksson? ... You wouldn't? That's great. When would be a suitable time for you?",
+        "startTime": "03:17:916",
+        "endTime": "03:38:806"
+      },
+      {
+        "txt": "[PA] Let me just check with Mr. Henriksson. Please hold for a moment.",
+        "startTime": "03:40:870",
+        "endTime": "03:45:360"
+      }
+    ],
+    "questions": [
+      {
+        "_id": "q_1",
+        "txt": "Who's calling? ",
+        "timeline": "00:52:823",
+        "options": [
+          {
+            "_id": "o_1_1",
+            "txt": "John Humphreys",
+            "selected": false
+          },
+          {
+            "_id": "o_1_2",
+            "txt": "Victor Henriksson",
+            "selected": false
+          },
+          {
+            "_id": "o_1_3",
+            "txt": "Scott Novak",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_2",
+        "txt": "What's his extension number? ",
+        "timeline": "02:00:536",
+        "options": [
+          {
+            "_id": "o_2_1",
+            "txt": "911",
+            "selected": false
+          },
+          {
+            "_id": "o_2_2",
+            "txt": "919",
+            "selected": false
+          },
+          {
+            "_id": "o_2_3",
+            "txt": "999",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_3",
+        "txt": "Why does Danielle have to reschedule the meeting?  ",
+        "timeline": "02:44:220",
+        "options": [
+          {
+            "_id": "o_3_1",
+            "txt": "She hadn't checked the chairman's schedule.",
+            "selected": false
+          },
+          {
+            "_id": "o_3_2",
+            "txt": "Scott Novak is going to the dentist's tomorrow.",
+            "selected": false
+          },
+          {
+            "_id": "o_3_3",
+            "txt": "She didn't know the chairman had other plans.",
+            "selected": false
+          }
+        ]
+      }
+    ]
+  },
+  "scoring": {
+    "questions": [
+      {
+        "_id": "q_1",
+        "options": [
+          {
+            "_id": "o_1_1",
+            "selected": false
+          },
+          {
+            "_id": "o_1_2",
+            "selected": false
+          },
+          {
+            "_id": "o_1_3",
+            "selected": true
+          }
+        ]
+      },
+      {
+        "_id": "q_2",
+        "options": [
+          {
+            "_id": "o_2_1",
+            "selected": false
+          },
+          {
+            "_id": "o_2_2",
+            "selected": true
+          },
+          {
+            "_id": "o_2_3",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_3",
+        "options": [
+          {
+            "_id": "o_3_1",
+            "selected": false
+          },
+          {
+            "_id": "o_3_2",
+            "selected": false
+          },
+          {
+            "_id": "o_3_3",
+            "selected": true
+          }
+        ]
+      }
+    ]
+  },
+  "templateCode": "MovieQuestion",
+  "references": {
+    "title": "",
+    "desc": ""
+  },
+  "filterOptions": {
+    "random": true,
+    "optionNo": 3
+  },
+  "maxAge": 86400,
+  "collapsed": false,
+  "id": "activity_content!251812"
+}

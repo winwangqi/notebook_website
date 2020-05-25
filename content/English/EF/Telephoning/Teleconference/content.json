@@ -1,0 +1,278 @@
+{
+  "content": {
+    "video": {
+      "url": "https://cns2.ef-cdn.com/Juno/23/72/3/v/23723/TE3_700V.mp4",
+      "maxAge": 3600,
+      "collapsed": false,
+      "id": "media!23723"
+    },
+    "scripts": [
+      {
+        "txt": "[PRESENTER] Teleconferencing allows business to be done by anyone, anytime, anywhere in the world.",
+        "startTime": "00:00:000",
+        "endTime": "00:08:220"
+      },
+      {
+        "txt": "[MESSAGE 1] Hi, this is Mark. Just calling to confirm that I'm ready for the teleconference. Speak to you a-a-at... 6.30 a.m. Rio de Janeiro time. Bye.",
+        "startTime": "00:13:220",
+        "endTime": "00:27:230"
+      },
+      {
+        "txt": "[MESSAGE 2] Hello, Clark here. This is to confirm that I will be available for the teleconference. It will be 17:30 here in Shanghai. Our clients have provided an office and set up the equipment. ",
+        "startTime": "00:27:720",
+        "endTime": "00:42:220"
+      },
+      {
+        "txt": "[PA] Ned, are you ready? The teleconference is in thirty minutes.",
+        "startTime": "00:48:220",
+        "endTime": "00:54:230"
+      },
+      {
+        "txt": "[IT GUY] Relax! I just have to set up the CODEC unit that transmits the compressed audio via ISDN, then connect the different sites using a bridge, go in through TANDBERG and link up the monitor...with the rest of the world. ",
+        "startTime": "00:54:520",
+        "endTime": "01:08:730"
+      },
+      {
+        "txt": "[PA:] Perfect!",
+        "startTime": "01:09:220",
+        "endTime": "01:09:760"
+      },
+      {
+        "txt": "[IT GUY] Quite easy, really.",
+        "startTime": "01:10:020",
+        "endTime": "01:14:780"
+      },
+      {
+        "txt": "[CHAIRMAN] Good morning, Mark. I'm hoping you can hear me.",
+        "startTime": "01:16:220",
+        "endTime": "01:19:230"
+      },
+      {
+        "txt": "[YOUNG EXEC] I can hear you loud and clear.",
+        "startTime": "01:19:780",
+        "endTime": "01:20:850"
+      },
+      {
+        "txt": "[CHAIRMAN] Good afternoon, Clark. Can you hear me?",
+        "startTime": "01:21:220",
+        "endTime": "01:23:858"
+      },
+      {
+        "txt": "[GM] Yes, I can. The reception is... excellent.",
+        "startTime": "01:24:220",
+        "endTime": "01:30:350"
+      },
+      {
+        "txt": "[CHAIRMAN] Okay, let's get down to business. Did you both receive the email with the attached agenda?",
+        "startTime": "01:30:520",
+        "endTime": "01:35:750"
+      },
+      {
+        "txt": "[YOUNG EXEC] Yes, sir.",
+        "startTime": "01:36:220",
+        "endTime": "01:36:980"
+      },
+      {
+        "txt": "[GM] Yes, I did.",
+        "startTime": "01:37:120",
+        "endTime": "01:37:880"
+      },
+      {
+        "txt": "[CHAIRMAN] Good. So, I'll be brief. The initial feedback on the design of the 'Manbag' has been mixed. Mark, you take the floor first on this one. What have you found out in Rio?",
+        "startTime": "01:38:120",
+        "endTime": "01:48:650"
+      },
+      {
+        "txt": "[YOUNG EXEC] Well, the sales teams here said that the response has not been favorable...",
+        "startTime": "01:49:220",
+        "endTime": "01:52:820"
+      },
+      {
+        "txt": "[GM] But if I could interject. The Asian market seems to like this design.",
+        "startTime": "01:53:220",
+        "endTime": "01:58:880"
+      },
+      {
+        "txt": "[YOUNG EXEC] Sorry to interrupt, Clark, but 82 percent of the Brazilian market said they don't like the design because...",
+        "startTime": "01:59:220",
+        "endTime": "02:04:490"
+      },
+      {
+        "txt": "[CHAIRMAN] Clark, can you please turn your microphone off when you're not speaking? Mark, you were saying?",
+        "startTime": "02:04:820",
+        "endTime": "02:09:220"
+      },
+      {
+        "txt": "[YOUNG EXEC] Thank you, Mr. Henriksson. As I was saying, 82 percent of the Brazilian market said they don't like the design because...",
+        "startTime": "02:09:520",
+        "endTime": "02:16:620"
+      },
+      {
+        "txt": "[CHAIRMAN] Ned! Ned! We have a problem!",
+        "startTime": "02:19:220",
+        "endTime": "02:25:220"
+      },
+      {
+        "txt": "[PRESENTER] Teleconferencing can be tricky. It's important to have a clear agenda, and for every participant to have a copy of it.",
+        "startTime": "02:25:420",
+        "endTime": "02:34:220"
+      },
+      {
+        "txt": "[CHAIRMAN] Did you both receive the email with the attached agenda?",
+        "startTime": "02:34:580",
+        "endTime": "02:37:120"
+      },
+      {
+        "txt": "[YOUNG EXEC] Yes, sir.",
+        "startTime": "02:37:220",
+        "endTime": "02:37:880"
+      },
+      {
+        "txt": "[GM]  Yes, I did.",
+        "startTime": "02:38:220",
+        "endTime": "02:38:950"
+      },
+      {
+        "txt": "[PRESENTER] The chairperson then has to make sure no one has any technical problems and is introduced to each other.",
+        "startTime": "02:39:120",
+        "endTime": "02:47:120"
+      },
+      {
+        "txt": "[CHAIRMAN] Good morning Mark. I'm hoping you can hear me.",
+        "startTime": "02:47:450",
+        "endTime": "02:49:000"
+      },
+      {
+        "txt": "[YOUNG EXEC] I can hear you loud and clear.",
+        "startTime": "02:49:220",
+        "endTime": "02:51:850"
+      },
+      {
+        "txt": "[PRESENTER] The chairperson then has to lead the attendees through the conference, making sure everyone has a turn.",
+        "startTime": "02:52:000",
+        "endTime": "02:59:350"
+      },
+      {
+        "txt": "[CHAIRMAN] Mark, you take the floor first on this one. What have you found out in Rio?",
+        "startTime": "02:59:850",
+        "endTime": "03:04:420"
+      },
+      {
+        "txt": "[PRESENTER] The chairperson also has to deal with other issues, such as people talking at the same time and background noise.",
+        "startTime": "03:05:220",
+        "endTime": "03:12:450"
+      },
+      {
+        "txt": " [YOUNG EXEC] Sorry to interrupt, Clark, but 82 percent of the Brazilian market said they don't like the design because...",
+        "startTime": "03:13:220",
+        "endTime": "03:17:000"
+      },
+      {
+        "txt": "[CHAIRMAN] Clark, can you please turn your microphone off when you're not speaking?",
+        "startTime": "03:17:220",
+        "endTime": "03:21:850"
+      },
+      {
+        "txt": " [CHAIRMAN] We have a problem!  ",
+        "startTime": "03:23:220",
+        "endTime": "03:24:000"
+      }
+    ],
+    "questions": [
+      {
+        "_id": "q_1",
+        "txt": "Select the phrases Mark and Clark use to confirm they can hear the chairman.",
+        "timeline": "01:30:350",
+        "options": [
+          {
+            "_id": "o_1_1",
+            "txt": "I can hear you loud and clear. / The reception is excellent.",
+            "selected": false
+          },
+          {
+            "_id": "o_1_2",
+            "txt": "I can hear you clearly. / I can hear you clear and loud.",
+            "selected": false
+          },
+          {
+            "_id": "o_1_3",
+            "txt": "The reception is fine. / The line is excellent.",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_2",
+        "txt": "Which of the summaries below best describes the reaction to the new 'Manbag' design?",
+        "timeline": "02:16:620",
+        "options": [
+          {
+            "_id": "o_2_1",
+            "txt": "The design is a lot more popular in Asia than in South America.",
+            "selected": false
+          },
+          {
+            "_id": "o_2_2",
+            "txt": "The design is quite popular in South America.",
+            "selected": false
+          },
+          {
+            "_id": "o_2_3",
+            "txt": "The design is slightly more popular in South America than in Asia.",
+            "selected": false
+          }
+        ]
+      }
+    ]
+  },
+  "scoring": {
+    "questions": [
+      {
+        "_id": "q_1",
+        "options": [
+          {
+            "_id": "o_1_1",
+            "selected": true
+          },
+          {
+            "_id": "o_1_2",
+            "selected": false
+          },
+          {
+            "_id": "o_1_3",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "_id": "q_2",
+        "options": [
+          {
+            "_id": "o_2_1",
+            "selected": true
+          },
+          {
+            "_id": "o_2_2",
+            "selected": false
+          },
+          {
+            "_id": "o_2_3",
+            "selected": false
+          }
+        ]
+      }
+    ]
+  },
+  "templateCode": "MovieQuestion",
+  "references": {
+    "title": "",
+    "desc": ""
+  },
+  "filterOptions": {
+    "random": true,
+    "optionNo": 3
+  },
+  "maxAge": 86400,
+  "collapsed": false,
+  "id": "activity_content!252725"
+}
