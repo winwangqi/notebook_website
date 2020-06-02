@@ -1,3 +1,5 @@
+# JavaScript FAQs
+
 ## 如何监听 DOM 的更新？
 
 使用 `MutationObserver` 监听 DOM 树的更新。

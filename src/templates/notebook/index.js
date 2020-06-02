@@ -24,7 +24,7 @@ export default function Index({ location, data, pageContext: { title } }) {
 
         <header className={styl.header}>
           <div className={styl.lf}>
-            <i className={styl.logo}></i>
+            <i className={styl.logo} />
             <span>Notebook</span>
           </div>
           <div className={styl.rt}>Note Everything</div>

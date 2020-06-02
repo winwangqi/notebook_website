@@ -41,9 +41,5 @@
       padding: .18em 0;
       @include text-ellipsis;
     }
-
-    .active > div .label {
-      font-weight: bold;
-    }
   }
 }
