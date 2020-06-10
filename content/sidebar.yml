@@ -23,6 +23,7 @@
       - FAQs
     - Vim:
       - vimtutor
+      - 常用命令
     - 在线工具
 
   - FrontEnd:
@@ -60,12 +61,17 @@
 
   - 微信开发:
     - 常见问题
+    - 微信小程序:
+      - e2e 测试
 
   - Linux:
     - Command:
       - chsh
     - 用户管理
     - FAQs
+
+  - Deno:
+    - 参考资料
 
   - 计算机科普
 
