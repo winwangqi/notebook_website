@@ -26,11 +26,6 @@
       - 常用命令
     - 在线工具
 
-  - FrontEnd:
-    - Animation
-    - 面试:
-      - 综合
-
   - Redis:
     - 基本类型
     - 命令
@@ -38,17 +33,36 @@
   - DynamoDB:
     - FAQs
 
+  - FrontEnd:
+      - Animation
+      - 面试:
+          - 综合
+      - 安全
+      - 文章
+      - 游戏开发之 Phaser
+
+  - HTML:
+    - 代码片段
+
   - CSS:
+    - 代码片段
+    - 移动端开发
     - 如何使用 CSS 自动切换明暗模式
     - flex
 
   - JavaScript:
-    - Search Engine
     - 学习资料
+    - 代码片段
+    - 正则表达式
+    - 搜索引擎
     - 注意项
     - FAQs
 
+  - Vue:
+    - FAQs
+
   - Golang:
+    - 杂记
     - 数据类型
     - 接口
     - 正则表达式
@@ -58,11 +72,6 @@
     - 生态系统
     - 工具
     - FAQs
-
-  - 微信开发:
-    - 常见问题
-    - 微信小程序:
-      - e2e 测试
 
   - Linux:
     - Command:
@@ -85,9 +94,18 @@
 
   - 正则表达式
 
+  - 电子书
+
   - markdown 生态
 
+  - 微信开发:
+    - 常见问题
+    - 微信小程序:
+        - e2e 测试
+    - 微信公众号
+
 - English:
+  - 学习资源
   - Grammar:
     - 将来时
   - EF:
