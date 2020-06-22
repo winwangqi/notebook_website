@@ -19,7 +19,8 @@
 
   - 工具:
     - Git:
-      - Branch
+      - branch
+      - remote
       - FAQs
     - Vim:
       - vimtutor
@@ -62,6 +63,7 @@
     - FAQs
 
   - Golang:
+    - 基础入门
     - 杂记
     - 数据类型
     - 接口
@@ -87,6 +89,7 @@
   - 计算机基础:
     - Mac:
       - shortcut
+      - FAQs
     # - Windows
 
   - 服务器:
