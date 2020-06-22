@@ -20,4 +20,6 @@ git remote add [NAME] [URL]
 
 ## 更换 url
 
+```bash
 git remote set-url origin <address>
+```
