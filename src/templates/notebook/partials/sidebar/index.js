@@ -8,7 +8,7 @@ import Header from './components/header'
 import ExpandButton from './components/expand-button'
 
 import { createTree, findActiveID, flattenTree, updateTreeDataCollapse, filterTree } from './utils/tree'
-import { initSearch } from './utils/search'
+import { initSearch } from '@/utils/js-search'
 
 import cns from 'classnames'
 import styl from './index.module.scss'
@@ -19,7 +19,7 @@ export default function Sidebar({ location }) {
   const [sideBarIsOpen, setSideBarIsOpen] = useState(false)
   const [activeID, setActiveID] = useState(findActiveID(initialTreeData, location))
   const [treeData, setTreeData] = useState(initTreeData)
-  const [searchEngine] = useState(() => initSearch(flattenTree(initialTreeData, true)))
+  const [searchEngine] = useState(() => initSearch('id', ['label'], flattenTree(initialTreeData, true)))
   const [searched, setSearched] = useState(false)
   const [searchedTreeData, setSearchedTreeData] = useState(null)
   const activeNode = useRef()

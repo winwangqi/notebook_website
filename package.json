@@ -56,7 +56,8 @@
     "jest": "^25.4.0",
     "js-yaml": "^3.13.1",
     "prettier": "^1.19.1",
-    "source-map-loader": "^0.2.4"
+    "source-map-loader": "^0.2.4",
+    "worker-loader": "^2.0.0"
   },
   "keywords": [
     "notebook"

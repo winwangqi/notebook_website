@@ -1,8 +1,8 @@
 import { flatten } from 'lodash'
 import * as JsSearch from 'js-search'
 
-export function initSearch(documents) {
-  const search = new JsSearch.Search('id')
+export function initSearch(uid, indexes, documents) {
+  const search = new JsSearch.Search(uid)
 
   const originTokenize = search.tokenizer.tokenize
 
@@ -24,7 +24,7 @@ export function initSearch(documents) {
     )
   }
 
-  search.addIndex('label')
+  indexes.forEach(index => search.addIndex(index))
 
   search.addDocuments(documents)
 

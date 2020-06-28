@@ -1,7 +1,5 @@
 const path = require(`path`)
 
-const headingTagNames = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-
 module.exports = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
@@ -16,6 +14,7 @@ module.exports = async ({ actions, graphql, reporter }) => {
               slug
             }
             body
+            rawBody
             tableOfContents(
               maxDepth: 3
             )
@@ -42,5 +41,21 @@ module.exports = async ({ actions, graphql, reporter }) => {
         title: pathSegments[pathSegments.length - 2],
       },
     })
+  })
+
+  /**
+   * search
+   */
+  createPage({
+    path: '/search',
+    component: path.resolve(`src/templates/client-search/index.js`),
+    context: {
+      allPageData: result.data.allMdx.edges.map(({ node }) => {
+        return {
+          path: node.fields.slug,
+          rawBody: node.rawBody,
+        }
+      })
+    },
   })
 }
