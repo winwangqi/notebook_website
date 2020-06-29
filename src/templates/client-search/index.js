@@ -39,6 +39,7 @@ const SearchTemplate = props => {
       <div>
         <input
           type="text"
+          autoFocus
           className={styl.searchInput}
           onChange={handleInputChange}
           placeholder="请输入关键词"
