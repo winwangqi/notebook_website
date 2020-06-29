@@ -8,6 +8,7 @@
   right: 0;
   padding: 0 1em;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   // todo: manage z-index
   z-index: 999;
@@ -20,6 +21,11 @@
     align-items: center;
     justify-content: center;
 
+    .logoWrapper {
+      display: flex;
+      align-items: center;
+    }
+
     .logo {
       margin-right: 8px;
       margin-bottom: 4px;
@@ -27,11 +33,21 @@
       height: 20px;
       background: url("@/images/logo.svg") center / contain no-repeat;
     }
+
+    .slogan {
+      margin-left: 3em;
+      font-size: .8em;
+    }
   }
 
   .rt {
-    margin-left: 3em;
-    font-size: .8em;
+    .search {
+      color: #fff;
+
+      i {
+        margin-right: .22em;
+      }
+    }
   }
 }
 

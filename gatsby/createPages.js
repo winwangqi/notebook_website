@@ -14,6 +14,7 @@ module.exports = async ({ actions, graphql, reporter }) => {
               slug
             }
             body
+            mdxAST
             rawBody
             tableOfContents(
               maxDepth: 3
@@ -53,9 +54,27 @@ module.exports = async ({ actions, graphql, reporter }) => {
       allPageData: result.data.allMdx.edges.map(({ node }) => {
         return {
           path: node.fields.slug,
-          rawBody: node.rawBody,
+          rawBody: getValueListFromMDXAst(node.mdxAST).join(' '),
         }
       })
     },
   })
 }
+
+function getValueListFromMDXAst(mdxAST) {
+  const list = []
+
+  function visit(AST) {
+    if (AST.type !== 'export' && AST.value) {
+      list.push(AST.value)
+    }
+    if (AST.children) {
+      AST.children.forEach(visit)
+    }
+  }
+
+  visit(mdxAST)
+
+  return list
+}
+

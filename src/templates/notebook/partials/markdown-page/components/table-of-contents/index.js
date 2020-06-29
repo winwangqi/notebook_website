@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 
-import Tree from '@/components/Tree'
+import Tree from '@/components/tree'
 
 import { throttle } from 'lodash'
 

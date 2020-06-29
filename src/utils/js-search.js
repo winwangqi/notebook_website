@@ -19,7 +19,7 @@ export function initSearch(uid, indexes, documents) {
           return originTokenize(segment)
         }
 
-        return segment.split('')
+        return segment.replace(/[\x00-\x7F]/g, "").split('')
       })
     )
   }

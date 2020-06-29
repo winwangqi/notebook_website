@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import menuList from '@/../content/sidebar.yml'
 
-import Tree from '@/components/Tree'
+import Tree from '@/components/tree'
 import Header from './components/header'
 import ExpandButton from './components/expand-button'
 

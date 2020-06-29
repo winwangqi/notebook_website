@@ -1,5 +1,6 @@
+// In work.js, the import should be absolute path, not relative path
 import { initSearch } from '@/utils/js-search'
-import { MESSAGE_TYPE } from '。/search.worker.actions'
+import { MESSAGE_TYPE } from '@/templates/client-search/search.worker.actions'
 
 let searchEngine = null
 

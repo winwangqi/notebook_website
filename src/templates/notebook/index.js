@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 
 import SEO from '@/components/seo'
@@ -10,6 +10,7 @@ import Sidebar from './partials/sidebar'
 import MarkdownPage from './partials/markdown-page'
 
 import styl from './index.module.scss'
+import cns from 'classnames'
 
 export default function Index({ location, data, pageContext: { title } }) {
   return (
@@ -24,10 +25,21 @@ export default function Index({ location, data, pageContext: { title } }) {
 
         <header className={styl.header}>
           <div className={styl.lf}>
-            <i className={styl.logo} />
-            <span>Notebook</span>
+            <div className={styl.logoWrapper}>
+              <i className={styl.logo} />
+              <span>Notebook</span>
+            </div>
+
+            <span className={styl.slogan}>
+              Note Everything
+            </span>
           </div>
-          <div className={styl.rt}>Note Everything</div>
+          <div className={styl.rt}>
+            <Link to="/search" className={styl.search}>
+              <i className={cns('iconfont icon-search', styl.icon)} />
+              <span className={styl.text}>搜索</span>
+            </Link>
+          </div>
         </header>
 
         <div className={styl.markdownLayout}>

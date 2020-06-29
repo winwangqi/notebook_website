@@ -4,6 +4,7 @@ import { throttle } from 'lodash'
 import SearchWorker from './search.worker'
 import { getInitSearchEngineAction, getSearchAction } from './search.worker.actions'
 
+import styl from './index.module.scss'
 
 const SearchTemplate = props => {
   const { pageContext } = props
@@ -21,7 +22,7 @@ const SearchTemplate = props => {
 
   const throttledHandleInputChange = throttle(function(keyword) {
     searchWorker.current.postMessage(getSearchAction(keyword))
-  }, 80)
+  }, 200, true)
 
   const handleInputChange = function (e) {
     e.persist()
@@ -29,15 +30,16 @@ const SearchTemplate = props => {
   }
 
   return (
-    <div>
+    <div className={styl.page}>
       <h1 className={styl.header}>搜索 🔍</h1>
       <div>
         <input
           type="text"
+          className={styl.searchInput}
           onChange={handleInputChange}
           placeholder="请输入关键词"
         />
-        <ul>
+        <ul className={styl.result}>
           {result.length > 0
             ? result.map(v =>
               (<li
@@ -46,7 +48,7 @@ const SearchTemplate = props => {
                 <Link to={v.path}>{v.path}</Link>
               </li>)
             )
-            : <div>no result</div>}
+            : <div className={styl.empty}>no result</div>}
         </ul>
       </div>
     </div>

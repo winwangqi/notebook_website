@@ -1,0 +1,45 @@
+.page {
+  padding: 0 1em;
+}
+
+.header {
+  padding: .5em 0;
+  margin-bottom: .6em;
+  font-size: 1.6em;
+  text-align: center;
+  border-bottom: 1px solid #999;
+}
+
+.searchInput {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5em .4em;
+  font-size: 1em;
+  outline: none;
+}
+
+.result {
+  li {
+    font-size: .96em;
+    line-height: 1.4;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+
+    &:hover {
+      background: #eee;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: .6em 0;
+      color: #222;
+    }
+  }
+}
+
+.empty {
+  margin-top: 2em;
+  font-size: 1em;
+  text-align: center;
+}
