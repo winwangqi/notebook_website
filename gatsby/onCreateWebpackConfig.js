@@ -16,6 +16,7 @@ module.exports = ({ getConfig, stage, actions}) => {
       rules: [
         {
           test: /\.worker\.js$/,
+          exclude: /(node_modules)/,
           use: {
             loader: 'worker-loader',
             options: { fallback: true },

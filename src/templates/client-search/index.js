@@ -10,18 +10,22 @@ const SearchTemplate = props => {
   const { pageContext } = props
   const { allPageData } = pageContext
   const [result, setResult] = useState([])
-  const searchWorker = useRef(new SearchWorker())
+  const searchWorker = useRef(null)
 
   useEffect(() => {
-    searchWorker.current.postMessage(getInitSearchEngineAction(allPageData))
+    if (window) {
+      searchWorker.current = new SearchWorker()
 
-    searchWorker.current.addEventListener('message', e => {
-      setResult(e.data)
-    })
+      searchWorker.current.postMessage(getInitSearchEngineAction(allPageData))
+
+      searchWorker.current.addEventListener('message', e => {
+        setResult(e.data)
+      })
+    }
   }, [])
 
   const throttledHandleInputChange = throttle(function(keyword) {
-    searchWorker.current.postMessage(getSearchAction(keyword))
+    searchWorker.current && searchWorker.current.postMessage(getSearchAction(keyword))
   }, 200, true)
 
   const handleInputChange = function (e) {
