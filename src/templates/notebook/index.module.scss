@@ -42,7 +42,12 @@
 
   .rt {
     .search {
-      color: #fff;
+      color: #cecece;
+      transition: color .3s;
+
+      &:hover, &:active {
+        color: #fff;
+      }
 
       i {
         margin-right: .22em;
