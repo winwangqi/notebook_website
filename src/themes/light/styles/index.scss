@@ -16,12 +16,19 @@
 
     a:hover {
       color: $theme-color;
-      background: $background-lv2;
     }
 
     .theme-tree {
-      .theme-tree-label:hover {
-        background: $background-lv2;
+      .theme-tree-node {
+        border-radius: $border-radius * 2;
+      }
+
+      .theme-tree-label {
+        border-radius: $border-radius * 2;
+
+        &:hover {
+          background: $background-lv2;
+        }
       }
 
       .active {
@@ -57,6 +64,11 @@
           margin-top: calc(-#{$header-height} - #{$gap} + 1px);
         }
       }
+    }
+
+    strong {
+      background: rgba(255, 242, 202, 0.77);
+      border-radius: $border-radius;
     }
 
     h1 {
@@ -153,6 +165,7 @@
       background: $background-lv2;
       word-break: break-word;
       font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+      border-radius: $border-radius;
     }
     // ================== /code ==================
 
@@ -191,11 +204,13 @@
       target-name: new;
       target-new: tab;
       color: $text-color-primary;
-      background: $background-lv1;
+      padding: 0 4px;
+      background: #eef0fc;
       border-bottom: 1px solid $theme-color;
+      border-radius: $border-radius $border-radius 0 0;
 
       &:hover {
-        background: $background-lv3;
+        background: #e2eefe;
       }
     }
     // ================== /link ==================
