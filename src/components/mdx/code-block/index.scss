@@ -1,3 +1,4 @@
+@import "~@/styles/_variables.scss";
 @import "variables";
 @import "mixins";
 
@@ -24,6 +25,7 @@
     background: #D9D7E0;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     text-transform: uppercase;
+    border-radius: 0 0 $border-radius / 2 $border-radius / 2;
   }
 
   &[class*=language-javascript]::before,

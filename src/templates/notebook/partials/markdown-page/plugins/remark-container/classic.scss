@@ -1,3 +1,5 @@
+@import "~@/styles/_variables.scss";
+
 @mixin non-plain {
   border-top-width: 0;
   border-right-width: 0;
@@ -13,6 +15,7 @@
   color: #111;
   word-break: break-word;
   background-color: #F5F7F9;
+  border-radius: $border-radius;
 
   .remark-container-title {
     margin-top: 0;
