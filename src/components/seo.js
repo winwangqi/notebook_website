@@ -68,7 +68,19 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script type="text/javascript">
+        {`
+          var _hmt = _hmt || [];
+          (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?dd911bcc5bdaece0f66f5fa16b2f4002";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        `}
+      </script>
+    </Helmet>
   )
 }
 
