@@ -3,6 +3,7 @@ module.exports = {
     title: `Notebook`,
     description: `Note Everything`,
     author: `w@ngq!`,
+    siteUrl: 'https://winwangqi.github.io',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -99,5 +100,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }

@@ -19,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.21",
+    "gatsby-plugin-sitemap": "^2.4.11",
     "gatsby-plugin-typescript": "^2.4.16",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-copy-linked-files": "^2.3.11",
@@ -65,7 +66,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby clean && gatsby develop -p 7777 -o --no-cache",
+    "develop": "gatsby clean && gatsby develop -p 7777 -o",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
