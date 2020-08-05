@@ -69,8 +69,9 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <script type="text/javascript">
-        {`
+      {process.env.NODE_ENV === 'production' && (
+        <script type="text/javascript">
+          {`
           var _hmt = _hmt || [];
           (function() {
           var hm = document.createElement("script");
@@ -79,7 +80,8 @@ function SEO({ description, lang, meta, title }) {
           s.parentNode.insertBefore(hm, s);
         })();
         `}
-      </script>
+        </script>
+      )}
     </Helmet>
   )
 }
