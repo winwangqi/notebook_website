@@ -6,7 +6,7 @@
 .sidebar {
   position: fixed;
   left: 0;
-  top: 3em;
+  top: $header-height;
   bottom: 0;
   display: block !important;
   opacity: 0;
@@ -93,8 +93,8 @@
   position: fixed;
   right: 2em;
   bottom: 2em;
-  width: 3.4em;
-  height: 3.4em;
+  width: 3em;
+  height: 3em;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -3,9 +3,48 @@
 @import "../../../../variables";
 
 .tableOfContents {
-  position: relative;
+  position: fixed;
+  max-width: $toc-width-xs;
+  right: -$toc-width-sm;
+  top: $header-height;
+  bottom: 0;
+  opacity: 0;
+  transition: right $transition-duration ease, opacity $transition-duration ease;
+  overflow: auto;
+  // todo: manage z-index
+  z-index: 98;
+  background: #fff;
+
+  &.open {
+    right: 0;
+    opacity: 1;
+  }
+
+  @include respond-to(sm) {
+    &.open {
+      max-width: $toc-width-sm;
+    }
+  }
+
   @include respond-to(lg) {
+    position: static;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    overflow: initial;
     max-width: $toc-width-lg;
+
+    .wrapper {
+      padding-top: 0;
+      padding-bottom: 0;
+      max-height: 38em;
+    }
+
+    .content {
+      .label {
+        padding: .24em 0 !important;
+      }
+    }
   }
 
   @include respond-to(xl) {
@@ -17,8 +56,7 @@
     top: calc(2em + #{$header-height});
     display: inherit;
     box-sizing: border-box;
-    padding: 0 1.2em;
-    max-height: 31em;
+    padding: 1.2em;
     border-left: 2px solid #ddd;
     overflow-y: auto;
   }
@@ -38,8 +76,27 @@
     .label {
       display: inline-block;
       width: 100%;
-      padding: .18em 0;
+      padding: .4em 0;
       @include text-ellipsis;
     }
   }
+}
+
+.toggleButton {
+  position: fixed;
+  right: 2em;
+  top: 5.6em;
+  width: 2.2em;
+  height: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #000;
+  box-shadow: rgba(0, 0, 0, .3) 0 0 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color $transition-duration;
+  // todo: manage z-index
+  z-index: 99;
 }

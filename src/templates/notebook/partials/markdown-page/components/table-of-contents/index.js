@@ -30,6 +30,7 @@ Index.defaultProps = {
 }
 
 export default function Index(props) {
+  const [isOpen, setIsOpen] = useState(false)
   const { className, tableOfContents, itemTopOffsets } = props
 
   if (tableOfContents.length === 0) return null
@@ -72,26 +73,39 @@ export default function Index(props) {
     setActiveID(item ? item.id : '')
   }, 16)
 
+  function handleToggleTableOfContents() {
+    setIsOpen(!isOpen)
+  }
+
+  console.log(isOpen)
+
   return (
-    <div className={cns('hidden-xs', 'hidden-sm', 'table-of-contents', styl.tableOfContents, className)}>
-      <div className={styl.wrapper}>
-        {treeData && (
-          <Tree
-            className={styl.content}
-            activeClassName={styl.active}
-            activeID={activeID}
-            node={treeData}
-            nodeCreator={node => (
-              <a
-                href={node.context.path}
-                title={node.label}
-                className={styl.label}
-              >{node.label}</a>
-            )}
-          />
-        )}
+    <>
+      <div className={cns('table-of-contents', styl.tableOfContents, className, { [styl.open]: isOpen })}>
+        <div className={styl.wrapper}>
+          {treeData && (
+            <Tree
+              className={styl.content}
+              activeClassName={styl.active}
+              activeID={activeID}
+              node={treeData}
+              nodeCreator={node => (
+                <a
+                  onClick={handleToggleTableOfContents}
+                  href={node.context.path}
+                  title={node.label}
+                  className={styl.label}
+                >{node.label}</a>
+              )}
+            />
+          )}
+        </div>
       </div>
-    </div>
+
+      <div className={cns('hidden-lg', styl.toggleButton)} onClick={handleToggleTableOfContents}>
+        <i className="iconfont icon-category"/>
+      </div>
+    </>
   )
 }
 
