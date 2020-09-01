@@ -6,6 +6,7 @@ module.exports = ({ node, actions, getNode }) => {
 
   switch (node.internal.type) {
     case 'Mdx':
+      // filed: slug
       const relativeFilePath = createFilePath({
         node,
         getNode,
@@ -16,6 +17,14 @@ module.exports = ({ node, actions, getNode }) => {
         node,
         name: "slug",
         value: relativeFilePath,
+      })
+
+      // filed: filePath
+      const contentPath = path.resolve(__dirname, '../content')
+      createNodeField({
+        node,
+        name: "filePath",
+        value: node.fileAbsolutePath.slice(contentPath.length),
       })
   }
 }

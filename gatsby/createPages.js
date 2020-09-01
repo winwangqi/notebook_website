@@ -12,6 +12,7 @@ module.exports = async ({ actions, graphql, reporter }) => {
           node {
             fields {
               slug
+              filePath
             }
             body
             mdxAST
@@ -19,6 +20,11 @@ module.exports = async ({ actions, graphql, reporter }) => {
             tableOfContents(
               maxDepth: 3
             )
+            parent {
+              ... on File {
+                modifiedTime(formatString: "YYYY-MM-DD HH:mm")
+              }
+            }
           }
         }
       }

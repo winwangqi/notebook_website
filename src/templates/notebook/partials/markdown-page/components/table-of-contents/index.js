@@ -77,8 +77,6 @@ export default function Index(props) {
     setIsOpen(!isOpen)
   }
 
-  console.log(isOpen)
-
   return (
     <>
       <div className={cns('table-of-contents', styl.tableOfContents, className, { [styl.open]: isOpen })}>

@@ -15,7 +15,38 @@
     margin: 0 auto;
     max-width: 1600px;
     min-height: calc(100vh - #{$header-height});
-    padding: $page-side-gap $page-side-gap $page-side-gap * 3;
+    padding: $page-side-gap;
+
+    .extra {
+      margin-bottom: $page-side-gap;
+      padding: $page-side-gap / 2 0 $page-side-gap 0;
+      border-bottom: 1px solid #eee;
+
+      .line {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .editThisPage {
+        color: rgb(55, 57, 64);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: rgb(236, 236, 236);
+        background: transparent;
+        transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
+
+        &:hover {
+          background: transparent;
+          color: rgb(26, 26, 26);
+          border-color: rgb(26, 26, 26);
+        }
+      }
+
+      .lastUpdate {
+        font-size: .9em;
+        color: #666;
+      }
+    }
 
     .markdownWrapper {
       flex: 1;

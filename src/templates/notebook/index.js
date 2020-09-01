@@ -60,6 +60,14 @@ export const pageQuery = graphql`
     mdx(fields: { slug: { eq: $path } }) {
       body
       tableOfContents
+      fields {
+        filePath
+      }
+      parent {
+        ... on File {
+          modifiedTime(formatString: "YYYY-MM-DD HH:mm")
+        }
+      }
     }
   }
 `

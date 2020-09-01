@@ -57,6 +57,17 @@ export default function(props) {
           className={cns('markdown', styl.markdownWrapper)}
           ref={markdownWrapperRef}
         >
+          <div className={styl.extra}>
+            <div className={styl.line}>
+              <a
+                className={styl.editThisPage}
+                target="_blank"
+                href={`${process.env.GATSBY_CONTENT_REPOSITORY}/tree/master${mdx.fields.filePath}`}
+              >Edit this page</a>
+              <div className={styl.lastUpdate}>更新时间：{mdx.parent.modifiedTime}</div>
+            </div>
+          </div>
+
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </div>
 
