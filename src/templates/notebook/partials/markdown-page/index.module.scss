@@ -18,33 +18,42 @@
     padding: $page-side-gap;
 
     .extra {
-      margin-bottom: $page-side-gap;
-      padding: $page-side-gap / 2 0 $page-side-gap 0;
+      margin-bottom: $page-side-gap * .5;
+      padding: $page-side-gap * .5 0 $page-side-gap * .5 0;
       border-bottom: 1px solid #eee;
+      font-size: .8em;
 
       .line {
         display: flex;
         justify-content: space-between;
+        color: #888;
+
+        .section {
+          display: flex;
+          align-items: center;
+          margin: 0 -10px;
+
+          .item {
+            margin: 0 10px;
+          }
+        }
       }
 
       .editThisPage {
         color: rgb(55, 57, 64);
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-color: rgb(236, 236, 236);
+        border-bottom: none;
+        padding: 0;
+        //border-bottom-width: 1px;
+        //border-bottom-style: solid;
+        //border-color: rgb(236, 236, 236);
         background: transparent;
         transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
 
         &:hover {
           background: transparent;
           color: rgb(26, 26, 26);
-          border-color: rgb(26, 26, 26);
+          //border-color: rgb(26, 26, 26);
         }
-      }
-
-      .lastUpdate {
-        font-size: .9em;
-        color: #666;
       }
     }
 

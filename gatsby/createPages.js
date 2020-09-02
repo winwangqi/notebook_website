@@ -1,4 +1,5 @@
 const path = require(`path`)
+const moment = require('moment')
 
 module.exports = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -46,6 +47,7 @@ module.exports = async ({ actions, graphql, reporter }) => {
       // additional data can be passed via context
       context: {
         title: pathSegments[pathSegments.length - 2],
+        modifiedTime: moment.utc(node.parent.modifiedTime).utcOffset(8).format('YYYY-MM-DD HH:mm'),
       },
     })
   })

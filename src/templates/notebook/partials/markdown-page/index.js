@@ -59,12 +59,17 @@ export default function(props) {
         >
           <div className={styl.extra}>
             <div className={styl.line}>
-              <a
-                className={styl.editThisPage}
-                target="_blank"
-                href={`${process.env.GATSBY_CONTENT_REPOSITORY}/tree/master${mdx.fields.filePath}`}
-              >Edit this page</a>
-              <div className={styl.lastUpdate}>更新时间：{mdx.parent.modifiedTime}</div>
+              <div className={styl.section}>
+                <div className={styl.item}>阅读时长： {mdx.timeToRead} 分钟</div>
+                <div className={styl.item}>更新时间： {props.modifiedTime}</div>
+              </div>
+              <div className={styl.section}>
+                <a
+                  className={cns(styl.editThisPage, styl.item)}
+                  target="_blank"
+                  href={`${process.env.GATSBY_CONTENT_REPOSITORY}/tree/master${mdx.fields.filePath}`}
+                >编辑此页</a>
+              </div>
             </div>
           </div>
 
