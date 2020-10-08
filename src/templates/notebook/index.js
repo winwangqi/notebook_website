@@ -12,7 +12,7 @@ import MarkdownPage from './partials/markdown-page'
 import styl from './index.module.scss'
 import cns from 'classnames'
 
-export default function Index({ location, data, pageContext: { title, modifiedTime } }) {
+export default function Index({ location, data, pageContext: { title } }) {
   return (
     <MDXProvider
       components={{
@@ -48,7 +48,6 @@ export default function Index({ location, data, pageContext: { title, modifiedTi
           <MarkdownPage
             title={title}
             mdx={data.mdx}
-            modifiedTime={modifiedTime}
           />
         </div>
       </Theme>
@@ -64,12 +63,6 @@ export const pageQuery = graphql`
       fields {
         filePath
       }
-      parent {
-        ... on File {
-          modifiedTime(formatString: "YYYY-MM-DD HH:mm")
-        }
-      }
-      timeToRead
     }
   }
 `

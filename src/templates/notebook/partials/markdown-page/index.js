@@ -57,12 +57,10 @@ export default function(props) {
           className={cns('markdown', styl.markdownWrapper)}
           ref={markdownWrapperRef}
         >
+          <MDXRenderer>{mdx.body}</MDXRenderer>
+
           <div className={styl.extra}>
             <div className={styl.line}>
-              <div className={styl.section}>
-                <div className={styl.item}>阅读时长： {mdx.timeToRead} 分钟</div>
-                <div className={styl.item}>更新时间： {props.modifiedTime}</div>
-              </div>
               <div className={styl.section}>
                 <a
                   className={cns(styl.editThisPage, styl.item)}
@@ -72,8 +70,6 @@ export default function(props) {
               </div>
             </div>
           </div>
-
-          <MDXRenderer>{mdx.body}</MDXRenderer>
         </div>
 
         <TableOfContents
