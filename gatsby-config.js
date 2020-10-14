@@ -62,7 +62,10 @@ module.exports = {
         ],
         remarkPlugins: [
           require('remark-breaks'),
+          require('remark-underline'),
           require('./plugins/remark-container'),
+          require('./plugins/remark-inline-highlight'),
+          // require('./plugins/remark-inline-delete'),
         ],
       },
     },

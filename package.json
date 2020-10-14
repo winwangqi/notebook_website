@@ -52,7 +52,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "remark-breaks": "^1.0.5",
-    "remark-container": "^0.1.2"
+    "remark-container": "^0.1.2",
+    "remark-underline": "^1.0.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.11.0",
