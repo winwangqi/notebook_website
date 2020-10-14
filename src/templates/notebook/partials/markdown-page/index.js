@@ -51,25 +51,13 @@ export default function(props) {
   }, 16)
 
   return (
-    <main className={styl.markdownPage}>
-      <div className={styl.wrapper}>
+    <div className={styl.markdownPage}>
+      <main className={styl.wrapper}>
         <div
           className={cns('markdown', styl.markdownWrapper)}
           ref={markdownWrapperRef}
         >
           <MDXRenderer>{mdx.body}</MDXRenderer>
-
-          <div className={styl.extra}>
-            <div className={styl.line}>
-              <div className={styl.section}>
-                <a
-                  className={cns(styl.editThisPage, styl.item)}
-                  target="_blank"
-                  href={`${process.env.GATSBY_CONTENT_REPOSITORY}/tree/master${mdx.fields.filePath}`}
-                >编辑此页</a>
-              </div>
-            </div>
-          </div>
         </div>
 
         <TableOfContents
@@ -77,12 +65,24 @@ export default function(props) {
           itemTopOffsets={itemTopOffsets}
           tableOfContents={mdx.tableOfContents.items}
         />
+      </main>
+
+      <div className={styl.bottomActionSection}>
+        <div className={styl.line}>
+          <div className={styl.section}>
+            <a
+              className={cns(styl.editThisPage, styl.item)}
+              target="_blank"
+              href={`${process.env.GATSBY_CONTENT_REPOSITORY}/tree/master${mdx.fields.filePath}`}
+            >编辑此页</a>
+          </div>
+        </div>
       </div>
 
       <footer className={styl.footer}>
         <p>w@ngq! All rights reserved. @{new Date().getFullYear()}</p>
       </footer>
-    </main>
+    </div>
   )
 }
 
