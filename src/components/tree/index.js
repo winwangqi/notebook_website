@@ -12,6 +12,7 @@ Tree.propTypes = {
   activeID: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   nodeCreator: PropTypes.func,
   enableScrollIntoView: PropTypes.bool,
+  enableNativeScrollIntoView: PropTypes.bool,
   enableCollapse: PropTypes.bool,
   treeClassName: PropTypes.string,
   nodeClassName: PropTypes.string,
@@ -28,6 +29,7 @@ Tree.defaultProps = {
 Tree.defaultProps = {
   nodeCreator: (node) => <span>{node.label}</span>,
   enableScrollIntoView: false,
+  enableNativeScrollIntoView: true,
   enableCollapse: false,
   treeClassName: '',
   nodeClassName: '',
@@ -49,7 +51,7 @@ function Tree(props) {
 function Node(props) {
   const {
     node, nodeCreator, activeID, nodeClassName, labelClassName, activeClassName,
-    enableScrollIntoView, enableCollapse,
+    enableScrollIntoView, enableNativeScrollIntoView, enableCollapse,
     onToggleNodeCollapse,
     onGetActiveNode
   } = props
@@ -68,7 +70,7 @@ function Node(props) {
         // line: 34 https://github.com/gatsbyjs/gatsby/blob/master/www/src/components/sidebar/item.js
         // await function () {}
         onGetActiveNode(node)
-        node.scrollIntoView({ block: 'center' })
+        if (enableNativeScrollIntoView) node.scrollIntoView({ block: 'center' })
       }
     },
     [active],

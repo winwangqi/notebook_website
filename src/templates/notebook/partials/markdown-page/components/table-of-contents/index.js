@@ -32,6 +32,7 @@ Index.defaultProps = {
 export default function Index(props) {
   const [isOpen, setIsOpen] = useState(false)
   const { className, tableOfContents, itemTopOffsets } = props
+  const wrapperRef = useRef(null)
 
   if (tableOfContents.length === 0) return null
 
@@ -73,6 +74,16 @@ export default function Index(props) {
     setActiveID(item ? item.id : '')
   }, 16)
 
+  function handleGetActiveNode(node) {
+    if (wrapperRef?.current) {
+      wrapperRef.current.scrollTo({
+        top: node.offsetTop - wrapperRef.current.offsetHeight / 2,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   function handleToggleTableOfContents() {
     setIsOpen(!isOpen)
   }
@@ -80,11 +91,14 @@ export default function Index(props) {
   return (
     <>
       <div className={cns('table-of-contents', styl.tableOfContents, className, { [styl.open]: isOpen })}>
-        <div className={styl.wrapper}>
+        <div className={styl.wrapper} ref={wrapperRef}>
           {treeData && (
             <Tree
               className={styl.content}
               activeClassName={styl.active}
+              enableScrollIntoView
+              enableNativeScrollIntoView={false}
+              onGetActiveNode={handleGetActiveNode}
               activeID={activeID}
               node={treeData}
               nodeCreator={node => (
