@@ -113,5 +113,5 @@ function getElementTopOffsetsByID(itemIDs) {
         offsetTop: element.offsetTop,
       }
     })
-    .filter(item => item)
+    .filter(Boolean)
 }
