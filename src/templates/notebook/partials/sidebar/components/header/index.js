@@ -5,7 +5,7 @@ import TreeButtonGroup from './components/tree-button-group'
 import SearchInput from './components/search-input'
 
 import cns from 'classnames'
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 
 Index.propTypes = {
   onToggleExpand: PropTypes.func,

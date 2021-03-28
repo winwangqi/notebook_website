@@ -11,7 +11,7 @@ import { createTree, findActiveID, flattenTree, updateTreeDataCollapse, filterTr
 import { initSearch } from '@/utils/js-search'
 
 import cns from 'classnames'
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 
 export const initialTreeData = createTree(menuList)
 

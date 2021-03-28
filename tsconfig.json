@@ -6,6 +6,10 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "esModuleInterop": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src"]
+    }
   }
 }

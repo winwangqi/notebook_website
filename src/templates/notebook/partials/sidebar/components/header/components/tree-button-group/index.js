@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import ExpandButton from '../../../../components/expand-button'
 
 import cns from 'classnames'
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 
 Index.propTypes = {
   icon: PropTypes.node,

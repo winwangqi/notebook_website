@@ -1,7 +1,7 @@
 import React from 'react'
 
 import cns from 'classnames'
-import styl from './footer.module.scss'
+import * as styl from './footer.module.scss'
 
 function Footer() {
   return (

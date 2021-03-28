@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import AnimateHeight from 'react-animate-height'
 
 import cns from 'classnames'
-import styl from './Tree.module.scss'
+import * as styl from './Tree.module.scss'
 
 Tree.propTypes = {
   node: PropTypes.object.isRequired,

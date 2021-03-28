@@ -6,7 +6,7 @@ import Tree from '@/components/tree'
 import { throttle } from 'lodash'
 
 import cns from 'classnames'
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 
 Index.propTypes = {
   tableOfContents: PropTypes.arrayOf(
@@ -95,7 +95,7 @@ export default function Index(props) {
           {treeData && (
             <Tree
               className={styl.content}
-              activeClassName={styl.active}
+              activeClassName={''}
               enableScrollIntoView
               enableNativeScrollIntoView={false}
               onGetActiveNode={handleGetActiveNode}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql, Link } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 
@@ -9,7 +9,7 @@ import Theme from '@/components/theme'
 import Sidebar from './partials/sidebar'
 import MarkdownPage from './partials/markdown-page'
 
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 import cns from 'classnames'
 
 export default function Index({ location, data, pageContext: { title } }) {
@@ -36,8 +36,8 @@ export default function Index({ location, data, pageContext: { title } }) {
           </div>
           <div className={styl.rt}>
             <Link to="/search" className={styl.search}>
-              <i className={cns('iconfont icon-search', styl.icon)} />
-              <span className={styl.text}>搜索</span>
+              <i className={cns('iconfont icon-search')} />
+              <span>搜索</span>
             </Link>
           </div>
         </header>
@@ -59,6 +59,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     mdx(fields: { slug: { eq: $path } }) {
       body
+      rawBody
       tableOfContents
       fields {
         filePath

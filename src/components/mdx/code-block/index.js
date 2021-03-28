@@ -7,7 +7,7 @@ import LazyHighlight from '../../lazy-highlight'
 
 import './index.scss'
 import cns from 'classnames'
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 
 const getParams = (name = ``) => {
   const [lang, params = ``] = name.split(`:`)

@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'gatsby'
 import { throttle } from 'lodash'
-import SearchWorker from './search.worker'
 import { getInitSearchEngineAction, getSearchAction } from './search.worker.actions'
 
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 
 const SearchTemplate = props => {
   const { pageContext } = props
@@ -14,7 +13,7 @@ const SearchTemplate = props => {
 
   useEffect(() => {
     if (window) {
-      searchWorker.current = new SearchWorker()
+      searchWorker.current = new Worker(new URL('./search.worker.js', import.meta.url))
 
       searchWorker.current.postMessage(getInitSearchEngineAction(allPageData))
 

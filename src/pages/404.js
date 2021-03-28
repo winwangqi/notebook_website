@@ -1,6 +1,6 @@
 import React from "react"
 
-import styl from './404.module.scss'
+import * as styl from './404.module.scss'
 
 const NotFoundPage = () => (
   <div className={styl.page}>

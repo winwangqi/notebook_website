@@ -43,7 +43,7 @@ module.exports = async ({ actions, graphql, reporter }) => {
 
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`src/templates/notebook/index.js`),
+      component: path.resolve(`src/templates/notebook/index.tsx`),
       // additional data can be passed via context
       context: {
         title: pathSegments[pathSegments.length - 2],

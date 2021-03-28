@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import cns from 'classnames'
-import styl from './header.module.scss'
+import * as styl from './header.module.scss'
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

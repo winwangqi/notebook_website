@@ -12,18 +12,6 @@ module.exports = ({ getConfig, stage, actions}) => {
   }
 
   actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.worker\.js$/,
-          exclude: /(node_modules)/,
-          use: {
-            loader: 'worker-loader',
-            options: { fallback: true },
-          },
-        },
-      ]
-    },
     resolve: {
       modules: [
         resolve(__dirname, '../src'),

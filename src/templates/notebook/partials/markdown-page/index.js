@@ -7,7 +7,7 @@ import { throttle } from 'lodash'
 
 import cns from 'classnames'
 import './index.scss'
-import styl from './index.module.scss'
+import * as styl from './index.module.scss'
 import './plugins/remark-container/classic.scss'
 import Theme from '@/components/theme'
 
