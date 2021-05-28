@@ -16,7 +16,8 @@ const getParams = (name = ``) => {
       .split(`language-`)
       .pop()
       .split(`{`)
-      .shift(),
+      .shift()
+      ?.toLowerCase(),
   ].concat(
     params.split(`&`).reduce((merged, param) => {
       const [key, value] = param.split(`=`)

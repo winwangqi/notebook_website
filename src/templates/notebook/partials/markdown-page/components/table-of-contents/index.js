@@ -103,7 +103,7 @@ export default function Index(props) {
               node={treeData}
               nodeCreator={node => (
                 <a
-                  onClick={handleToggleTableOfContents}
+                  onClick={() => setIsOpen(false)}
                   href={node.context.path}
                   title={node.label}
                   className={styl.label}

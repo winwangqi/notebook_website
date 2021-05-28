@@ -4,6 +4,6 @@
     <option name="languageLevel" value="JSX" />
   </component>
   <component name="WebPackConfiguration">
-    <option name="path" value="$PROJECT_DIR$/webstorm.config.js" />
+    <option name="mode" value="DISABLED" />
   </component>
 </project>
