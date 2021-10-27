@@ -49,6 +49,7 @@ module.exports = async ({ actions, graphql, reporter }) => {
         title: pathSegments[pathSegments.length - 2],
         modifiedTime: moment.utc(node.parent.modifiedTime).utcOffset(8).format('YYYY-MM-DD HH:mm'),
       },
+      defer: true,
     })
   })
 

@@ -1,7 +1,7 @@
 const {resolve} = require('path')
 const webpack = require('webpack')
 
-module.exports = ({ getConfig, stage, actions}) => {
+module.exports = ({ getConfig, stage, actions }) => {
   const config = getConfig()
 
   if (stage.startsWith('develop') && config.resolve) {
@@ -22,6 +22,6 @@ module.exports = ({ getConfig, stage, actions}) => {
       },
     },
     // See https://github.com/FormidableLabs/react-live/issues/5
-    plugins: [new webpack.IgnorePlugin(/^(xor|props)$/)],
+    // plugins: [new webpack.IgnorePlugin(/^(xor|props)$/)],
   })
 }
