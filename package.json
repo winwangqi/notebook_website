@@ -28,7 +28,7 @@
     "gatsby-remark-images-medium-zoom": "^1.7.0",
     "gatsby-remark-import-code": "^0.1.1",
     "gatsby-remark-lazy-load": "^1.0.2",
-    "gatsby-remark-mermaid": "^2.1.0",
+    "gatsby-remark-mermaid": "^3.0.1",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-remark": "^5.0.0",
     "gatsby-transformer-sharp": "^4.0.0",
